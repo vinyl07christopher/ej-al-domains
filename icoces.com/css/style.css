@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+.navbar {
+  min-height: 60px;
+  background-color: #fff !important;
+}
+
+.nav-link {
+  color: #000 !important;
+  transition: all 0.2s;
+  margin-inline: 0.2rem;
+  border-bottom: 3px solid #f0986600;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #f09866;
+}
+
+body {
+  font-family: Assistant !important;
+}
+
+.links {
+  color: #005;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px dotted;
+}
+
+.main h3 {
+  text-align: center;
+  color: #fff;
+  padding-block: 0.2rem;
+  margin-block: 1rem 2rem;
+  text-shadow: 0 0 4px #000;
+}
+.main h4,
+.main h5 {
+  color: #f09866;
+  font-weight: 700;
+  padding: 0;
+}
+.main h3,
+.frontPage {
+  background-image: linear-gradient(
+    to right top,
+    #048699,
+    #0a8b9e,
+    #0f91a4,
+    #1496a9,
+    #189caf,
+    #189caf,
+    #189caf,
+    #189caf,
+    #1496a9,
+    #0f91a4,
+    #0a8b9e,
+    #048699
+  );
+}
+
+.frontPage {
+  color: #fff;
+  padding: 2rem 1rem;
+}
+.frontPage a {
+  color: yellow;
+  text-shadow: 0 0 2px #000;
+}
+
+.impDates {
+  font-size: 110%;
+  font-weight: 400;
+}
+
+.impDates span {
+  font-weight: 700;
+  opacity: 0.7;
+
+  font-size: 1rem;
+  color: #000d53;
+}

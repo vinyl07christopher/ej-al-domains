@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Oleo+Script&display=swap");
+
+.navbar {
+  font-weight: 400;
+
+  min-height: 50px;
+
+  background-color: #f4a4bd !important;
+}
+
+.nav-link {
+  color: #000c !important;
+  transition: all 0.2s;
+  margin-inline: 0.2rem;
+}
+.nav-link:hover {
+  color: #e54777 !important;
+}
+
+body {
+  font-family: PT Serif;
+  color: #222;
+  background-color: #f5f5f5;
+}
+.section1 a:not(.btn) {
+  color: blue;
+}
+.frontpage {
+  background-image: linear-gradient(to top, #ffb0c9, #f4a4bd);
+}
+
+.frontpage a {
+  color: rgb(0, 55, 255);
+}
+
+.section1 h3 {
+  text-align: center;
+  color: #5a194277;
+  font-family: Oleo Script;
+  margin-block: 1.5rem;
+  font-size: 2rem;
+}
+
+.section1 h4 {
+  color: #851f5f;
+  font-weight: 800;
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="./committeeImages" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Great+Vibes&family=Amaranth&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap");
+      body {
+        color: #111;
+        background: #fff;
+        font-family: PT Sans;
+      }
+
+      .dates {
+        font-weight: 700;
+        opacity: 1;
+        color: #0a65dc !important;
+        background-color: #ffeab6 !important;
+      }
+      .dates span {
+        color: #000;
+        font-weight: 500;
+      }
+
+      section a {
+        color: #5b14cc;
+      }
+      section {
+        padding-top: 1.5rem;
+      }
+      section h3 {
+        text-align: center;
+        /* color: #055792;   */
+        margin-bottom: 2rem;
+        font-family: Great Vibes;
+        letter-spacing: 0.1rem;
+        font-weight: 900;
+        text-decoration: 1px underline #0008;
+        text-underline-offset: 0.7rem;
+      }
+
+      section h5 {
+        /* color: #004aac; */
+        font-weight: 600;
+      }
+
+      .front {
+        color: #fff;
+        padding: 3rem 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 70vh;
+      }
+
+      .bg-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -10;
+        background-image: linear-gradient(to right, #000a, #000a), url(../banner.webp);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+      }
+
+      .front .conf-name {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        font-weight: 800;
+        line-height: 1.1;
+        font-family: PT Serif;
+        color: #fff;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      }
+
+      .front .date {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        font-weight: 600;
+        padding: 0.2rem 0.8rem;
+        background-color: #fffc;
+        color: #000e;
+        text-shadow: none;
+        font-family: PT Sans;
+      }
+
+      .front a {
+        color: #ffdd1d;
+        transition: all 0.1s;
+        display: table;
+        margin-inline: auto;
+        margin-bottom: 0.2rem;
+        box-sizing: border-box;
+      }
+      .front a:hover {
+        color: #ffcf56cc;
+        border-bottom: none;
+        text-underline-offset: 0.3rem;
+      }
+
+      .members {
+        display: flex;
+      }
+
+      .members .images {
+        margin-right: 1rem;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 8px #222;
+      }
+      .members .images img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+      }
+      .members .images .tall {
+        width: 100%;
+        height: auto;
+      }
+
+      .members .names {
+        font-size: 0.85rem;
+        color: #000b;
+      }
+      .members .names .name {
+        font-size: 1rem;
+        color: #000;
+      }
+
+      .shadow {
+        box-shadow: 0 0 3px #0008;
+      }
+    </style>
+    <title>ICCCES 2024</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg p-0 px-2 navbar-light sticky-top bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand m-0 p-0">
+          <img src="hill-black.png" alt="ppg logo" height="60px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="committee.html">Committee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./#important-date">Important Dates</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="cfp.html">Call for Papers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="keynote.html">Keynote</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="submission.html">Submission</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="publication.html">Publication</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="venue.html">Venue</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="m-0 w-100 text-left align-items-center" style="margin: 0">
+        <div class="container">
+          <h3>Committee</h3>
+
+          <section class="container committee pb-5">
+            <!--<h6 class="text-center">Committee</h6>-->
+            <h4 style="color: #3258c3">Chief Patrons</h4>
+            <hr />
+            <div class="row">
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/kamal.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) Kamal Ghanshala <br /></div>
+                    Chancellor, <br />
+                    Graphic Era Hill University, <br />
+                    India <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/JOSHI.jpeg" class="image1" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) R.C Joshi <br /></div>
+                    Chancellor, <br />
+                    Graphic Era (Deemed to be University), <br />
+                    India <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5" style="color: #3258c3">Patrons</h4>
+            <hr />
+
+            <div class="row">
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/image2.png" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) J. Kumar <br /></div>
+                    Pro-Chancellor <br />
+                    Graphic Era Hill University, <br />
+                    India <br />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/Nagaraj.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) H. N. Nagaraj <br /></div>
+                    Director General, <br />
+                    Graphic Era (Deemed to be University), <br />
+                    India
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/Sanjay Jasola.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) Sanjay Jasola <br /></div>
+                    Vice-Chancellor, <br />
+                    Graphic Era (Deemed to be University), <br />
+                    India <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/Gowri Ravi.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) R. Gowri <br /></div>
+                    Vice-Chancellor, <br />
+                    Graphic Era Hill University, <br />
+                    India
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5" style="color: #3258c3">General Chair</h4>
+            <hr />
+            <div class="row">
+              <div class="col-lg-5 mb-3">
+                <!-- <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/SriNivasSingh.png" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. Sri Niwas Singh <br /></div>
+
+                    Director, <br />
+                    ABB-IITM Gwalior, <br />
+                    Professor(HAG), <br />
+                    Dept. of Electrical Engineering, <br />
+                    IIT Kanpur, India
+                  </div>
+                </div> -->
+
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/vrince vimal.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. (Dr.) Vrince Vimal <br /></div>
+                    Associate Dean Research, <br />
+                    Computer Science & Engineering, <br />
+                    Graphic Era Hill University, <br />
+                    India.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5" style="color: #3258c3">Conference Chair</h4>
+            <hr />
+            <div class="row">
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/image7.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Prof. Dibyahash Bordoloi<br /></div>
+                    HoD, Computer Science & Engineering, <br />
+                    Graphic Era Hill University, <br />
+                    India.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-3"></div>
+            </div>
+
+            <h4 class="mt-5" style="color: #3258c3">Conference Co-Chairs</h4>
+            <hr />
+            <div class="row">
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/image8.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Mr. Navin Garg<br /></div>
+                    Associate Professor,<br />
+                    Computer Science & Engineering, <br />
+                    Graphic Era Hill University - India <br />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 mb-3">
+                <div class="members">
+                  <div class="images my-1">
+                    <img src="committeeImages/Nisha Chandran.jpeg" class="" alt="members" />
+                  </div>
+                  <div class="names my-1">
+                    <div class="name">Dr. Nisha Chandran <br /></div>
+                    Assistant Professor, <br />
+                    School of Computing, <br />
+                    Graphic Era Hill University, <br />
+                    India.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-5" style="color: #3258c3">Convener</h4>
+            <hr />
+            <div class="col-lg-5 mb-3">
+              <div class="members">
+                <div class="images my-1 text-color">
+                  <img src="committeeImages/Mahesh Manchanda.jpeg" class="" alt="members" />
+                </div>
+                <div class="names my-1">
+                  <div class="name">Prof. (Dr.) Mahesh Manchanda <br /></div>
+                  Computer Science & Engineering, <br />
+                  Graphic Era Hill University, <br />
+                  India.
+                </div>
+              </div>
+            </div>
+            <h4 class="mt-5" style="color: #3258c3">Co-Convener</h4>
+            <hr />
+            <div class="col-lg-5 mb-3">
+              <div class="members">
+                <div class="images my-1">
+                  <img src="committeeImages/PrateekSrivastva.png" class="tall" alt="members" />
+                </div>
+                <div class="names my-1">
+                  <div class="name">Dr. Prateek Srivastva <br /></div>
+
+                  Associate Professor, <br />
+                  Graphic Era Hill University, <br />
+                  India
+                </div>
+              </div>
+            </div>
+            <br /><br />
+
+            <h4 class="mt-5" style="color: #3258c3">Technical Program Chairs</h4>
+            <li>Prof. Sri Niwas Singh, Director, ABB-IITM Gwalior, Professor(HAG), Dept. of Electrical Engineering, IIT Kanpur, India.</li>
+            <li>Prof. (Dr.) Vrince Vimal, Graphic Era Hill University, India.</li>
+            <li>Dr. Messaouda Bouneb, El Arbi Ben M'hidi University, Algeria.</li>
+            <li>Dr. Vincenzo Piuri, University of Milan, Italy.</li>
+            <li>Dr. Elmootazbellah (Mootaz) N. Elnozahy, King Abdullah University of Science and Technology, Saudi Arabia.</li>
+            <li>Dr. Maria Ganzha, Warsaw University of Technology, Poland.</li>
+            <li>Dr. V. Bindhu, Professor and Head, Department of ECE, PPG Institute of Technology, Coimbatore, India.</li>
+            <li>Dr. Nasimuddin, Institute for Infocomm Research Singapore, Singapore.</li>
+
+            <h4 class="mt-4" style="color: #3258c3">Technical Program Committee</h4>
+            <li>Dr. Arunkumar Sridharan, Indian Institute of Technology, Bombay, India</li>
+            <li>Dr. Sitikantha Das, Indian Institute of Technology, Kharagpur, India</li>
+            <li>Dr. Bilal Saoud, University of Bouira, Algeria</li>
+            <li>Dr. Narendra Londhe, National Institute of Technology, Raipur, India</li>
+            <li>Dr. Altaf Q H Badar, National Institute of Technology, Warangal, India</li>
+            <li>Dr. Mohamed Cherradi, Abdelmalek Essaadi University, Malaysia</li>
+            <li>Dr. Adriana Turriate Guzmán, Universidad Privada Del Norte, Peru</li>
+            <li>Dr. Hamed Taherdoost, University Canada West, Canada</li>
+            <li>Dr. Renjith V. Ravi, M.E.A Engineering College, India</li>
+            <li>Dr. Narayan Debnath C, Eastern International University, Vietnam</li>
+            <li>Dr. Sai Prakash, National Institute of Technology, India.</li>
+            <li>Dr. Soumaya Zayrit, University Hassan II, Morocco.</li>
+            <li>Dr. R. K. Nagaria, Motilal Nehru National Institute of Technology, India.</li>
+            <li>Dr. Ram Krishan, National Institute of Technology, Warangal, India.</li>
+            <li>Dr. Christina Tay, Christ Church College, India.</li>
+            <li>Dr. Wajahat Rizvi, Amity University, India.</li>
+            <li>Dr. Shaik Mazhar, Hussain Middle East College (MEC), India,</li>
+            <li>Dr. Archana Prabahar, Cleveland State University, United States of America.</li>
+            <li>Dr. Halima Sadia, Integral University, India.</li>
+            <li>Dr. P William, Sanjivani Group of Institutes, India.</li>
+            <li>Dr. Shailu Sachan Maulana Azad National Institute of Technology, India.</li>
+            <li>Dr. Chandrasekaran K, National Institute of Technology, Karnataka, India.</li>
+            <li>Dr. N. Suthanthira, Vanitha Knowledge Institute of Technology, India</li>
+            <li>Dr. K. K. Thiyagarajan, R. M. D Engineering College, India</li>
+            <li>Dr. Hlaing Htake Khaung, Tin University of Information Technology, Myanmar</li>
+            <li>Dr. Siva Rama Krishnan S, VIT University, India.</li>
+            <li>Dr. Paramasivam Alagumariappan, VelTech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, India.</li>
+            <li>Dr. Khalesi, London South Bank University, United Kingdom.</li>
+            <li>Dr. Bushra Shaikh Sies, Graduate School of Technology, India.</li>
+            <li>Dr. Ajmer Singh, DCRUST Murthal, India.</li>
+            <li>Dr. Ganesh Kumar Srinivasan, Anna University, India.</li>
+            <li>Dr. Salahuddin Morsalin, National Yunlin University of Science and Technology, Taiwan.</li>
+            <li>Dr. Manoj Verma, Shri Mata Vaishno Devi University, India.</li>
+            <li>Dr. Hanane Sebbaq, Mohammadia School of Engineers, Mohammed V University, Rabat, Morocco.</li>
+            <li>Dr B Gomathy, Dr NGP Institute of Technology, India.</li>
+            <li>Dr. Cancio Monteiro, National University of Timor Lorosa'e (UNTL), East Timor.</li>
+            <li>Dr. Rajat Bhardwaj, RV University, India.</li>
+            <li>Dr. Messaoudene Khadidja, University M’Hamed Bougara of Boumerdes, Algeria.</li>
+            <li>Dr. Daniel Pavaloaia, Alexandru Ioan Cuza University of Iasi, Romania.</li>
+            <li>Dr. Disha Wankhede, Vishwakarma Institute of Information Technology (VIIT), India.</li>
+            <li>Dr. Faizan Qamar, Universiti Kebangsaan Malaysia (UKM), Malaysia.</li>
+            <li>Dr. Syamsuri Yaakob, Universiti Putra Malaysia, Malaysia.</li>
+            <li>Dr. Najhan M. Ibrahim, International Islamic University Malaysia.</li>
+            <li>Dr. C. R. Rene Robin, Sai Ram Group of Institutions, India.</li>
+            <li>Dr. Brij Bhooshan Gupta, Indian Institute of Technology, Roorkee, India.</li>
+            <li>Dr. Sanjoy Choudhury S. N. Bose National Centre for Basic Sciences, India.</li>
+            <li>Dr. Omar Hussain, Omar Alhazmi Taibah University, Saudi Arabia.</li>
+            <li>Dr. Gunavathie M A, Panimalar Engineering College India.</li>
+            <li>Dr. Geetika Singh, M S Ramaiah Institute of Technology India.</li>
+            <li>Dr. Kartick Chandra, Monda Jadavpur University India.</li>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

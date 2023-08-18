@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <title>ICOEI 2024</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+  <body class="w3-light-grey w3-content" style="max-width: 1600px">
+    <!-- Sidebar/menu -->
+    <nav
+      class="w3-sidebar w3-collapse w3-white"
+      style="z-index: 3; width: 300px"
+      id="mySidebar"
+    >
+      <br />
+      <div w3-include-html="sidebar.html"></div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <div class="w3-main" style="margin-left: 300px">
+      <!-- Header -->
+      <header>
+        <a href="#"
+          ><img
+            src="images/ICOEI logo.png"
+            style="width: 65px"
+            class="w3-right w3-margin w3-hide-large w3-hover-opacity"
+        /></a>
+        <span
+          class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></span>
+        <div class="w3-container">
+          <h1 class="w3-text-indigo"><b>ICOEI 2024</b></h1>
+          <h3>
+            <b
+              >8th International Conference on Trends in Electronics and
+              Informatics
+            </b>
+          </h3>
+          <h3 class="w3-text-indigo">
+            4-6, April 2024 ♦ Cheranmahadevi, Tirunelveli, India
+          </h3>
+        </div>
+      </header>
+
+      <!-- Welcome -->
+      <div class="w3-container w3-padding-large">
+        <div
+          class="w3-card-4 w3-content w3-display-container"
+          style="max-width: 800px"
+        >
+          <a href="#acknowledgments"
+            ><img
+              src="./images/room-business-meeting.jpg"
+              alt="Brisbane Skyline"
+              style="width: 100%"
+          /></a>
+        </div>
+        <div class="w3-section w3-bottombar w3-padding-16"></div>
+      </div>
+
+      <div class="w3-container w3-padding-large" style="margin-bottom: 32px">
+        <h4><b>About</b></h4>
+
+        <p>
+          The 8th International Conference on Trends in Electronics and
+          Informatics (ICOEI 2024) is being organized by SCAD College of
+          Engineering and Technology on 4-6, April 2024 at Tirunelveli, India.
+          ICOEI 2024 will provide an outstanding international forum for sharing
+          knowledge and results in all fields of Engineering and Technology. The
+          primary goal of the conference is to promote research and
+          developmental activities in Electronics and Informatics. Another goal
+          is to promote scientific information interchange between researchers,
+          developers, engineers, students, and practitioners working in India
+          and abroad. The conference is organized to make it an ideal platform
+          for people to share views and experiences in Electronics, Informatics
+          and related areas.
+        </p>
+      </div>
+      <div class="w3-container w3-padding-large" style="margin-bottom: 32px">
+        <h4><b>College Information </b></h4>
+
+        <p>
+          SCAD College of Engineering and Technology (SCADCET), an NBA
+          Accredited Institution, approved by AICTE & affiliated to ANNA
+          UNIVERSITY CHENNAI, It's an ISO certified institution and recognized
+          by UGC under the section 12(B) & 2(f). SCAD CET is a premier
+          engineering college located in a sprawling 300 acre campus at
+          Cheranmahadevi, a quaint town in Tirunelveli District, Tamil Nadu. The
+          college is managed and run by SCAD Educational Trust of the SCAD Group
+          of Institutions and offers engineering courses in the undergraduate as
+          well as postgraduate degree level. It also provides management and
+          computer application courses at the postgraduate level. Students of
+          Scad College of Engineering and technology are given the opportunity
+          to pursue first-rate and advanced technical education regardless of
+          background, gender or financial constraints. The necessity to promote
+          most advantageous learning and service is well harmonized and clearly
+          expressed by allowing students to successfully plan their education
+          and competently achieve the education they need. Curricular and
+          co-curricular programs form an integral part of the curriculum and
+          help students to have commanding incorporation of theory and practical
+          knowledge. Each individual is motivated to increase the gravity of
+          responsibility and be committed to serve the nation.
+        </p>
+      </div>
+
+ 
+
+      <br /><br /><br />
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+
+      function accordianFunc(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
