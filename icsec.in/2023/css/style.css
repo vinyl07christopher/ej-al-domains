@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap");
+body {
+  font-family: Roboto;
+  padding-bottom: 5rem;
+}
+
+#main h3 {
+  font-size: 2.2rem;
+  color: #4ac6d1;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-block: 0 3rem;
+  letter-spacing: 0.2rem;
+  font-family: Source Serif Pro;
+  text-align: center;
+}
+#main h4 {
+  font-family: Source Serif Pro;
+  font-weight: 500;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #036f82;
+  color: #fffc;
+  text-transform: uppercase;
+  padding: 4px 1rem 1px 1rem;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem !important;
+  color: #000c !important;
+  margin-block: 0.3rem;
+  border-radius: 10px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.dropdown-item {
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+.dropdown-item:hover {
+  background-color: #036f82;
+  color: #fffc !important;
+}
+.nav-link:hover,
+.active {
+  background-color: #036f82;
+  color: #fffc !important;
+  border-radius: 20px;
+}
+
+.navbar {
+  background-color: #fff !important;
+}
+.front-page {
+  background-image: url("../kongu background.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+.front-page,
+#main {
+  padding-top: 100px;
+}

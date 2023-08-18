@@ -1,0 +1,132 @@
+@import url("http://fonts.cdnfonts.com/css/timeless");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("http://fonts.cdnfonts.com/css/Cera-Compact-Pro");
+body {
+  color: #000c;
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 60px;
+}
+
+.container {
+  background: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.container h3 {
+  font-weight: 600;
+  font-family: timeless;
+  letter-spacing: 0.1rem;
+  margin-block: 1rem 1.5rem;
+  background-color: #9f1d6522;
+  color: #0008;
+  padding-inline: 1rem;
+  padding-block: 5px 1px;
+  margin-inline: -0.5rem;
+}
+
+.container h4 {
+  color: #9f1d65;
+  margin-block: 1rem 0.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  border-left: 3px solid #9f1d65;
+  font-family: Cera Compact Pro;
+}
+
+.navbar {
+  padding: 0;
+  box-shadow: 0 2px 4px #222;
+  margin: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.nav-link {
+  color: #000b !important;
+  transition: all 0.1s;
+  font-weight: 500;
+  background-color: #fff !important;
+  margin-inline: 0.3rem;
+  font-family: Cera Compact Pro;
+}
+.nav-link:hover {
+  color: #9f1d65 !important;
+}
+
+#confTitle span {
+  color: #fff;
+  padding: 2px 1rem 0.5px 1rem;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-weight: 800;
+  display: inline-block;
+  background-image: linear-gradient(45deg, #be307e, #9b0457);
+  margin-bottom: 0.3rem;
+  box-shadow: 0 0.1rem 4px #444;
+}
+
+.home {
+  background: linear-gradient(to right, #0004, #0004), url("../HCET banner.webp");
+  background-size: cover;
+
+  padding: 2rem 1rem;
+}
+
+.home .date {
+  font-weight: 500;
+  color: #a10a5d;
+  background: #fff;
+  padding: 3px 8px 1px 8px;
+  border-radius: 8px;
+  box-shadow: 0 0.1rem 4px #444;
+  display: inline-block;
+}
+
+.home a {
+  color: blue;
+  border-bottom: 1px dotted;
+}
+
+.dates .card {
+  border-radius: 5px;
+  background: rgb(255, 255, 203);
+  border: 1px solid;
+  color: #000;
+  box-shadow: 0 0.1rem 4px #444;
+  padding: 0.5rem;
+}
+
+.dates .card:not(span) {
+  font-size: 110%;
+}
+
+.dates .card span:not(.submission-date) {
+  display: block;
+  color: #a10a5d;
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.dates a {
+  display: block;
+  margin-bottom: 1rem;
+  color: blue;
+  width: auto;
+  margin-right: auto;
+  border-bottom: 1px dotted;
+}
+
+@media only screen and (max-width: 600px) {
+  #confTitle {
+    background-image: linear-gradient(45deg, #be307e, #9b0457);
+    padding: 5px;
+    box-shadow: 0 0.1rem 4px #444;
+  }
+  #confTitle span {
+    background-image: none;
+    line-height: 1;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+}

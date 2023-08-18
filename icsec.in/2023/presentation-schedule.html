@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="http://icsec.in/2023/css/style.css" />
+
+    <title>ICOSEC 2023</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div id="main">
+      <div class="container">
+        <h3>Presentation Schedule</h3>
+
+        <style>
+          table {
+            background-color: #fff;
+            margin: 1rem;
+          }
+          table tr:hover td {
+            background-color: #fffebb;
+          }
+          table td {
+            font-size: 0.8rem;
+            padding: 0.7rem 0.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            vertical-align: middle;
+            text-align: center;
+            line-height: 1.3;
+          }
+          table .title,
+          table .authors {
+            text-align: left;
+            width: 45%;
+          }
+          table .paperid {
+            font-size: 0.85rem;
+            font-weight: bold;
+            white-space: nowrap;
+          }
+          table thead {
+            background-color: rgb(214, 205, 255);
+          }
+          table thead th {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            padding: 0.3rem 0.5rem;
+          }
+          table thead th:last-child::after {
+            content: "*";
+          }
+
+          .time-zone {
+            margin-bottom: 5rem;
+          }
+          .time-zone i {
+            font-style: normal;
+          }
+          .time-zone::before {
+            content: "*";
+          }
+
+          .parallel-session-title {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            margin-inline: auto;
+            text-align: center;
+          }
+
+          .parallel-session-title .ps {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+
+          .date-and-timing-header {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+          .s-table .box div {
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: #1f509e;
+            color: rgba(255, 255, 255, 1);
+          }
+          .s-table .box div b {
+            font-weight: normal;
+          }
+          .s-table .box table {
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(255, 255, 255, 0.9882352941);
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5333333333);
+          }
+          .s-table .box table tr td:nth-child(odd) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            background-color: #e1e9ff;
+            white-space: nowrap;
+            font-size: 95%;
+          }
+
+          .s-table .box table tr td:nth-child(even) {
+            text-align: right;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          .s-table .box table td {
+            padding: 5px 9px;
+
+            width: 50%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2666666667);
+          }
+          .s-table .box table td i {
+            opacity: 0.7;
+            font-size: 90%;
+            font-weight: normal;
+          }
+        </style>
+
+        <div class="s-table row">
+          <div class="box col-lg-4">
+            <div class="mb-2">
+              <b>20&nbsp;September, 2023 <span class="mx-3">|</span> Day - 1</b>
+            </div>
+            <table class="mx-auto">
+              <tr>
+                <td>9:30 am - 10:30 am</td>
+                <td>Inaugural Function & Keynote Address</td>
+              </tr>
+              <tr>
+                <td>10:30 am - 1:30 pm</td>
+                <td>Session - 1</td>
+              </tr>
+              <tr>
+                <td>1:30 pm - 2:30 pm</td>
+                <td><i>Lunch Break</i></td>
+              </tr>
+              <tr>
+                <td>2:30 pm - 5:30 pm</td>
+                <td>Session - 2</td>
+              </tr>
+            </table>
+          </div>
+          <div class="box col-lg-4">
+            <div class="mb-2">
+              <b>21&nbsp;September, 2023 <span class="mx-3">|</span> Day - 2</b>
+            </div>
+            <table class="mx-auto">
+              <tr>
+                <td>9:30 am - 11:00 am</td>
+                <td>Session - 3</td>
+              </tr>
+              <tr>
+                <td>11:00 am - 1:30 pm</td>
+                <td>Session - 4</td>
+              </tr>
+              <tr>
+                <td>1:30 pm - 2:30 pm</td>
+                <td><i>Lunch Break</i></td>
+              </tr>
+              <tr>
+                <td>2:30 pm - 5:30 pm</td>
+                <td>Session - 5</td>
+              </tr>
+            </table>
+          </div>
+          <div class="box col-lg-4">
+            <div class="mb-2">
+              <b>22&nbsp;September, 2023 <span class="mx-3">|</span> Day - 3</b>
+            </div>
+            <table class="mx-auto">
+              <tr>
+                <td>9:30 am - 11:00 am</td>
+                <td>Session - 6</td>
+              </tr>
+              <tr>
+                <td>11:00 am - 1:30 pm</td>
+                <td>Session - 7</td>
+              </tr>
+              <tr>
+                <td>1:30 pm - 2:30 pm</td>
+                <td><i>Lunch Break</i></td>
+              </tr>
+              <tr>
+                <td>2:30 pm - 5:30 pm</td>
+                <td>Session - 8</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="p-3 my-auto pb-5" style="font-size: 0.9rem">
+          <div class="text-dark p-3 d-table mx-auto text-left" style="background-color: #ffffcf; box-shadow: 0 2px 3px #0002">
+            <div class="mb-2"><b>Presentation Time</b>: 20 Minutes</div>
+            <div><b>Presentation Format</b>: PPT (PowerPoint Presentation)</div>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <h5 class="parallel-session-title"><span class="s">Session - 1</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 10:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Fully on-chain DAO to invest in NFTs</td>
+                <td class="authors">Immanni&nbsp;Bhanu&nbsp;Prakash, Adarsh&nbsp;Kr.&nbsp;Tiwari, U&nbsp;Hariharan</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Object Detection using a YOLOv4 model in Video Surveillance</td>
+                <td class="authors">Dr.&nbsp;G&nbsp;Balamurugan, V&nbsp;Arulalan, V&nbsp;Premanand</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Solar based uninterrupted Power Supply for Household by using Relay Switching</td>
+                <td class="authors">M&nbsp;Suresh, S&nbsp;ArunPrabhu, C&nbsp;Chithravel, T&nbsp;Logeswaran, A&nbsp;Thivakar, A&nbsp;Charan</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Development of an Undersized Packet Testcase for 10GB MAC CORE Verification</td>
+                <td class="authors">
+                  Perumal&nbsp;B, Nagaraj&nbsp;P, Kuppala&nbsp;Nagaraju, Gopavaram&nbsp;Rakesh&nbsp;Reddy, Tamballa&nbsp;Naveen&nbsp;Kumar,
+                  Annampelly&nbsp;Sahith
+                </td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Optimization and Representation of non-slicing VLSI floorplanning</td>
+                <td class="authors">R&nbsp;Jeyarohini, Dr.&nbsp;K&nbsp;R&nbsp;Aravind&nbsp;Britto, Dr.&nbsp;M&nbsp;P&nbsp;Ramkumar</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">FACE IDENTIFICATION METHOD USING SCALE INVARIANT FEATURE TRANSFORM METHOD FOR CRIMINAL MANAGEMENT SYSTEM</td>
+                <td class="authors">M&nbsp;Maragatharajan, M&nbsp;B&nbsp;Sudhan, L&nbsp;Sathishkumar, S&nbsp;Suprakash, S&nbsp;P&nbsp;Balakannan</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">AI based Optimization of Fault Tolerance in Multipath Routing for Medical Application</td>
+                <td class="authors">
+                  Lakkakula&nbsp;Hari&nbsp;Prasad, Lakshmi&nbsp;Sireesha&nbsp;Ch., G&nbsp;Shobana, Parikshit&nbsp;Kumar&nbsp;Bais,
+                  Anjul&nbsp;Bhardwaj, Balakrishna&nbsp;Kothapalli
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">STUDY OF COGNITIVE RADIO TECHNIQUES FOR DYNAMIC SPECTRUM ALLOCATION</td>
+                <td class="authors">
+                  M&nbsp;Poonguzhali, M&nbsp;Rekha, A&nbsp;Sumathi, N&nbsp;Duraichi, K&nbsp;Jeyalakshmi, Sivakumar&nbsp;Sattanathan
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">HIGH-PERFORMANCE DIGITAL SIGNAL PROCESSING CIRCUIT DESIGN AND ANALYSIS FOR WIRELESS COMMUNICATION SYSTEMS</td>
+                <td class="authors">
+                  Kanika, R&nbsp;Shankar, R&nbsp;Eswaramoorthi, J&nbsp;Joselin&nbsp;Jeya&nbsp;Sheela, Ashish&nbsp;Suri, N&nbsp;Vellachi
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 1</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 10:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Blockchain Technology for Agricultural Supply Chain Management to Enhance Farming</td>
+                <td class="authors">Dhachayani&nbsp;Sivakumar, Srideivanai&nbsp;Nagarajan, R&nbsp;Maruthi</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Meta-Classifier-Driven Exploration of Large-scale Wetland Dynamics in Karaivetti with Time Series Satellite Imagery
+                </td>
+                <td class="authors">Thylashri&nbsp;S, Rajalakshmi&nbsp;N&nbsp;R</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An In-depth Analysis of Deep Learning and Machine Learning Methods for Identifying Rice Leaf Diseases</td>
+                <td class="authors">
+                  Murala&nbsp;Praveena, Dr.&nbsp;Vidyanadha&nbsp;Babu&nbsp;Dubisetty, Kurapati&nbsp;Veeranjaneya&nbsp;Varaprasad, M&nbsp;Rama,
+                  Pittala&nbsp;Susmitha&nbsp;Vadana, Dr.&nbsp;Thota&nbsp;Siva&nbsp;Ratna&nbsp;Sai
+                </td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An optimizing Crime Detection in Social Media Platforms Using Multiagent Ontology-based approach</td>
+                <td class="authors">J&nbsp;Sathya, F&nbsp;Mary&nbsp;Harin&nbsp;Fernandez</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Novel Algorithm for Image Encryption Using Hybrid Chaotic Encryption with KNN Classification</td>
+                <td class="authors">R&nbsp;Dhivya, Dr.&nbsp;N&nbsp;Shanmugapriya</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Predicting User Likes in Online Shopping Using Artificial Intelligence and Big Data Analytics</td>
+                <td class="authors">Kypa&nbsp;Jeevitha, RM&nbsp;Noorullah, Moulana&nbsp;Mohammed</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Exploring a Novel Methodologies for Beetroot Leaf Disease Severity Prediction: Federated Learning and CNN</td>
+                <td class="authors">Shiva&nbsp;Mehta, Vinay&nbsp;Kukreja, Vikrant&nbsp;Sharma, Manika&nbsp;Manwal</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Intelligent Video Surveillance: Artificial Intelligence and its Applications on Security Systems</td>
+                <td class="authors">
+                  Guisseppi&nbsp;Paul&nbsp;Morales&nbsp;Cauti, Alfonso&nbsp;Renato&nbsp;Vargas-Murillo,
+                  Francisco&nbsp;de&nbsp;Jesús&nbsp;Guevara-Soto, Isai&nbsp;Luis&nbsp;Ypanaque-Pereira
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Precision Diagnosis of Wheat Bunt Disease: A Hybrid CNN-RNN Model for Multi-Classification</td>
+                <td class="authors">Niharika, Vinay&nbsp;Kukreja, Rishabh&nbsp;Sharma, Vikrant&nbsp;Sharma, Aditya&nbsp;Verma</td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 1</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 10:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Effective traffic model for intelligent traffic monitoring enabled deep RNN algorithm for autonomous vehicles surveillance systems
+                </td>
+                <td class="authors">S&nbsp;Leelavathy, M&nbsp;Nithya, R&nbsp;Dhaya, S&nbsp;Muthuselvan, R&nbsp;Kanthavel, K&nbsp;Rajakumari</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Real-Time Vehicle Speed Monitoring and Alerting System to Prevent Road Accidents</td>
+                <td class="authors">W&nbsp;Deva&nbsp;Priya, S&nbsp;Yuvaraj, V&nbsp;Sujatha, R&nbsp;Thanga&nbsp;Selvi</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Cloud-Based UV Monitoring System for Remote Real-Time UV Exposure Tracking</td>
+                <td class="authors">
+                  Dankan&nbsp;Gowda&nbsp;V, V&nbsp;Nuthan&nbsp;Prasad, KDV&nbsp;Prasad, VK&nbsp;Satya&nbsp;Prasad, Yogesh&nbsp;Mahajan,
+                  Sampathirao&nbsp;Suneetha
+                </td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Blockchain and Machine Learning Empowered Internet of Things Applications: Current Issues, Challenges and Future Research
+                  Opportunities
+                </td>
+                <td class="authors">L&nbsp;Gomathi, Anand&nbsp;Kumar&nbsp;Mishra, Amit&nbsp;Kumar&nbsp;Tyagi</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Insights into Diabetes Prediction: A Multi-Algorithm Machine Learning Analysis</td>
+                <td class="authors">V&nbsp;Usha, Dr.&nbsp;N&nbsp;R&nbsp;Rajalakshmi</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  PERFORMANCE AND ANALYSIS OF OPTICAL FLOW TECHNIQUES FOR MOVING OBJECT SEGMENTATION &DETECTION IN INFRARED TRACKING METHOD
+                </td>
+                <td class="authors">M&nbsp;Anto&nbsp;Bennet, Subha&nbsp;K&nbsp;J, S&nbsp;Vinod, M&nbsp;Shruthi, T&nbsp;Sri&nbsp;Lakshmi</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Different Disease Detection of Paddy Crops using Drones - A Survey</td>
+                <td class="authors">Lakshmi&nbsp;Priya&nbsp;S, R&nbsp;Subhashini</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Comprehensive Survey on Naive Bayes Algorithm: Advantages, Limitations and Applications</td>
+                <td class="authors">
+                  Dr.&nbsp;P&nbsp;J&nbsp;Beslin&nbsp;Pajila, B&nbsp;Gracelin&nbsp;Sheena, Dr.&nbsp;A&nbsp;Gayathri, Dr.&nbsp;J&nbsp;Aswini,
+                  Dr.&nbsp;M&nbsp;Nalini, Siva&nbsp;Subramanian&nbsp;R
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An AgroBot: Natural Language Processing based Chatbot for Farmers</td>
+                <td class="authors">
+                  Anushka&nbsp;Marla, Rejath&nbsp;Paul, Arupam&nbsp;Kumar&nbsp;Saha, Niha&nbsp;Kamal&nbsp;Basha, Balasundaram&nbsp;Anandhakrishnan
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 1</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 10:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Advancing Safety: IoT-Based Multi sensor System for Real-Time Multiple Hazards Detection and Alarming</td>
+                <td class="authors">Ajay&nbsp;N&nbsp;Upadhyaya, Muthukumar&nbsp;K, N&nbsp;R&nbsp;Rejin&nbsp;Paul, Sivangi&nbsp;Ravikanth</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Classification of automatic detection of plant disease in leaves and fruits using image processing with convolutional neural network
+                </td>
+                <td class="authors">
+                  S&nbsp;Muthuselvan, Veeramreddy&nbsp;Rajasekhar, Bhukya&nbsp;Shankar, P&nbsp;Mohana, Doddabasappa&nbsp;N, Badugu&nbsp;Suresh
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An Ensemble Data Security on Cloud Healthcare Systems</td>
+                <td class="authors">Jhansi&nbsp;Bharathi&nbsp;Madavarapu, Radha&nbsp;Krishna&nbsp;Yalamanchili, Venkata&nbsp;Naresh&nbsp;Mandhala</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Implementation of e-learning platform to enhance education sectors through virtual and augmented reality with internet of things
+                </td>
+                <td class="authors">
+                  S&nbsp;Kumaraperumal, Sagar&nbsp;H&nbsp;Mohite, Sunita&nbsp;Bhosle, A&nbsp;Jafersadhiq, Naveen&nbsp;Kumar&nbsp;M,
+                  Vaishali&nbsp;Sharma
+                </td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Integration of Support Vector Machine and Deep Convolutional Neural Network for Rice Crop Diseases identification
+                </td>
+                <td class="authors">M&nbsp;Pradeepa, S&nbsp;Kumaraperumal, Jyoti&nbsp;Kharade, Radha&nbsp;Raman&nbsp;Chandan</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A robust image registration using multi-scale feature extraction techniques using deep learning</td>
+                <td class="authors">Sathiyakeerthi&nbsp;Madasamy, Nelson&nbsp;Kennedy&nbsp;Babu&nbsp;C, V&nbsp;Sumathi, Arun&nbsp;Chokkalingam</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A machine learning approach in predictive maintenance in the IoT enabled Industry 4.0</td>
+                <td class="authors">
+                  Sathiyakeerthi&nbsp;Madasamy, B&nbsp;Prabhu&nbsp;Shankar, Rakesh&nbsp;Kumar&nbsp;Yadav, Jayalakshmi&nbsp;K&nbsp;P
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Extraction and recommendation of current fashion trend analysis through social media interaction with multimodal search engine using
+                  artificial intelligence and blockchain technology
+                </td>
+                <td class="authors">
+                  A&nbsp;Thilakesh&nbsp;Raj, J&nbsp;Shobana, Vinay&nbsp;Kumar&nbsp;Nassa, Sakshi&nbsp;Painuly, Mythreya&nbsp;Savaram, M&nbsp;Sridevi
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Building Resilience in Shopping: Secure Shopping System for Pandemics like Covid-19</td>
+                <td class="authors">
+                  S&nbsp;Jeyapandi, A&nbsp;Essaki&nbsp;Muthu, N&nbsp;Vallileka, R&nbsp;Niranjana, K&nbsp;Saravanan, I&nbsp;Sakthidevi
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 1</span><span class="ps">Parallel Session - 5</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 10:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Enhancing Campus Safety: A Comprehensive Approach with IoT and OpenCV Technology</td>
+                <td class="authors">
+                  X&nbsp;Arogya&nbsp;Presskila, D&nbsp;Abitha&nbsp;Kumari, P&nbsp;Ebby&nbsp;Darney, S&nbsp;Sundararajan,
+                  C&nbsp;Ramasamy&nbsp;Sankar&nbsp;Ram, A&nbsp;Sangeetha
+                </td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Improved Performance Analysis and Reactive Power Compensation of FACTS Devices Utilizing Fuzzy Logic</td>
+                <td class="authors">N&nbsp;V&nbsp;Uma&nbsp;Reddy</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Enhancing Network Slicing Efficiency in Self-Organizing Networks Using Quantum Computing</td>
+                <td class="authors">Asha&nbsp;Rani&nbsp;Borah</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Test Pattern Generation in BIST Architecture using One-Hot Encoding</td>
+                <td class="authors">Noopura&nbsp;Parvathi&nbsp;A, Kirti&nbsp;S&nbsp;Pande, Nizampatnam&nbsp;Neelima</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Reduction of FWM in WDM Optical Network for Increasing Fiber Capacity</td>
+                <td class="authors">
+                  Harini&nbsp;Shriram&nbsp;S, Dr.&nbsp;S&nbsp;Vairaprakash, G&nbsp;Subhashini, Venkatesh&nbsp;P, Chandralekha&nbsp;R
+                </td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Chronic Kidney Disease Prediction using Random Forest, Decision Tree and Ada Boost Classifier</td>
+                <td class="authors">Mayank&nbsp;Agrawal, Narendra&nbsp;Mohan, Vinod&nbsp;Jain</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">HYBRID CHARACTERISTICS ARE USED IN AN EFFICIENT FRAMEWORK FOR THE IDENTIFICATION OF GASTROINTESTINAL DISEASES</td>
+                <td class="authors">
+                  Veeraswamy&nbsp;Ammisetty, VS&nbsp;Sudhakar&nbsp;Rao&nbsp;Ande, Viswanath&nbsp;Veera&nbsp;Krishna&nbsp;Maddinala
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Tropical Fire Prediction and Detection using MLCNN Algorithm</td>
+                <td class="authors">
+                  Mary&nbsp;Valentina, Nagendar&nbsp;Yamsani, Niroshini&nbsp;Infantia&nbsp;H, S&nbsp;Padmakala, A&nbsp;Akilandeswari, D&nbsp;Sungeetha
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Quantum-Assisted Spectrum Sharing in Cognitive Self-Organizing Networks</td>
+                <td class="authors">Caleb&nbsp;S, S&nbsp;John&nbsp;Justin&nbsp;Thangaraj</td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 2</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Application of frequency domine and particle swarm optimization algorithm for fractional order controller</td>
+                <td class="authors">Manisha&nbsp;Chandna</td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Optimization of operating rooms using machine learning models and artificial intelligence</td>
+                <td class="authors">SaurabhLahoti</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Forecasting of the stock market price using LSTM-CNN model with various representations of collected dataset</td>
+                <td class="authors">Sakshi&nbsp;Pandey</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">AI Based Electric Automobile Battery Drain Forecasting System</td>
+                <td class="authors">
+                  Santhosh&nbsp;B&nbsp;J, Shalet&nbsp;Benvin, Arvind&nbsp;R, Aswini&nbsp;V, Ramya&nbsp;Maranan, B&nbsp;V&nbsp;Sai&nbsp;Thrinath
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Prediction of Fruit Texture Features Using Deep Learning Techniques</td>
+                <td class="authors">
+                  M&nbsp;Sangeetha, S&nbsp;Rajes&nbsp;Kannan, Sampath&nbsp;Boopathi, J&nbsp;Ramya, Mohammad&nbsp;Ishrat, G&nbsp;Sabarinathan
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Design and Implementation of Integrated Circuits Using Enhanced Grey Swarm Optimized Artificial Neural Network</td>
+                <td class="authors">Anubhav&nbsp;Bhalla</td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Forecasting Of Renewable Energy In Microgrids Using Novel Deep Learning Algorithm</td>
+                <td class="authors">Sunila&nbsp;Choudhary</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Hybrid Machine Learning Method For Product Sales Forecasting In E-Commerce</td>
+                <td class="authors">Ravi&nbsp;Kumar</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">DESIGN AND OPTIMIZATION OF LOW POWER AND HIGH-PERFORMANCE CMOS CIRCUITS</td>
+                <td class="authors">
+                  Keerthi&nbsp;Kumar&nbsp;N, N&nbsp;K&nbsp;Anushkannan, V&nbsp;Kumara&nbsp;Swamy, K&nbsp;Abdul&nbsp;Munaf, K&nbsp;Subramani,
+                  T&nbsp;Sathish
+                </td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 2</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Feature Selection using Firefly Algorithm for Classification of Attacks in Routing Protocol for Low Power Lossy Networks (LLNs)
+                  Based Internet of Things (IoT) Networks
+                </td>
+                <td class="authors">Nandhini&nbsp;P&nbsp;S, Bharani&nbsp;S, Harish&nbsp;M, Gomanishwaran&nbsp;S</td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Priority Based Multi-Server Queueing Model For Electric Vehicle Charging</td>
+                <td class="authors">V&nbsp;Kumaresan, J&nbsp;M&nbsp;Bavadharshini, R&nbsp;Bharath&nbsp;Kumar, P&nbsp;Gokulraj, G&nbsp;Hariharan</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Speaker Verification in Real-World Applications:Advances and Emerging Trends</td>
+                <td class="authors">N&nbsp;Lohith&nbsp;Sai, K&nbsp;Kishore, Y&nbsp;Rupesh&nbsp;Kumar&nbsp;Reddy, K&nbsp;Gowtham&nbsp;Sai</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Aquaponics and Smart Hydroponics Systems Water Recirculation using Machine Learning</td>
+                <td class="authors">Venkatraman&nbsp;M, Surendran&nbsp;R</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Ischemic Stroke Prediction Utilizing a Class Balancing Approach and Performance Comparison Using Different Machine Learning
+                  Algorithms
+                </td>
+                <td class="authors">Divya&nbsp;T, Ramadevi&nbsp;R</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Comparative Analysis on Machine Learning Models for Image Captions Generation</td>
+                <td class="authors">
+                  Anirudh&nbsp;B&nbsp;Mitta, Ajay&nbsp;H&nbsp;Hegde, Beluvigi&nbsp;Shreegagana, Mohammad&nbsp;Rooh&nbsp;Ullah,
+                  Asha&nbsp;Rani&nbsp;K&nbsp;P, Gowrishankar&nbsp;S
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">State-of-the-Art Object Detection: An Overview of YOLO Variants and their Performance</td>
+                <td class="authors">
+                  Dhruthi&nbsp;L, Praveen&nbsp;K&nbsp;Megharaj, Pranav&nbsp;P, Niharika&nbsp;Kiran, Asha&nbsp;Rani&nbsp;K&nbsp;P,
+                  Dr.&nbsp;Gowrishankar&nbsp;S
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Beyond the Basics: A Study of Advanced Techniques for Detecting and Preventing SQL Injection Attacks</td>
+                <td class="authors">Ashtha&nbsp;Goyal, Priya&nbsp;Matta</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Review on Augmented Reality and YOLO</td>
+                <td class="authors">
+                  Dr.&nbsp;M&nbsp;Uma, S&nbsp;Abirami, M&nbsp;Ambika, Dr.&nbsp;M&nbsp;Kavitha, S&nbsp;Sureshkumar, Kaviyaraj&nbsp;R
+                </td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 2</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">An Intelligent Method for Predicting Skin Disease using OM-Extreme Learning Machine</td>
+                <td class="authors">
+                  Suja&nbsp;G&nbsp;P, M&nbsp;Akshaya, Abu&nbsp;Salim, Mohd&nbsp;Sarfaraz, Dr.&nbsp;Mathur&nbsp;Nadarajan&nbsp;Kathiravan,
+                  Dr.&nbsp;Aditya&nbsp;Kumar&nbsp;Singh&nbsp;Pundir
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An Innovative Method to Predict Real Estate Prices using Convolutional Block Attention Module</td>
+                <td class="authors">
+                  Dr.&nbsp;G&nbsp;N&nbsp;P&nbsp;V&nbsp;Babu, Dr.&nbsp;Vijayalakshmi&nbsp;N&nbsp;S, Sameer&nbsp;Yadav, Dr.&nbsp;E&nbsp;Manigandan,
+                  Chahat&nbsp;Gulati, Dr.&nbsp;Aditya&nbsp;Kumar&nbsp;Singh&nbsp;Pundir
+                </td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Real-time Face Mask Detection in Video Streams using Deep Learning Technique</td>
+                <td class="authors">V&nbsp;Asha</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Revolutionizing Agriculture with IoT -A Review</td>
+                <td class="authors">Rathi&nbsp;M, C&nbsp;Gomathy</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">ENHANCING CYBER BULLYING DETECTION USING CONVOLUTIONAL NEURAL NETWORK</td>
+                <td class="authors">
+                  P&nbsp;Dedeepya, D&nbsp;Karishma, Siva&nbsp;Ganesh&nbsp;Manuri, Tata&nbsp;Raghuvaran, Vahiduddin&nbsp;Shariff, S&nbsp;Sindhura
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Blockchain Technology in Rejuvenating the Media & Entertainment Sector</td>
+                <td class="authors">
+                  Radhika&nbsp;Nautiyal, Radhey&nbsp;Shyam&nbsp;Jha, Shweta&nbsp;Pandey, Navjot&nbsp;Rathor, Gotte&nbsp;Ranjith&nbsp;Kumar,
+                  Manish&nbsp;Gupta
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Intervention of AI in Prediction of Judgement of Cases</td>
+                <td class="authors">
+                  Ritika&nbsp;Singh, Kanchan&nbsp;Kishor&nbsp;Rawat, Samta&nbsp;Kathuria, Bura&nbsp;Vijay&nbsp;Kumar, Shaik&nbsp;Vaseem&nbsp;Akram,
+                  Vikrant&nbsp;Pachouri
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Intersection of Artificial Intelligence (AI) in Entertainment Sector</td>
+                <td class="authors">
+                  Radhika&nbsp;Nautiyal, Radhey&nbsp;Shyam&nbsp;Jha, Samta&nbsp;Kathuria, Yerrolla&nbsp;Chanti, Navjot&nbsp;Rathor, Manish&nbsp;Gupta
+                </td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Detailed Review of Data Deduplication Approaches in the Cloud and Key Challenges</td>
+                <td class="authors">Anjuli&nbsp;Goel, Chander&nbsp;Prabha</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 2</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Athlete Fitness Monitoring with the Application of Wearable IOT Devices</td>
+                <td class="authors">
+                  Narender&nbsp;Chinthamu, Vishal&nbsp;Moyal, Rajeev&nbsp;Sharma, T&nbsp;A&nbsp;Mohanaprakash, Saiyed&nbsp;Faiayaz&nbsp;Waris,
+                  K&nbsp;Renuka
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  An advanced machine learning based wear optimization of nano particles reinforced with high strength metal matrix composite
+                </td>
+                <td class="authors">
+                  Narender&nbsp;Chinthamu, T&nbsp;Coumaressin, Bechoo&nbsp;Lal, Ismail&nbsp;Kakaravada, Hrishikesh&nbsp;Haribhau&nbsp;Khodade,
+                  B&nbsp;Sundaramurthy
+                </td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Automated Face Mask Detector Using Machine Learning: An Approach To Reduce Burden On Healthcare System</td>
+                <td class="authors">Retinderdeep&nbsp;Singh, Chander&nbsp;Prabha</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Detection and Analysis of Gene Functioning and Manipulation using Deep Learning</td>
+                <td class="authors">
+                  Jameel&nbsp;Ahmed&nbsp;Bhutto, Venkateswarlu&nbsp;Sunkari, Amit&nbsp;Madhukar&nbsp;Patil, D&nbsp;Vanathi, Loganayagi&nbsp;S,
+                  Manjushree&nbsp;Nayak
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Spatially-Constrained Anomaly Detection in Crowded Environments Using Meta-Heuristic Algorithm</td>
+                <td class="authors">R&nbsp;J&nbsp;Anandhi</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A metaheuristic based clustering approach for breast cancer identification for earlier diagnosis</td>
+                <td class="authors">S&nbsp;Balaji, T&nbsp;Arunprasath, M&nbsp;Pallikonda&nbsp;Rajasekaran, K&nbsp;Sindhuja, R&nbsp;Kottaimalai</td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Performance Analysis of Lightweight Virtualization for Environments with Edge Computing Based on NFV</td>
+                <td class="authors">
+                  Maganti&nbsp;Syamala, Seeniappan&nbsp;Kaliappan, Haripriya&nbsp;M&nbsp;P, K&nbsp;P&nbsp;Aishwarya, R&nbsp;Venkatesh,
+                  Anuj&nbsp;Raturi
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Use of Self-Organizing Kohonen Maps for quantization of Tomography images</td>
+                <td class="authors">
+                  Mahesh&nbsp;Prasanna&nbsp;K, Mary&nbsp;Selvan, Deepa&nbsp;R, D&nbsp;Suganthi, B&nbsp;Uma&nbsp;Maheswari, Parul&nbsp;Madan
+                </td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A processing method, a system and a data storage medium focused on liver cancer</td>
+                <td class="authors">Mamatha&nbsp;C&nbsp;M, Anupriya&nbsp;A&nbsp;G, Swathi&nbsp;V, Mayur&nbsp;K&nbsp;L, Sneha&nbsp;Zolgikar</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 2</span><span class="ps">Parallel Session - 5</span></h5>
+        <div class="date-and-timing-header">20&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">DEVELOPMENT OF AN NLP-BASED AUTOMATIC DATA RETRIEVAL MODEL</td>
+                <td class="authors">Thejas&nbsp;P, Dr.&nbsp;S&nbsp;Anupama&nbsp;Kumar, Y&nbsp;S&nbsp;Kiran&nbsp;Kumar</td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Bridge Crack Detection using Horse Herd Optimization Algorithm</td>
+                <td class="authors">Rishitha&nbsp;P, Anuradha&nbsp;G, Venkata&nbsp;Sai&nbsp;U, Dyutik&nbsp;Chaudhary&nbsp;S</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Novel Deep Learning Scheme for Brain Tumour Detection in Medical Images</td>
+                <td class="authors">B&nbsp;Ramu, Sandeep&nbsp;Bansal</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">SKIN MELANOMA DETECTION USING IMAGE AUGMENTATION</td>
+                <td class="authors">
+                  D&nbsp;Sivabalaselvamani, K&nbsp;Nanthini, D&nbsp;Selvakarthi, V&nbsp;M&nbsp;Niranchan, L&nbsp;Saravana&nbsp;Kumar, P&nbsp;Swetha
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Climate Time Series Prediction with Deep Learning</td>
+                <td class="authors">Ravi&nbsp;Sha, Tapas&nbsp;Guha</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Antenna design for Millimeter-Wave applications</td>
+                <td class="authors">
+                  E&nbsp;Shalini, C&nbsp;Saranya, Dr.&nbsp;S&nbsp;Nithya, S&nbsp;Divya, R&nbsp;Vivek&nbsp;Krishna, S&nbsp;Caroline&nbsp;Vinnetia
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Detection of anomalies in pedestrian walking using OpenPose and bidirectional LSTM</td>
+                <td class="authors">
+                  P&nbsp;Sivaprakash, Senthil&nbsp;Kumar&nbsp;S, Stanly&nbsp;Felix&nbsp;C, S&nbsp;Kayalvili, Meesala&nbsp;Sudhir&nbsp;Kumar
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Evaluation of Flow-based Intrusion Detection Systems using network segmentation</td>
+                <td class="authors">Dr.&nbsp;Tapas&nbsp;Guha, Ravi&nbsp;Sha</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Implementation of Modeling and distribution of a Big Data Warehouse</td>
+                <td class="authors">Santosh&nbsp;Kumar&nbsp;J, K&nbsp;Saravanan, R&nbsp;Sharmila, S&nbsp;Sivankalai, S&nbsp;Prabakar</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 3</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Detecting Diseases in Potato Leaves Using Deep Learning and Machine Learning Approaches: A Review</td>
+                <td class="authors">
+                  Dr.&nbsp;Harikrishna&nbsp;Bommala, N&nbsp;Junnu&nbsp;Babu, Pothuganti&nbsp;Srikanth, S&nbsp;Kumar&nbsp;Reddy&nbsp;Mallidi,
+                  Dr.&nbsp;Thota&nbsp;Siva&nbsp;Ratna&nbsp;Sai, Rudrapati&nbsp;Mounika
+                </td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Turbulence Modeling through Deep Learning: An In-Depth Study of Wasserstein GANs</td>
+                <td class="authors">
+                  Wajdi&nbsp;Alghamdi, S&nbsp;Mayakannan, G&nbsp;A&nbsp;Sivasankar, Dr.&nbsp;Jagendra&nbsp;Singh, Dr.&nbsp;B&nbsp;Ravi&nbsp;Naik,
+                  Dr.&nbsp;Ch.&nbsp;Venkata&nbsp;Krishna&nbsp;Reddy
+                </td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Novel Approach to Grover's Quantum Algorithm Simulation: Cloud-Based Parallel Computing Enhancements</td>
+                <td class="authors">
+                  Adugna&nbsp;Mekonnen&nbsp;Gejea, S&nbsp;Mayakannan, Rosana&nbsp;Marianela&nbsp;Palacios, Abdulsattar&nbsp;Abdullah&nbsp;Hamad,
+                  Dr.&nbsp;Barani&nbsp;Sundaram, Wajdi&nbsp;Alghamdi
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A RECREATING BATTERY CHARGING FOR E-CYCLE</td>
+                <td class="authors">Prakash&nbsp;Perumal, S&nbsp;Joe&nbsp;Patrick&nbsp;Gnanaraj, G&nbsp;Satish&nbsp;Pandian, T&nbsp;Livingston</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">IOT BASED HAND GESTURE CONTROL WHEELCHAIR FOR DISABLED PERSON</td>
+                <td class="authors">
+                  Nikhil&nbsp;S&nbsp;Patankar, Dushing&nbsp;Akshada&nbsp;Shaharam, Deshmukh&nbsp;Tejas&nbsp;Rajendra,
+                  Gadhave&nbsp;Sakshi&nbsp;Bhausaheb, Petkar&nbsp;Sarthak&nbsp;Satish, Yogesh&nbsp;S&nbsp;Deshmukh
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Deep Learning-Based Framework for Opinion Mining of Patient Reviews on Web Forums</td>
+                <td class="authors">Anuj&nbsp;Kumar, Anuj&nbsp;Mangal</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 3</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Detecting Background Dynamic Scenes using Naive Bayes Classifier Analysis Compared to CNN Analysis</td>
+                <td class="authors">Asha&nbsp;Rani&nbsp;Borah</td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Antenna Selection in 5G Communication Networks using the Improved Grey Wolf Optimizer Algorithm</td>
+                <td class="authors">Dipali&nbsp;Bansal, Malay&nbsp;Ranjan&nbsp;Tripathy, Prasad&nbsp;Shastry</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Checking and supervisory system for calculation of industrial constraints using embedded system</td>
+                <td class="authors">Seeniappan&nbsp;Kaliappan, L&nbsp;Natrayan, Neha&nbsp;Garg</td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Control and monitoring of a quadcopter in border areas using embedded system</td>
+                <td class="authors">L&nbsp;Natrayan, S&nbsp;Kaliappan, Sumit&nbsp;Pundir</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Whispers of the Grid: Unraveling the Mysteries of Automated Energy Billing, Fault Detection, and Raspberry Pi's Power Unplug System
+                </td>
+                <td class="authors">Guna&nbsp;Priya</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Sentiment Analysis of News Headlines Based on Sentiment Lexicon and Deep Learning</td>
+                <td class="authors">S&nbsp;Kaliappan, L&nbsp;Natrayan, Akshay&nbsp;Rajput</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 3</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Design and Analysis of Charge Pumping Circuit for Low Power Charge Pump Based Phase Locked Loop Organization</td>
+                <td class="authors">P&nbsp;Nagarajan, Kavitha&nbsp;Thandapani, N&nbsp;Ashokkumar, C&nbsp;Kanmani&nbsp;Pappa</td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Shortest route * bidirectional Search algorithm for Predicting Shortest Routes in traffic</td>
+                <td class="authors">A&nbsp;Lakshna, S&nbsp;Gokila, K&nbsp;Ramesh</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Review on Vision Based Human Motion Detection using Deep Learning</td>
+                <td class="authors">Lino&nbsp;Zachariah, Dr.&nbsp;K&nbsp;Maharajan</td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Utilization of Various Controllers for Determination of Stability For Hybrid System Under MATLAB</td>
+                <td class="authors">Akhil&nbsp;Nigam, Kaml&nbsp;Kant&nbsp;Sharma</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Smart Sprouts: Fuzzy Logic-Driven IoT-based smart water management system for Vertical Farming</td>
+                <td class="authors">K&nbsp;S&nbsp;Ananda&nbsp;Kumar, Jyoti&nbsp;Metan, R&nbsp;Hemanth, N&nbsp;Akash, Sanjay&nbsp;N</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Enhancing Apple Leaf Diagnosis through Deep Learning Techniques</td>
+                <td class="authors">
+                  Dr.&nbsp;Rekha&nbsp;H, T&nbsp;Kumaravel, Dr.&nbsp;P&nbsp;Natesan, S&nbsp;Sangeetha, N&nbsp;Nathiya, V&nbsp;Uvetha
+                </td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 3</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Enhancing system stability with FACTS devices using Widrof-Hof Least Mean Square Based Neural Network Algorithm</td>
+                <td class="authors">T&nbsp;Sathish&nbsp;Kumar, K&nbsp;SathiyaSekar</td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">AI based security for internet of transportation systems</td>
+                <td class="authors">
+                  Heena&nbsp;Kousar, Shaista&nbsp;Fatima, Syed&nbsp;Imran&nbsp;Ahmed, S&nbsp;Sajithra, Sumit&nbsp;Kushwaha,
+                  N&nbsp;Alangudi&nbsp;Balaji
+                </td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Battery Energy Management Systems in Active Distribution Network</td>
+                <td class="authors">S&nbsp;P&nbsp;Alexprabu, K&nbsp;Sathiya&nbsp;Sekar</td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Sending Query Data To Mobile Sinks At High Speed In Wireless Sensor Networks</td>
+                <td class="authors">
+                  Charanjeet&nbsp;Singh, Subba&nbsp;Reddy&nbsp;V, Narayan&nbsp;Krishan&nbsp;Vyas, Mridul&nbsp;Gupta, Sumit&nbsp;Kushwaha,
+                  N&nbsp;M&nbsp;Sri&nbsp;Prasanna
+                </td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Comparison of AI concepts, Machine learning hybrid approach and IOT in monitoring smart home appliances in IDS</td>
+                <td class="authors">
+                  B&nbsp;Vanipriya, Vignesh&nbsp;Janarthanan, M&nbsp;Bhargavi, V&nbsp;Rajesh, Boopathiraja&nbsp;K&nbsp;P,
+                  V&nbsp;V&nbsp;Satyanarayana&nbsp;Tallapragada
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Design and Implementation of Low-power and Area-efficient Flip flop with Redundant Pre-charge Free Operation</td>
+                <td class="authors">R&nbsp;Vishal, P&nbsp;Sri&nbsp;Vidyanidhi, R&nbsp;Deepak, Sonali&nbsp;Agrawal</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 3</span><span class="ps">Parallel Session - 5</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">An Intelligent and Smart Pill Box</td>
+                <td class="authors">
+                  Kavitha&nbsp;Balamurugan, Jose&nbsp;Anand&nbsp;A, Vignesh&nbsp;B, Raja&nbsp;Vikram&nbsp;Singan&nbsp;K, Sri&nbsp;Subramaniam&nbsp;N
+                </td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Decrease of Communication Workloads over Green Scheduling Algorithm based Federated Learning with Erlang in Big Data using IoT
+                </td>
+                <td class="authors">G&nbsp;Anitha, A&nbsp;Jegatheesan, E&nbsp;Baburaj</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An Efficient High-Speed Architecture for Fast Fourier Transform using Pipelining</td>
+                <td class="authors">
+                  Senthamizh&nbsp;Selvi&nbsp;R, Resmi&nbsp;R&nbsp;Nair, Yogapriya&nbsp;B, Samyuktha&nbsp;Shrruthi&nbsp;K&nbsp;R,
+                  Sachin&nbsp;Dev&nbsp;S&nbsp;S
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An Efficient Low Power Full Adder Architecture using Memristor</td>
+                <td class="authors">Senthamizh&nbsp;Selvi&nbsp;R, Resmi&nbsp;R&nbsp;Nair, Sooraj&nbsp;I, Subhishvar&nbsp;S</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Rainfall Prediction using Machine Learning</td>
+                <td class="authors">
+                  Kavitha&nbsp;Balamurugan, Jose&nbsp;Anand&nbsp;A, Rammya&nbsp;B, Dinesh&nbsp;Kumar&nbsp;R, Kalanithy&nbsp;K, Mathan&nbsp;J&nbsp;N
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Implementation of Information Decoding and Interference Signals for Energy Harvesting</td>
+                <td class="authors">Yazhinian&nbsp;Sougoumar, Sofia&nbsp;R, Namadev&nbsp;B, Neelamegam&nbsp;Devarasu</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 4</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">A NOVEL APPROACH FOR ORGAN TRANSPORTATION</td>
+                <td class="authors">Babu&nbsp;N, Natarajan&nbsp;K, Vinod&nbsp;Kumar&nbsp;D</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Automatic Diagnosis of Congenital Conditions in Pediatric age using Pupillometry with Machine Learning</td>
+                <td class="authors">E&nbsp;N&nbsp;VijayaKumari, Kora&nbsp;Swetha, Atul&nbsp;Kumar, Rajesh&nbsp;Tulasi</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">DRIVER DROWSINESS ALERT USING MACHINE LEARNING</td>
+                <td class="authors">
+                  Dr.&nbsp;G&nbsp;Revathy, Dr.&nbsp;G&nbsp;Indirani, K&nbsp;Senthilvadivu, D&nbsp;Sathya, A&nbsp;Kalaiyarasi,
+                  Dr.&nbsp;A&nbsp;Ramalingam
+                </td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Correlation of Groundwater Quality Index Prediction and Classification using Optimal Deep Belief Network</td>
+                <td class="authors">Soundharyaa&nbsp;Shri&nbsp;Harini&nbsp;R, Dr.&nbsp;V&nbsp;Amudha, S&nbsp;Vidhya&nbsp;Lakshmi</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Resilient Five-Layer Key Generation Technique for Stream Ciphers</td>
+                <td class="authors">
+                  C&nbsp;Manikandan, G&nbsp;Raj&nbsp;Kumar, B&nbsp;Sai&nbsp;Jashwanthi, Akshaya&nbsp;R&nbsp;L, C&nbsp;Veda&nbsp;Vardhan, A&nbsp;Rajesh
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Crop Yield Prognostication using Colourful Point Selection Fashions and Classifier</td>
+                <td class="authors">
+                  Yogesh&nbsp;S&nbsp;Deshmukh, Saisagar&nbsp;Ranmale, Bhushan&nbsp;Sonawane, Sandip&nbsp;Navale, Sarthak&nbsp;Murtadak,
+                  Nikhil&nbsp;S&nbsp;Patankar
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 4</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Nursing Robot With Voice Control For Isolated Patient</td>
+                <td class="authors">Shanmugaraj&nbsp;G, Anusheya&nbsp;A&nbsp;A, Helan&nbsp;Joice&nbsp;D, Kavitha&nbsp;S</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">DESIGN AND DEVELOPMENT OF LOW POWER AND AREA EFFICIENT DESIGN FOR VLSI CIRCUITS</td>
+                <td class="authors">V&nbsp;Kamalkumar, R&nbsp;Lal&nbsp;Raja&nbsp;Singh</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Multi-verse Optimization for Two Stage CMOS Operational Amplifier Circuit Design</td>
+                <td class="authors">Renish&nbsp;Israel&nbsp;I, Immanuel&nbsp;Selvakumar&nbsp;A</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Assistive Device Based on Machine Learning approach for Communication of visually challenged and muted community
+                </td>
+                <td class="authors">Dr.&nbsp;Smitha&nbsp;Sasi, Dr.&nbsp;Srividya&nbsp;B&nbsp;V, Dr.&nbsp;A&nbsp;R&nbsp;Aswatha</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  AN IMPROVED CLASSIFICATION AND IMAGE ANNOTATION BY MULTI CLASS SVM WITH CNN BASED ELEVATED WHALE OPTIMIZATION CLASSIFIER
+                </td>
+                <td class="authors">Ezhilarasan&nbsp;D, Dr.&nbsp;J&nbsp;Femila&nbsp;Roseline</td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Automated Groundwater Quality Index Classification using Adaptive Aquila Optimizer with Deep Learning</td>
+                <td class="authors">Soundharyaa&nbsp;Shri&nbsp;Harini&nbsp;R, Dr.&nbsp;V&nbsp;Amudha, S&nbsp;Vidhya&nbsp;Lakshmi</td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 4</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Self-Driving Car Simulation using Reinforcement Learning and Xception Model Tuning</td>
+                <td class="authors">Aparna&nbsp;Balasubramaniam, Rabindra&nbsp;Kumar&nbsp;Singh, Amit&nbsp;Kumar&nbsp;Tyagi</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Development of Secure Hardware Architectures for Preventing Side-Channel Attacks and Protecting Sensitive Data in VLSI Systems
+                </td>
+                <td class="authors">
+                  Varuna&nbsp;Kumara, S&nbsp;Jayakumar, D&nbsp;Leela&nbsp;Rani, Ramya&nbsp;Maranan, D&nbsp;Raja&nbsp;Ramesh, M&nbsp;Deivakani
+                </td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Integration of Solar Photovoltaics and Thermal Collectors for Hybrid Solar Energy Systems</td>
+                <td class="authors">S&nbsp;Selvi, Karthikeyan&nbsp;S, Manimaran&nbsp;K, G&nbsp;Ravindra, Rajesh&nbsp;T, T&nbsp;Sathish</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An Investigation and Development into the Use of AI-Based Analytical Methods for Forecasting the Stock Market</td>
+                <td class="authors">
+                  M&nbsp;Sheeba, D&nbsp;Ranjith&nbsp;Kumar, S&nbsp;Kirubakaran, Ila&nbsp;Dixit, D&nbsp;Leela&nbsp;Rani, Ajay&nbsp;Singh&nbsp;Yadav
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Machine learning algorithms for intrusion detection Performance Evaluation and Comparative Analysis</td>
+                <td class="authors">
+                  B&nbsp;Md.&nbsp;Irfan, V&nbsp;Poornima, Mohana&nbsp;Kumar&nbsp;S, Upendra&nbsp;Singh&nbsp;Aswal, N&nbsp;Krishnamoorthy,
+                  Ramya&nbsp;Maranan
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Optimization of Solar Panel Orientation for Maximum Energy Efficiency</td>
+                <td class="authors">
+                  S&nbsp;Selvi, M&nbsp;Mohanraj, P&nbsp;Duraipandy, Seeniappan&nbsp;Kaliappan, L&nbsp;Natrayan, Nadanakumar&nbsp;Vinayagam
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 4</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">An Architecture-Based Self-Typing Service For Cloud Native Applications</td>
+                <td class="authors">
+                  Srinivasa&nbsp;Rao&nbsp;Mandalapu, Kalaimagal&nbsp;Sivamuni, Chitra&nbsp;Devi&nbsp;D, Upendra&nbsp;Singh&nbsp;Aswal,
+                  S&nbsp;Irin&nbsp;Sherly, N&nbsp;Alangudi&nbsp;Balaji
+                </td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Discovery of behavioral patterns of Viral Hepatitis applying Datamining</td>
+                <td class="authors">
+                  Vaishali&nbsp;Gajendra&nbsp;Shende, A&nbsp;Jency, K&nbsp;Pavithra, T&nbsp;Jayasudha, G&nbsp;Venkatesan, Manish&nbsp;Sharma
+                </td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Adaptive Security Management Model for Networks</td>
+                <td class="authors">
+                  Lakshmana&nbsp;Phaneendra&nbsp;Maguluri, Jemi&nbsp;Gold&nbsp;P, S&nbsp;Rahini&nbsp;Sudha, K&nbsp;P&nbsp;Aishwarya,
+                  Jayanthi&nbsp;L&nbsp;S, Narendra&nbsp;Singh&nbsp;Bohra
+                </td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Determination of Hemoglobin Percentage through K- Means Algorithm and Image Processing for White Blood Cell Diagnosis
+                </td>
+                <td class="authors">
+                  Renukalatha&nbsp;S, J&nbsp;Senthil&nbsp;Kumar, A&nbsp;Sangeetha, M&nbsp;Hema, Ashok&nbsp;Kumar, Ramesh&nbsp;Singh&nbsp;Rawat
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Empirical Evaluation Of The Automated Generation Of Software Tests From The Perspective Of Test Smells</td>
+                <td class="authors">
+                  R&nbsp;Josphineleela, R&nbsp;Panneer&nbsp;Selvi, T&nbsp;Jayasudha, Neha&nbsp;Garg, C&nbsp;S&nbsp;Sundar&nbsp;Ganesh,
+                  M&nbsp;Jogendra&nbsp;Kumar
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Design and Optimization of Antenna for Short Range Applications in Ultra Wide Band</td>
+                <td class="authors">Srividhya&nbsp;R, M&nbsp;Anto&nbsp;Bennet</td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 5</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Leveraging Deep Learning for Accurate Detection and Precise Localization of Vertebral Fractures in Medical Imaging
+                </td>
+                <td class="authors">
+                  M&nbsp;Lakshmana&nbsp;Kumar, Patchigolla&nbsp;Sampath, P&nbsp;V&nbsp;V&nbsp;S&nbsp;Srinivas, Dhiren&nbsp;Dommeti,
+                  Siva&nbsp;Ramakrishna&nbsp;Nallapati
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Optimal Hybrid Modeling Scheme for Electricity Price Prediction using Ensemble Learning</td>
+                <td class="authors">M&nbsp;S&nbsp;Minu, K&nbsp;Venkata&nbsp;Ratnam, M&nbsp;Yeshwanth, N&nbsp;Sai&nbsp;Deepak&nbsp;Reddy</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Kernel-based SVM Classifiers for Multi-Disease Forecasting: A Meta-Analysis</td>
+                <td class="authors">
+                  D&nbsp;Anil&nbsp;Kumar, U&nbsp;Jyothi, Dr.&nbsp;Kammili&nbsp;Jagan&nbsp;Mohan, Vanapalli&nbsp;Mounica, A&nbsp;Nageswari
+                </td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Exploring the Efficacy of Image Encryption using Independent, Combined, and Improved Chaotic Maps</td>
+                <td class="authors">C&nbsp;Manikandan, S&nbsp;Shreela, S&nbsp;Karunyaa, Priya&nbsp;Selvam, A&nbsp;Rajesh, N&nbsp;Raju</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Bore Well Rescue System for Children</td>
+                <td class="authors">Sagadevan&nbsp;K, Sathish&nbsp;Kumar&nbsp;D, Krishnaraj&nbsp;K, Manikandan&nbsp;B, Mohanraj&nbsp;S</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A SUMMARY ON PRIVACY AND SECURITY IN CLOUD DATA USING VARIOUS APPROACHES</td>
+                <td class="authors">B&nbsp;Jayaram, Dr.&nbsp;T&nbsp;Sethukarasi, M&nbsp;Sindhu, H&nbsp;Jeyamohan</td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Design and Testing of a Hexacopter Sprayer for Controlled Deforestation and Pest Control</td>
+                <td class="authors">M&nbsp;Nambi&nbsp;Rajan, G&nbsp;Velmurugan, Nawaz&nbsp;Basha&nbsp;N, Ajith&nbsp;V</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Exploring the Diverse Landscape of Nanotechnology: From DNA-based Photonics to Liquid Metals and Biomedical Applications
+                </td>
+                <td class="authors">Amit&nbsp;Mittal, Harsh&nbsp;Pandey, Mohammad&nbsp;Arsh, Mehul&nbsp;Manu</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Predictive Analysis-Based Deep-Context Aware Recommendation for Synthetic Fertilisers</td>
+                <td class="authors">S&nbsp;Raveena, Surendran&nbsp;R</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 5</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Smart-Charge-Pro: Innovating Energy Metering and Monitoring for Sustainable EV Stations</td>
+                <td class="authors">
+                  Suyog&nbsp;I&nbsp;Dukare, Akash&nbsp;S&nbsp;Bankar, Pooja&nbsp;S&nbsp;Chobe, Dr.&nbsp;D&nbsp;B&nbsp;Pardeshi, P&nbsp;William
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">ATCRI-21 Neural Network Based Character Recognition with Image Denoising in Ancient Epigraphs</td>
+                <td class="authors">R&nbsp;Jagannathan, A&nbsp;Rajesh, C&nbsp;Manikandan</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">CROP RECOMMENDATION USING SUPERVISED LEARNING TECHNIQUES</td>
+                <td class="authors">J&nbsp;Ramya, Dr.&nbsp;M&nbsp;Sankar</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Gesture-Based Control of Ping-Pong: Developing an Interactive Game Interface</td>
+                <td class="authors">Chaluvadi&nbsp;Rashmika, Guduguntla&nbsp;Varsha, U&nbsp;SaiRam</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Novel Mobile App based College Event Management System</td>
+                <td class="authors">
+                  Geerjja&nbsp;Lavania, Neeraj&nbsp;Kumar, Vivek&nbsp;Arya, Meet&nbsp;Kumari, Neha&nbsp;Sharma, Pardeep&nbsp;Singh
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Enhancing Singing Performances: Novel Method for Automatic Vocal Pitch Correction</td>
+                <td class="authors">
+                  Shashidhar&nbsp;R, Aishwarya&nbsp;D&nbsp;S, Shruthi&nbsp;B&nbsp;M, Shashank&nbsp;M&nbsp;P, Neha&nbsp;Sharma, Pardeep&nbsp;Singh
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Real Time Detection and Classification of Street Signs Using Deep Learning with Voice alert system</td>
+                <td class="authors">Samundiswary&nbsp;S, Karthik&nbsp;Sridhar, Mehul&nbsp;Aswar, Simran&nbsp;Kaur&nbsp;Shembe</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A COMPARATIVE STUDY OF RAINFALL PREDICTION USING MACHINE LEARNING TECHNIQUES</td>
+                <td class="authors">E&nbsp;Ajitha, Dr.&nbsp;B&nbsp;Diwan, K&nbsp;Jaspin, B&nbsp;Swetha&nbsp;Shri, G&nbsp;Shobana</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Multi-stage Classification of Pomegranate Anthracnose disease severity levels with CNN and SVM</td>
+                <td class="authors">
+                  Sahil&nbsp;Thakur, Dhruv&nbsp;Malik, Vinay&nbsp;Kukreja, Rishabh&nbsp;Sharma, Rishika&nbsp;Yadav, Kireet&nbsp;Joshi
+                </td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 5</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Design of Hybrid Energy Storage and Management System in Hybrid Electric Vehicle Using Machine Learning Approach
+                </td>
+                <td class="authors">
+                  J&nbsp;Kamalakannan, K&nbsp;Rajasekhara&nbsp;Reddy, NMG&nbsp;Kumar, Shafee&nbsp;S&nbsp;M, Kunal&nbsp;Dewangan, V&nbsp;Kannan
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Trends and Challenges of Block Chain in Electronic Health Record System</td>
+                <td class="authors">C&nbsp;A&nbsp;Bindyashree, Syed&nbsp;Muzamil&nbsp;Basha</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Unveiling Sentiment Analysis: Exploring Techniques and Navigating Challenges</td>
+                <td class="authors">Mani&nbsp;Rautela, Bhawna&nbsp;Tewari, Shobhit&nbsp;Kumar, Amit&nbsp;Mittal</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Vehicle Accident Location Tracking System Using GSM and GPS</td>
+                <td class="authors">
+                  K&nbsp;Ramesh&nbsp;Chandra, Pulaparthi&nbsp;Ramyanjani, Shaik&nbsp;Farid, Seelam&nbsp;Himaja, Reddy&nbsp;John&nbsp;Vesli,
+                  Sykham&nbsp;Sai&nbsp;Konda&nbsp;Reddy
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Comparative Study of Deep Learning Techniques for Automated Classification of Lung Diseases</td>
+                <td class="authors">
+                  Dr.&nbsp;Rekha&nbsp;H, T&nbsp;Kumaravel, Dr.&nbsp;P&nbsp;Natesan, Brinda&nbsp;B&nbsp;M, S&nbsp;Sangeetha, S&nbsp;Dharanesh
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">DEEP VARIATIONAL AUTO ENCODERS FOR BOTNET ATTACK DETECTION IN INDUSTRIAL INTERNET OF THINGS</td>
+                <td class="authors">
+                  Sharada&nbsp;K&nbsp;A, Chahat&nbsp;Gulati, Subha&nbsp;B, Md.&nbsp;Abul&nbsp;Ala&nbsp;Walid, Manasi&nbsp;Vyankatesh&nbsp;Ghamande,
+                  Parul&nbsp;Madan
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Integrating Diverse Omics Data using Graph Convolutional Networks: Advancing Comprehensive Analysis and Classification in Colorectal
+                  Cancer
+                </td>
+                <td class="authors">
+                  Rahul&nbsp;Kumar, T&nbsp;S&nbsp;Rao, Md.&nbsp;Abul&nbsp;Ala&nbsp;Walid, S&nbsp;Kaliappan, Ramya&nbsp;Maranan, M&nbsp;Saratha
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">AN IMPROVED CUTTLEFISH OPTIMIZATION ALGORITHM BASED FASTER R-CNN FOR BRAIN TUMOUR DETECTION</td>
+                <td class="authors">
+                  AR&nbsp;Arunarani, Vedant&nbsp;Bhenia, T&nbsp;Abirami, N&nbsp;Aparna, Md.&nbsp;Abul&nbsp;Ala&nbsp;Walid, Sharada&nbsp;K&nbsp;A
+                </td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  AI and Blockchain based Platform for Empowering Content Creators: Enabling NFT - driven Content Sharing, Inspiration Generation, and
+                  Collaborative Interaction
+                </td>
+                <td class="authors">Sri&nbsp;Likhita&nbsp;Adru, Sandra&nbsp;Johnson, M&nbsp;Hemalatha</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 5</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">21&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Study of Speed Tracking of a PWM Inverter based Induction Motor Drive</td>
+                <td class="authors">Sandeep&nbsp;Kumar&nbsp;Sunori, Abhijit&nbsp;Singh&nbsp;Bhakuni, Lalit&nbsp;Mohan, Pradeep&nbsp;Juneja</td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">SmartCrop: An Intelligent IoT System for Automated Weed Detection and Precision Pesticide Spray</td>
+                <td class="authors">Pooja&nbsp;V&nbsp;Chandaragi, Jayashree&nbsp;Mallidu, Padmaja&nbsp;Kallimani, Anupama&nbsp;R&nbsp;Itagi</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Detecting tags for real-time objects in images using the Yolo-v3 algorithm</td>
+                <td class="authors">
+                  Dr.&nbsp;Pothuraju&nbsp;Rajarajeswari, Peddarapu&nbsp;Ramakrishna, Sharooq&nbsp;Sayyed, Sadiq&nbsp;Shaik, JayaSurya&nbsp;Vemuri
+                </td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  An Effective Hybrid Spectrum Sensing Methodology in Cognitive Radio Network Using Deep Temporal Convolution Network
+                </td>
+                <td class="authors">R&nbsp;KoteswaraRao, Dr.&nbsp;C&nbsp;Sharanya</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">GEOSPATIAL DATA EXPLORATION USING MACHINE LEARNING</td>
+                <td class="authors">Dr.&nbsp;K&nbsp;Geetha, A&nbsp;Srivani, S&nbsp;Gunasekaran, Dr.&nbsp;S&nbsp;Ananthi, S&nbsp;Sangeetha</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An Efficient Method to Detection Flight Delay Propagation Based on Supplement GRU</td>
+                <td class="authors">
+                  Jaydeep&nbsp;Sarjerao&nbsp;Patil, Dr.&nbsp;Sandip&nbsp;Kanase, Girish&nbsp;M&nbsp;Lonare, Surekha&nbsp;Khetree,
+                  Padmini&nbsp;Kiran&nbsp;Sawant, Firdos&nbsp;Jahan&nbsp;Khan
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Intelligent Road Anomaly Detection and Driver Assistance System: Machine Learning Approach for Enhanced Road Safety
+                </td>
+                <td class="authors">
+                  Mohanaprakash&nbsp;T&nbsp;A, Savija&nbsp;J, M&nbsp;John&nbsp;Peter, C&nbsp;Tamilselvi, S&nbsp;Dhanush&nbsp;Hariharan, T&nbsp;Sunitha
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Enabling Secure and Efficient Traffic Data Sharing in VANETs through a Scalable Blockchain Framework</td>
+                <td class="authors">Thenmozhi&nbsp;M, Dr.&nbsp;G&nbsp;M&nbsp;Kadhar&nbsp;Nawaz</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Detection and Categorization of Sorghum crop using MCRNN Architecture</td>
+                <td class="authors">
+                  M&nbsp;Senthil&nbsp;Murugan, D&nbsp;Sungeetha, K&nbsp;Vijaya, A&nbsp;Gnana&nbsp;Soundari, R&nbsp;Dhanalakshmi, S&nbsp;Gomathi
+                </td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 6</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Exploring the Significance and Paradoxical Nature of the Zero Value in Mathematics using Artificial intelligence
+                </td>
+                <td class="authors">Ishwarya&nbsp;K, Saranya&nbsp;G, Appathurai&nbsp;K, Surendran&nbsp;R</td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Six Convolutional Layered Deep Convolutional Neural Network based Real Time Single Image Super Resolution</td>
+                <td class="authors">
+                  M&nbsp;Shyamala&nbsp;Devi, J&nbsp;Arun&nbsp;Pandian, Rahul&nbsp;Kumar&nbsp;Thakur, Vinod&nbsp;Babu&nbsp;Vemuri,
+                  Javvaji&nbsp;Naga&nbsp;Bharath
+                </td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">IoT BASED INTEGRATED HEALTH CARE MONITORING SYSTEM</td>
+                <td class="authors">
+                  Dr.&nbsp;S&nbsp;Usha, Dr.&nbsp;M&nbsp;Karthik, G&nbsp;Jeevitha, M&nbsp;Kaviyaa, M&nbsp;Logesh, S&nbsp;Sri&nbsp;Prasanth
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">CNN-based Deep Learning Approach for MRI-based Brain Tumor Detection</td>
+                <td class="authors">Kanagaraj&nbsp;Narayanasamy, Elangovan, Sathish&nbsp;Kumar&nbsp;L, M&nbsp;Maragatharajan, D&nbsp;Deepa</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">ATTENDANCE MANAGEMENT SYSTEM USING FACE RECOGNITION</td>
+                <td class="authors">
+                  Kisan&nbsp;Kushwan, Sakala&nbsp;Rahul, Shaik&nbsp;Eliyaz, Chaitanya&nbsp;Reddy, Dr.&nbsp;K&nbsp;Amarendra,
+                  TK&nbsp;Rama&nbsp;Krishna&nbsp;Rao
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Hybrid Approaches for Intracerebral Hemorrhage Stroke Classification Using Deep Learning Techniques</td>
+                <td class="authors">M&nbsp;Sathya&nbsp;Sundaram, Dr.&nbsp;S&nbsp;Karthick, Dr.&nbsp;P&nbsp;Thiyagarajan</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 6</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Sky Sentinel: Pioneering Real-Time Facial Recognition in Intelligent Drones</td>
+                <td class="authors">
+                  L&nbsp;Visalatchi, Praveena&nbsp;Anjelin, Malathi&nbsp;Eswaran, Vijayalakshmi&nbsp;K, Sathish&nbsp;Kumar&nbsp;L,
+                  Chinmay&nbsp;Inamdar
+                </td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Estimated Posture for Human Elbow Flexion in Acoustic Environments</td>
+                <td class="authors">P&nbsp;Pandi&nbsp;Selvi, V&nbsp;Sangeetha, Sathish&nbsp;Kumar&nbsp;L, D&nbsp;Saravanan, Manikandan&nbsp;J</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Sustainable Smart Homes Using IoT For future Smart Cities</td>
+                <td class="authors">
+                  Vijayaraja&nbsp;L, Dhanasekar&nbsp;R, Vignesh&nbsp;V, Jayakumar&nbsp;N&nbsp;S, Manibha&nbsp;M&nbsp;P, Rupa&nbsp;Kesavan
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A COMPREHENSIVE REVIEW ON DEEP LEARNING MODEL FOR MELANOMA DIAGNOSIS USING DERMOSCOPY IMAGES</td>
+                <td class="authors">Zaheer&nbsp;Abbas&nbsp;Mohammad, S&nbsp;Nagakishore&nbsp;Bhavanam</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Unscrambling representation and recognizing gaits in an intelligent attendance system</td>
+                <td class="authors">Prathik&nbsp;K, Girija&nbsp;J</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Empowering Electrical Systems With an Intelligent Microcontroller-Based Transmission Line Multi-Fault Detector and Transformer
+                  Protection
+                </td>
+                <td class="authors">Aravinda&nbsp;K</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 6</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Internet of Things Enabled System for Water Pump Monitoring</td>
+                <td class="authors">
+                  Shivam&nbsp;Amoli, Minakshi&nbsp;Memoria, Kapil&nbsp;Joshi, Abhishek&nbsp;Kumar&nbsp;Pathak, Harishchander&nbsp;Anandaram,
+                  Aditya&nbsp;Verma
+                </td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Predictive Power of Machine Learning in Chronic Disease: A Comprehensive Review and Meta-analysis</td>
+                <td class="authors">Akanksha&nbsp;Rani, Shivangi&nbsp;Garg, Astha&nbsp;Sharma, Ashwni&nbsp;Kumar</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">ENHANCED HONEY BADGER ALGORITHM FOR RESOURCE ALLOCATION AND TASK SCHEDULING IN CLOUD ENVIRONMENT</td>
+                <td class="authors">
+                  R&nbsp;Rajagopal, AR&nbsp;Arunarani, A&nbsp;Arivarasi, Anup&nbsp;Ingle, Ravichandran&nbsp;T, R&nbsp;Vijaya&nbsp;Prakash
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Enhancing Sentiment Analysis of Twitter Data Using Recurrent Neural Networks With Attention Mechanism</td>
+                <td class="authors">
+                  S&nbsp;Nithya, X&nbsp;Arogya&nbsp;Presskila, B&nbsp;Sakthivel, R&nbsp;Santhana&nbsp;Krishnan, K&nbsp;Lakshmi&nbsp;Narayanan,
+                  S&nbsp;Sundararajan
+                </td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  A Novel CNN-Based IoT System Architecture for Real-Time Detection and Prevention of Animal Intrusion in Farmland
+                </td>
+                <td class="authors">
+                  C&nbsp;Ashokkumar, M&nbsp;Arun&nbsp;Kumar, R&nbsp;Santhana&nbsp;Krishnan, S&nbsp;Mohanap&nbsp;Priya, K&nbsp;Lakshmi&nbsp;Narayanan,
+                  E&nbsp;Golden&nbsp;Julie
+                </td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">CRIME RATE PREDICTION AND PREVENTION: UNLEASHING THE POWER OF DEEP LEARNING</td>
+                <td class="authors">
+                  S&nbsp;Sangeetha, P&nbsp;Suganya, S&nbsp;Shanthini, Dr.&nbsp;G&nbsp;N&nbsp;Keshava&nbsp;Murthy, Dr.&nbsp;R&nbsp;Sathya
+                </td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 6</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 9:30 am to 11:30 am</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">
+                  Research Direction towards Distributed Denial of Service atttack Detection Algorithms for Enhancing Network Security
+                </td>
+                <td class="authors">V&nbsp;Raghava&nbsp;Swamy&nbsp;Dora, Prof.&nbsp;V&nbsp;Naga&nbsp;Lakshmi</td>
+                <td class="time">9:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Detection of Black Hole Attack in Adhoc Networks Using KNN Algorithm With Reputation Calculation</td>
+                <td class="authors">R&nbsp;Barath&nbsp;Ramesh, Dr.&nbsp;S&nbsp;John&nbsp;Justin&nbsp;Thangaraj</td>
+                <td class="time">9:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Unsupervised Deep Learning Approaches for Anomaly Detection in IoT Data Streams</td>
+                <td class="authors">
+                  Helina&nbsp;Rajini&nbsp;Suresh, R&nbsp;Neelaveni, Bonda&nbsp;Kiran&nbsp;Kumar, R&nbsp;Arunadevi, Indhumathi&nbsp;G, M&nbsp;Varun
+                </td>
+                <td class="time">10:10&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Convolutional Neural Network Approach to Crowd Counting</td>
+                <td class="authors">P&nbsp;Sivaprakash, M&nbsp;Sankar, R&nbsp;Chithambaramani, D&nbsp;Marichamy</td>
+                <td class="time">10:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Car Dent Detection using Watershed Segmentation and Deep Learning</td>
+                <td class="authors">Shripad&nbsp;Bhatlawande, Swati&nbsp;Shilaskar, Saket&nbsp;Kumar, Parag&nbsp;Salunkhe, Sarthak&nbsp;Jaybhay</td>
+                <td class="time">10:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A HYBRID LEARNING-BASED NETWORK MODEL FOR SECURITY ESTABLISHMENT IN IOT ENVIRONMENT</td>
+                <td class="authors">P&nbsp;Vasantha&nbsp;Lakshmi, R&nbsp;Raja</td>
+                <td class="time">11:10&nbsp;am</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 7</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Static and Dynamic Routing Protocols in Network Security Attacks</td>
+                <td class="authors">Lovedeep&nbsp;Abrol, Parul&nbsp;Gahelot</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Implementation and Prediction of Accurate Fore-casting Detection with Different Approach</td>
+                <td class="authors">
+                  Dr.&nbsp;B&nbsp;Uma&nbsp;Maheswari, Dr.&nbsp;S&nbsp;Kirubakaran, P&nbsp;Saravanan, M&nbsp;Jeyalaxmi, Alabazar&nbsp;Ramesh,
+                  Dr.&nbsp;R&nbsp;G&nbsp;Vidhya
+                </td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">AN OPTIMAL ATTRIBUTE-FOCUSED PRIVACY-PRESERVING ANONYMIZATION SCHEME HEALTHCARE DATA IN CLOUD SYSTEMS</td>
+                <td class="authors">
+                  Dr.&nbsp;B&nbsp;Yuvaraj, S&nbsp;Thumilvannan, Dr.&nbsp;D&nbsp;C&nbsp;Jullie&nbsp;Josephine, Dr.&nbsp;C&nbsp;Srivenkateswaran,
+                  Divya&nbsp;K
+                </td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Deployment of Robust Security Scheme in SDN Based 5G Network to Detect DDoS Attack</td>
+                <td class="authors">Nirmala&nbsp;E, Suresh&nbsp;M, Maragatharajan&nbsp;M</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A PROPORTIONATE STUDY OF CYBERSECURITY AUDIT MODELS TO PROVIDE ROBUST SECURITY</td>
+                <td class="authors">Nirmala&nbsp;E, Suresh&nbsp;M, Maragatharajan&nbsp;M</td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Sampling Technique to Reduce Execution Time Using Multi-Viewpoints Cosine-based Similarity Metrics with Hybrid Topic Models in
+                  Social Network Datasets
+                </td>
+                <td class="authors">Niharika&nbsp;Marepally, RM&nbsp;Noorullah, Moulana&nbsp;Mohammed, K&nbsp;Rashmi</td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 7</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">An Ensemble Stacking Methodology for Identifying Heart Disease</td>
+                <td class="authors">
+                  D&nbsp;Rosy&nbsp;Salomi&nbsp;Victoria, Mayuri&nbsp;K, Ramalakshmi&nbsp;N&nbsp;R, Meghna&nbsp;Ganesh&nbsp;Kumar
+                </td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">A Comprehensive Method for MRI Brain Tumor Classification Using Hybrid CNN and Feature Selection</td>
+                <td class="authors">Sreedhar&nbsp;Kollem</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">An Optimized CNN Method for Multi-Class MRI Brain Tumor Classification</td>
+                <td class="authors">Sreedhar&nbsp;Kollem</td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Role of AI in Combating Cyber Terrorism</td>
+                <td class="authors">
+                  Anushka&nbsp;Jha, Rajesh&nbsp;Bahuguna, Samta&nbsp;Kathuria, G&nbsp;Sunil, Manish&nbsp;Gupta, Vikrant&nbsp;Pachouri
+                </td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">PREDICTION OF WEATHER FORECASTING WITH LONG SHORT-TERM MEMORY USING IN-DEPTH LEARNING</td>
+                <td class="authors">
+                  Karthika&nbsp;S, T&nbsp;Priyanka, J&nbsp;Indirapriyadharshini, Dr.&nbsp;S&nbsp;Sadesh, Rajeshkumar&nbsp;G, Rajesh&nbsp;Kanna&nbsp;P
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Role of Cyber Physical System in Insider Trading</td>
+                <td class="authors">
+                  Shreyasi&nbsp;Godse, Sandhya&nbsp;Verma, Shweta&nbsp;Pandey, Srinivas&nbsp;Aluvala, Prafful&nbsp;Negi, Mansi&nbsp;Sahu
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 7</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">The Energy-Balanced Routing Algorithm for Wireless Sensor Network</td>
+                <td class="authors">S&nbsp;Kumaran, D&nbsp;Suresh&nbsp;Kumar, A&nbsp;Saravanan, K&nbsp;Suresh&nbsp;Kumar</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Integrating Unmanned Aerial Vehicles (UAVs) into Modern Agrometerologica Approach for Precise, Real-Time Prediction in Crop Water
+                </td>
+                <td class="authors">S&nbsp;Kumaran, M&nbsp;Karthik, P&nbsp;Krithikraj, M&nbsp;Gokul&nbsp;Shankar</td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">Cutting Edge Ironing Technology: Smart Laundry Cart System</td>
+                <td class="authors">
+                  K&nbsp;Rajkumar, A&nbsp;Valli, R&nbsp;Santhana&nbsp;Krishnan, G&nbsp;Karpagarajesh, S&nbsp;Sundararajan,
+                  K&nbsp;Lakshmi&nbsp;Narayanan
+                </td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">CEEORP: Cluster based Energy Efficient Optimal Routing Protocol</td>
+                <td class="authors">D&nbsp;Bhanu, Dr.&nbsp;R&nbsp;Santhosh</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Fashion Recommendation System Using Machine Learning</td>
+                <td class="authors">
+                  Lingala&nbsp;Sivaranjani, Sandeep&nbsp;Kumar&nbsp;Rachamadugu, B&nbsp;V&nbsp;Suresh&nbsp;Reddy, Basi&nbsp;Reddy&nbsp;A,
+                  M&nbsp;Sakthivel, Sivakumar&nbsp;Depuru
+                </td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A heterogeneous network model based analysis and detection of RNA enabling convolutional neural network</td>
+                <td class="authors">
+                  G&nbsp;Soniya&nbsp;Priyatharsini, Aruna&nbsp;M, Madhu&nbsp;Bala&nbsp;Myneni, P&nbsp;Kiran&nbsp;Kumar, Anil&nbsp;Kumar&nbsp;D&nbsp;B,
+                  Vijay&nbsp;Singh
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 7</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 11:30 am to 1:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Integrating IoT and Machine Learning for Real-time Patient Health Monitoring with Sensor Networks</td>
+                <td class="authors">S&nbsp;P&nbsp;Vimal, M&nbsp;Vadivel, V&nbsp;Vijaya&nbsp;Baskar, V&nbsp;G&nbsp;Sivakumar, C&nbsp;Srinivasan</td>
+                <td class="time">11:30&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  An IoT-Based Soil Moisture Management System for Precision Agriculture: Real-Time Monitoring and Automated Irrigation Control in SOA
+                  University
+                </td>
+                <td class="authors">
+                  Suprava&nbsp;Ranjan&nbsp;Laha, Binod&nbsp;Kumar&nbsp;Pattanayak, Saumendra&nbsp;Pattnaik, Debashree&nbsp;Mishra,
+                  Debasish&nbsp;Swapnesh&nbsp;Kumar&nbsp;Nayak, Bibhuti&nbsp;Bhusan&nbsp;Dash
+                </td>
+                <td class="time">11:50&nbsp;am</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  OPTIMISING LUNG CANCER SCREENING THROUGH ADVANCED TECHNIQUES FOR IMAGE ANALYSIS: AN EFFICIENT DEEP LEARNING APPROACH
+                </td>
+                <td class="authors">
+                  K&nbsp;Sherin, K&nbsp;Jaspin, Harini&nbsp;S, Sakthivel&nbsp;Sivanantham, Surendar&nbsp;Senthilvelan, Srinivasan&nbsp;Theerthagiri
+                </td>
+                <td class="time">12:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Number Plate Recognition in Roadways</td>
+                <td class="authors">K&nbsp;R&nbsp;Prabha, B&nbsp;Nataraj, P&nbsp;Adithyan, R&nbsp;Ajith&nbsp;Kumar, S&nbsp;Arun&nbsp;Vijay</td>
+                <td class="time">12:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">MRI Imaging for the Detection and Diagnosis of Brain Tumors</td>
+                <td class="authors">K&nbsp;R&nbsp;Prabha, B&nbsp;Nataraj, A&nbsp;Karthikeyan, N&nbsp;Mukilan, M&nbsp;S&nbsp;Parkavin</td>
+                <td class="time">12:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Compact Reconfigurable Antenna for 5G Bands</td>
+                <td class="authors">
+                  B&nbsp;Nataraj, K&nbsp;R&nbsp;Prabha, K&nbsp;A&nbsp;Gokul&nbsp;Kanna, A&nbsp;Gandhi&nbsp;Prakash, Jayavarshan&nbsp;M
+                </td>
+                <td class="time">1:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 8</span><span class="ps">Parallel Session - 1</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Enhancing Disease Detection in Fruits and Leaves through a Hybrid Deep Learningm Approach</td>
+                <td class="authors">
+                  Aishwarya&nbsp;B&nbsp;K, Moulana&nbsp;Mohammed, Vasimunnisa&nbsp;Shaik, Shamshadh&nbsp;Unissa, Shareen&nbsp;Khan, RM&nbsp;Noorullah
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">New Deep Learning Models for Medical Imaging: Deep Belief Network, GAN, Autoencoder</td>
+                <td class="authors">Richa&nbsp;Gupta, Surendra&nbsp;Kumar&nbsp;Shukla, Vikas&nbsp;Tripathi</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Concrete Crack Identification Using Convolution Neural Network</td>
+                <td class="authors">Atul&nbsp;Kumar&nbsp;Uttam</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Prediction of Diabetes using Binomial Logistic Regression</td>
+                <td class="authors">D&nbsp;Ravalika, R&nbsp;Pitchai</td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">CheckersMind: Enhancing Cognitive Ability in Dimentia Patients Through Checkers Game Therapy With Chatbot</td>
+                <td class="authors">Joypriyanka&nbsp;M, Surendran&nbsp;R</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Comprehensive Review on Analysing of Brian Signals using Different Clustering Methods</td>
+                <td class="authors">
+                  P&nbsp;Naveen, T&nbsp;Akilan, P&nbsp;Manikandan, B&nbsp;Pushpavanam, C&nbsp;Swedheetha, H&nbsp;James&nbsp;Deva&nbsp;Koresh
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">EV Route Optimization Using Artificial Hummingbird Algorithm</td>
+                <td class="authors">Chinduluru&nbsp;Lokhannadh, A&nbsp;Rajesh, C&nbsp;Manikandan, J&nbsp;Rajamohan, M&nbsp;Easwaran, S&nbsp;Uma</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Revolutionizing Prostate Cancer Diagnosis: Harnessing the Potential of Transfer Learning for MRI-Based Classification
+                </td>
+                <td class="authors">
+                  Dr.&nbsp;Sheshang&nbsp;Degadwala, Dhairya&nbsp;Vyas, Prof.&nbsp;Dr.&nbsp;Sanjay&nbsp;Trivedi, Harsh&nbsp;Dave,
+                  Patel&nbsp;Khush&nbsp;Nilaykumar, Dr.&nbsp;Pankaj&nbsp;Dalal
+                </td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Novel Procedure for Recognising Human Activity Using Machine Learning</td>
+                <td class="authors">Neelam&nbsp;Singh, Mansi&nbsp;Bhatt</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 8</span><span class="ps">Parallel Session - 2</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Inventory Management Using Blockchain and Big Data</td>
+                <td class="authors">
+                  Shubham&nbsp;Bhushan, Manoj&nbsp;Kumar&nbsp;Sharma, Anita&nbsp;Gehlot, Shweta&nbsp;Pandey, Nagendar&nbsp;Yamsani, Rajat&nbsp;Balyan
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Facial Movement and Voice Recognition based Mouse Cursor Control</td>
+                <td class="authors">
+                  P&nbsp;Kalyanakumar, P&nbsp;Dinesh&nbsp;Kumar, M&nbsp;Sivavignesh, Venkateshbabu&nbsp;B&nbsp;B, S&nbsp;Jeyapandi,
+                  G&nbsp;Vinoth&nbsp;Rajkumar
+                </td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Plant Image Disease Detection using Deep Learning</td>
+                <td class="authors">Devansh&nbsp;Mishra, Alok&nbsp;Pandey, Deepanshu, Dr.&nbsp;Vivek&nbsp;Sharma</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Design and Analysis of Optical Wireless Communication Systems</td>
+                <td class="authors">
+                  K&nbsp;Kannan, A&nbsp;Jagadesan, G&nbsp;Karthika, Hemant&nbsp;Singh&nbsp;Pokhariya, S&nbsp;Kaliappan, K&nbsp;V&nbsp;Kanimozhi
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Hybrid Deep Learning Model for Fire Detection and Trigger Alert</td>
+                <td class="authors">S&nbsp;Vidhya, D&nbsp;Yashaswi, N&nbsp;Revanth</td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Comprehensive Study on Security Attacks and It's Defense Techniques in Wireless Sensor Networks</td>
+                <td class="authors">Saranya&nbsp;V&nbsp;G, Dr.&nbsp;S&nbsp;Karthik</td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Predicting Early Stage Disease Diagnosis Using Machine Learning Algorithms</td>
+                <td class="authors">Sivaraman&nbsp;M, Thyagarajan&nbsp;M, Sumitha&nbsp;J</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Coyote Optimization Algorithm for Enhancing Connectivity and Energy Efficiency in WSN</td>
+                <td class="authors">M&nbsp;Ramkumar&nbsp;Prabhu, S&nbsp;Yuvarani, P&nbsp;D&nbsp;Selvam, R&nbsp;Hemalatha</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Genereic Approach on Current Technologies in Metaverse</td>
+                <td class="authors">Gaurav&nbsp;Singh&nbsp;Negi, Gopal&nbsp;Krishna, Nagendar&nbsp;Yamsani, Jitendra&nbsp;Kumar&nbsp;Gupta</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 8</span><span class="ps">Parallel Session - 3</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">PREDICTION EVALUATION OF GENE ONTOLOGY USING MACHINE LEARNING ALGORITHM</td>
+                <td class="authors">
+                  Yerram&nbsp;Sneha, Y&nbsp;Mohana&nbsp;Roopa, Padmini&nbsp;Sawant, M&nbsp;Varaprasad&nbsp;Rao, D&nbsp;Lakshmi&nbsp;Padmaja,
+                  R&nbsp;V&nbsp;S&nbsp;Lalitha
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An effective approach for image denoising using wavelet transform involving deep learning techniques</td>
+                <td class="authors">Abhay&nbsp;Shukla, K&nbsp;Seethalakshmi, P&nbsp;Hema, Jitendra&nbsp;Chandrakant&nbsp;Musale</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Modelling and manufacturing of abrasive water jet machining of reinforced AI alloy cast hybrid nanocomposites with mechanical and
+                  metallurgical behavior through artificial neural network
+                </td>
+                <td class="authors">
+                  Kingshuk&nbsp;Das&nbsp;Bakshi, Thilagham&nbsp;K&nbsp;T, R&nbsp;Yamini, C&nbsp;Vijaya&nbsp;Bhaskar&nbsp;Reddy,
+                  Anjali&nbsp;Sandeep&nbsp;Gaikwad, Anshika&nbsp;Gupta
+                </td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Recognition and optimization of wear behaviour of Al 6081 with polymeric nanocomposites using machine learning</td>
+                <td class="authors">
+                  Jaidev&nbsp;Kumar, Sanjay&nbsp;R&nbsp;Pawar, Ashish, V&nbsp;Kamalakar, R&nbsp;Karuppathal, Anup&nbsp;D&nbsp;Bhange
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Analysis of friction and dry sliding wear characteristics of nano-aluminium metal composite using machine learning through linear
+                  regression algorithm
+                </td>
+                <td class="authors">
+                  Syeda&nbsp;Jeelani&nbsp;Basri, Kishore&nbsp;Kumar&nbsp;Mamidala, N&nbsp;Balakrishnan, C&nbsp;Geetha, V&nbsp;L&nbsp;Kiranmai,
+                  D&nbsp;S&nbsp;Jayalakshmi
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Simulation and Assessment of Sensor Technologies in Automotive frontal Airbag systems using LSDYNA</td>
+                <td class="authors">
+                  Jagannath&nbsp;Jijaba&nbsp;Kadam, Inbalatha&nbsp;K, B&nbsp;Vishnu&nbsp;Vardhana&nbsp;Naidu, M&nbsp;A&nbsp;Hasamnis
+                </td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Analysis and prediction of wear characteristics of sustainable metal matrix composites using machine learning with decision making
+                  algorithm
+                </td>
+                <td class="authors">
+                  Vaishali&nbsp;N&nbsp;Agme, Ashish, Rushali&nbsp;Pant, Mulagundla&nbsp;Sridevi, A&nbsp;Suman, M&nbsp;Vijaya&nbsp;Sekhar&nbsp;Babu
+                </td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">IoT Based Automatic Temperature Detection And Visitor Recognition System</td>
+                <td class="authors">
+                  Vidhya&nbsp;S, M&nbsp;Jagadeeswari, Rajalakshmi&nbsp;R, M&nbsp;Balasenduran, Arunsrinivas&nbsp;U&nbsp;S, T&nbsp;Akileshwaran
+                </td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">DESIGN AND DEVELOPMENT OF NODEMCU BASED SMART IoT DOOR SYSTEM</td>
+                <td class="authors">Prabhu&nbsp;K, Mukila&nbsp;D, Mukesh&nbsp;L&nbsp;B, Nithesraj&nbsp;G</td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+
+        <h5 class="parallel-session-title"><span class="s">Session - 8</span><span class="ps">Parallel Session - 4</span></h5>
+        <div class="date-and-timing-header">22&nbsp;September &nbsp; | &nbsp; 2:30 pm to 5:30 pm</div>
+
+        <div class="table-responsive">
+          <table class="presentation-table">
+            <thead>
+              <th>Paper Title</th>
+              <th>Author(s)</th>
+              <th>Time</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">An Extensive Review of Spring Boot Testing Based on Business Requirements of the Software</td>
+                <td class="authors">
+                  M&nbsp;Mythily, Anand&nbsp;Deva&nbsp;Durai&nbsp;C, V&nbsp;RaviTeja&nbsp;Kanakala, Iwin&nbsp;Thanakumar&nbsp;Joseph&nbsp;S,
+                  Radhika&nbsp;Nambiar
+                </td>
+                <td class="time">2:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">AUTOMATIC DRYING OF COCO PITH USING HEATED COIL IN COIR INDUSTRY</td>
+                <td class="authors">Vidhyalakshmi&nbsp;P, Sasireka&nbsp;M, Roshini&nbsp;R, Ragul&nbsp;D, Sai&nbsp;Parisheth&nbsp;Adithiya&nbsp;M</td>
+                <td class="time">2:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  WEBARIO: a web based portal with revolutionary virtual classroom and augmented reality integration for enhanced learning
+                </td>
+                <td class="authors">Nived&nbsp;N&nbsp;Sooraj, Sidharth&nbsp;Manoj, Mahalakshmi&nbsp;P</td>
+                <td class="time">3:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">An Empirical Analysis of S-CNN Based Oral Tongue Squamous Cell Carcinoma</td>
+                <td class="authors">
+                  Dr.&nbsp;Veeranna&nbsp;Hombalimath, Dr.&nbsp;S&nbsp;Subha, K&nbsp;Kartheeban, Dr.&nbsp;Kavita&nbsp;Singh,
+                  Bhagyalakshmi&nbsp;Avinash, Sunil&nbsp;Kumar
+                </td>
+                <td class="time">3:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">High Gain Dual Wide-Band Annular Ring Two-Port Antenna for Millimeter Wave Applications</td>
+                <td class="authors">
+                  G&nbsp;S&nbsp;Uthayakumar, Beulah&nbsp;Jackson, B&nbsp;Siva&nbsp;Kumar&nbsp;Reddy, P&nbsp;Sharmila, Maya&nbsp;R, Karthi&nbsp;J
+                </td>
+                <td class="time">3:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Prediction of Surface Roughness of a Nimonic C-238 by Using the ANN Technique</td>
+                <td class="authors">Manjunatha&nbsp;B</td>
+                <td class="time">4:10&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">
+                  Enhancing Breast Cancer Classification in Mammography Images using Multi-View Deep Convolutional Neural Networks
+                </td>
+                <td class="authors">Swathi&nbsp;Baswaraju</td>
+                <td class="time">4:30&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">A Hybrid Approach for Medical Image Classification Using Support Vector Machines and Artificial Neural Networks</td>
+                <td class="authors">Uma&nbsp;N</td>
+                <td class="time">4:50&nbsp;pm</td>
+              </tr>
+              <tr>
+                <td class="title">Leveraging Radial Basis Function Neural Networks with Adaptive Variability Functionality to Predict Wild Fires</td>
+                <td class="authors">
+                  Dr.&nbsp;T&nbsp;V&nbsp;Sai&nbsp;Krishna, V&nbsp;Bhargavi, S&nbsp;Jyothsna, Vuduga&nbsp;Rakesh, Dadi&nbsp;Bikshapathi, D&nbsp;Saritha
+                </td>
+                <td class="time">5:10&nbsp;pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="time-zone">
+          <small><i>all timings are in IST</i></small>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("#header").load("header.html");
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

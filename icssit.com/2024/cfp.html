@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>ICSSIT 2024</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+  
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background: linear-gradient(#1434A4, #1434A4 50%, #FFF 50%, #FFF 100%); */
+      }
+  
+      .container {
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+      }
+  
+      .container .box {
+        max-width: 400px;
+        position: relative;
+        background: #fff;
+        padding: 100px 40px 60px;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+      }
+  
+      .container .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0096ff;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s;
+      }
+  
+      .container .box:hover::before {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        transition: transform 0.5s;
+      }
+  
+      .container .box h2 {
+        position: absolute;
+        left: 40px;
+        top: 60px;
+        font-size: 4em;
+        font-weight: 800;
+        z-index: 1;
+        opacity: 0.1;
+        transition: 0.5s;
+      }
+  
+      .container .box:hover h2 {
+        opacity: 1;
+        color: #fff;
+        transform: translateY(-40px);
+      }
+  
+      .container .box h4 {
+        position: relative;
+        font-size: 1.5em;
+        z-index: 2;
+        color: #333;
+        transition: 0.5s;
+      }
+  
+      .container .box p {
+        position: relative;
+        z-index: 2;
+        color: #555;
+        transition: 0.5s;
+        line-height: 2em !important;
+      }
+  
+      .container .box:hover h4,
+      .container .box:hover p {
+        color: #fff;
+      }
+  
+      @media (max-width: 1000px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+          padding: 60px 30px;
+        }
+  
+        .box {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand p-0 m-0"> <img class="logo-bg" src="white-logo.png" style="height: 50px" alt="FX logo" /></a>
+
+        <button
+          id="nav-btn"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto mr-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Information
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="committee.html">Committee</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>
+               
+
+              </div>
+            </li>
+
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ICSSIT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="registration.html">Registration</a>
+                <a class="dropdown-item" href="keynote.html">Speakers</a>
+                <a class="dropdown-item" href="cfp.html">Call for Papers</a>
+                <a class="dropdown-item" href="submission.html">Submit Papers</a>
+                <a class="dropdown-item" href="publication.html">Publication</a>
+
+              </div>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./#important-dates">Important Dates</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- section 1 -->
+
+    <div class="main">
+      <div class="m-0 w-100 text-left align-items-center">
+        <div class="">
+          <h3>Call for Papers</h3>
+
+          <div class="container mt-4" style="line-hight: 1.5em">
+            <div class="box">
+              <h4>Networks</h4>
+              <br />
+              <p>&#9679; Agent Communication and Networking</p>
+      
+              <p>&#9679; Intelligent Web Services</p>
+      
+              <p>&#9679; Data Centre and Cloud Networking</p>
+      
+              <p>&#9679; Sensor Networks</p>
+      
+              <p>&#9679; Vehicular Networks</p>
+      
+              <p>&#9679; Virtual Private Network</p>
+      
+              <p>&#9679; Network Virtualization</p>
+      
+              <p>&#9679; Network Protocols</p>
+      
+              <p>&#9679; Interference Reduction in Networks</p>
+      
+              <p>&#9679; Data Communications</p>
+      
+              <p>&#9679; Grid Computing</p>
+      
+              <p>&#9679; Information and Network Security</p>
+      
+              <p>&#9679; Mobile Computing</p>
+      
+              <p>&#9679; Network Management</p>
+      
+              <p>&#9679; Service Oriented Architectures</p>
+      
+              <p>&#9679; Storage Area Networks</p>
+      
+              <p>&#9679; Wireless Communication</p>
+            </div>
+      
+            <div class="box">
+              <!-- <h2>02</h2> -->
+              <h4>Smart Systems</h4>
+              <br />
+              <p>&#9679; On Chip Systems</p>
+              <p>&#9679; Neuromorphic Computing</p>
+              <p>&#9679; Energy Harvesting</p>
+              <p>&#9679; Energy Efficient Architectures</p>
+              <p>&#9679; Cognitive Ergonomics</p>
+              <p>&#9679; Models of Smart Environments</p>
+              <p>&#9679; Smart Computing Algorithms</p>
+              <p>&#9679; Smart Energy Management and Analytics</p>
+              <p>&#9679; Renewable Energy Sources and Technology</p>
+              <p>&#9679; RF/Millimeter -Wave Circuits and Systems</p>
+              <p>&#9679; Electronic Devices and Materials Processing</p>
+              <p>&#9679; Nano-Electronics</p>
+              <p>&#9679; Analog and Mixed Signal ICs</p>
+              <p>&#9679; Data Engineering and Data Warehousing</p>
+              <p>&#9679; Data Mining and Web Mining</p>
+              <p>&#9679; Database Management Systems</p>
+            </div>
+      
+            <div class="container mt-4">
+              <div class="box">
+                <h4>Software Engineering</h4> <br>
+                <p>&#9679; Agent Oriented Software Engineering</p>
+                <p>&#9679; Component-Based Software Engineering</p>
+                <p>&#9679; Software Architectures</p>
+                <p>&#9679; Software Dependability Evaluation</p>
+                <p>&#9679; Software Design Patterns</p>
+                <p>&#9679; Software Project Management</p>
+                <p>&#9679; Software Reverse Engineering</p>
+                <p>&#9679; Software Testing Tools</p>
+              </div>
+      
+              <div class="box">
+                <h4>Internet of Things (IoT)</h4> <br>
+                <p>&#9679; Internet of Things Architecture</p>
+                <p>&#9679; Middleware modelling</p>
+                <p>&#9679; Social Acceptance of IoT Systems</p>
+                <p>&#9679; Interface and Control Systems in IoT</p>
+                <p>&#9679; IoT Analytics</p>
+                <p>&#9679; Security of Things</p>
+                <p>&#9679; Cognitive IoT</p>
+                <p>&#9679; IoT Based E-Commerce</p>
+                <p>&#9679; Computational Geometry</p>
+                <p>&#9679; Probabilistic Algorithms</p>
+                <p>&#9679; Software Defined Networking</p>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

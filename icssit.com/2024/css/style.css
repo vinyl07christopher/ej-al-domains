@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&family=Source+Sans+Pro&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #1c437e, #1b4789, #1a4b94, #1a4f9f, #1a53aa) !important;
+
+  box-shadow: 0 2px 4px #000c;
+
+  transition: all 0.2s;
+}
+
+.transparent {
+  background: transparent !important;
+
+  box-shadow: none;
+}
+
+.nav-link {
+  color: #fff !important;
+
+  transition: all 0.2s;
+
+  font-size: 0.85rem;
+
+  font-family: "Poppins", sans-serif !important;
+
+  padding-block: 0.5rem;
+
+  margin-block: 0.3rem;
+
+  border-bottom: 2px solid #fff0;
+
+  margin-left: 0.3rem;
+}
+
+.nav-link:hover {
+  color: #fffa !important;
+}
+
+.logo-bg {
+  background-color: #fff;
+}
+
+body {
+  color: #000c;
+
+  background: #f5f5f5;
+
+  font-size: 1rem;
+
+  padding-bottom: 4rem;
+
+  font-family: "Poppins", sans-serif !important;
+}
+
+.home {
+  background-image: linear-gradient(to right, #0007, #0007), url(../FX_banner.webp);
+
+  background-size: cover;
+
+  background-position: right center;
+
+  text-shadow: 0 0 4px #000;
+
+  padding-block: 100px 2rem;
+
+  padding-inline: 1rem;
+
+  color: #fff;
+}
+
+.home .title {
+  font-weight: 600;
+
+  font-size: 2.7rem;
+
+  color: #fff;
+
+  display: table;
+}
+
+.home .date {
+  font-weight: 500;
+}
+
+.home a {
+  color: #ca513c !important;
+}
+
+.committee li {
+  list-style: none;
+
+  margin-bottom: 0.8rem;
+}
+
+.main h3 {
+  background: linear-gradient(to right, #1c437e, #1b4789, #1a4b94, #1a4f9f, #1a53aa);
+
+  color: #fff9;
+
+  font-weight: 700;
+
+  font-family: "Poppins", sans-serif !important;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  padding-inline: 2rem;
+
+  border-radius: 15px;
+
+  padding-top: 0.2rem;
+
+  box-shadow: 0 2px 4px #000c;
+
+  display: table;
+
+  margin-inline: auto;
+
+  min-width: 300px;
+
+  margin-block: 1rem 3rem;
+}
+
+.main h4 {
+  color: #1c437e;
+
+  font-weight: 700;
+
+  font-family: "Poppins", sans-serif !important;
+}
+
+.main {
+  max-width: 868px;
+
+  margin-inline: auto;
+
+  margin-top: 90px;
+
+  padding-inline: 1rem;
+}
+
+.fa-solid {
+  color: #1c437e;
+}
+
+.font {
+  font-family: "Poppins", sans-serif !important;
+}

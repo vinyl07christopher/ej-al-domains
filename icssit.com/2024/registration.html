@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>ICSSIT 2024</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* New Styles */
+    table {
+      background-color: #eaf6ff; /* Light blue color */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    tr.fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    tr.slide-in-left {
+      animation: slideInLeft 0.5s ease-in-out;
+    }
+
+    tr.slide-in-right {
+      animation: slideInRight 0.5s ease-in-out;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand p-0 m-0">
+          <img
+            class="logo-bg"
+            src="white-logo.png"
+            style="height: 50px"
+            alt="FX logo"
+        /></a>
+
+        <button
+          id="nav-btn"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto mr-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Information
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="committee.html">Committee</a>
+                <a class="dropdown-item" href="contact.html">Contact</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ICSSIT
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="registration.html"
+                  >Registration</a
+                >
+                <a class="dropdown-item" href="keynote.html">Speakers</a>
+                <a class="dropdown-item" href="cfp.html">Call for Papers</a>
+                <a class="dropdown-item" href="submission.html"
+                  >Submit Papers</a
+                >
+                <a class="dropdown-item" href="publication.html">Publication</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./#important-dates">Important Dates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- section 1 -->
+
+    <div class="main container bg-white p-4 rounded">
+      <div class="m-0 w-100 text-left align-items-center">
+        <div class="">
+          <h3>Registration</h3>
+
+  <p>
+
+    <ul>
+        <li>
+          For authors of accepted articles and participants, please complete
+          the registration and payment according to the following methods.
+        </li> <br>
+        <li>
+          At least one author of each accepted paper (preferably the
+          corresponding author) must register and pay the fee before the
+          conference registration deadline (20 December, 2023).
+        </li>  <br>
+        <li>
+          The registration fee for a paper (IEEE member and Non-IEEE member)
+          is as given below, each paper is allowed to 6 pages, if you
+          require to extend the page length, you can go up to 8 pages. The
+          registration fee paid towards the conference covers attending the
+          3-day conference program, attending technical sessions, keynote or
+          plenary talks, research discussions, lunch and dinner,
+          refreshments, and conference kit. Traveling and lodging fees
+          excluded.
+        </li>
+      </ul>
+
+  </p>
+ <br><br>
+
+  <h5>Registration Fee</h5>
+
+  <table class="table-container">
+    <tr>
+      <th></th>
+      <th>Category</th>
+      <th>IEEE Members</th>
+      <th>Non-IEEE Members</th>
+    </tr>
+    <tr class="fade-in">
+      <td rowspan="4">Indian Participants (INR)</td>
+      <td>UG/PG Students</td>
+      <td>6500</td>
+      <td>7000</td>
+    </tr>
+    <tr class="fade-in">
+      <td>Research Scholars / Academicians</td>
+      <td>7000</td>
+      <td>7500</td>
+    </tr>
+    <tr class="fade-in">
+      <td>Industry Delegates</td>
+      <td>7500</td>
+      <td>8000</td>
+    </tr>
+    <tr class="fade-in">
+      <td>Listeners</td>
+      <td>4500 INR</td>
+      <td>5500 INR</td>
+    </tr>
+    <tr class="slide-in-left">
+      <td rowspan="3">Foreign Participants (USD)</td>
+      <td>Authors</td>
+      <td>150 USD</td>
+      <td>200 USD</td>
+    </tr>
+    <tr class="slide-in-right">
+      <td>Listeners</td>
+      <td>100 USD</td>
+      <td>150 USD</td>
+    </tr>
+  </table>
+
+<br><br>
+
+
+<div>
+
+    
+  <h5>The methods of registration payment:</h5>
+
+  <p>To Be Updated…</p> <br>
+
+<h6>
+    Each paper registration fee only allows the paper presentation and publication of one paper of the conference participants. Either all the authors or at least one author should present the registered research work in the conference event (Please make sure to make payment and send the registration documents on the mentioned registration deadline).
+</h6>
+</div>
+
+
+  <br><br>
+
+         <h5>Note:</h5>
+          
+            <p>
+                After the payment, please keep the receipt of payment, and you must send a scanned copy of the receipt to
+              <a style="color: blue" href="mailto:icssit.info@gmail.com"
+                >icssit.info@gmail.com</a 
+              >.  We need it to confirm your payment.
+           
+            </p>
+            <br />
+           
+
+   
+          <p><strong>Refunds:</strong></p>
+          <p>
+            Cancellation after registration is not possible.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

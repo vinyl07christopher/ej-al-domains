@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital@1&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+::selection {
+  background-color: rgb(24, 73, 180);
+  color: #fff;
+}
+
+.navbar,
+.title-header {
+  background-image: linear-gradient(to right, #9b072c, #c11a43);
+}
+
+.nav-link {
+  color: #fff;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 0.15rem 0.5rem 0.1rem 0.5rem !important;
+  margin-inline: 0.2rem;
+}
+
+.nav-link:hover,
+.active {
+  background-color: #fff;
+  color: #c11a43;
+}
+
+.title-header {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 2px 4px #000;
+}
+
+.sectionHeading {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-family: "Overlock", cursive;
+
+  font-size: 2.5rem;
+  color: #fffa;
+}
+
+.committee li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.cfp li {
+  margin-bottom: 0.3rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  color: #fff;
+  box-shadow: 0 2px 4px #000;
+  padding: 1rem;
+  padding-top: 50px;
+  background-image: linear-gradient(to right, #0008, #0008), url("../bg_banner.webp");
+  background-size: cover;
+}
+
+.header a {
+  color: #ffff5f;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #f3a60a;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 888px;
+  padding: 1rem;
+  margin: 3rem auto;
+}
+
+.section {
+  margin-block: 5rem;
+}
+
+.dates {
+  font-size: 1.1rem;
+}
+
+.dates tr td,
+.reg-table th,
+.reg-table td {
+  padding-block: 0.25rem;
+  padding-inline: 1rem;
+  border: 1px solid #000;
+}
+
+.dates tr td:nth-child(odd),
+.reg-table .dark {
+  background-color: #c11a43;
+  color: #fff;
+}
+.dates tr td:nth-child(even) {
+  text-align: right;
+}
+
+.main h4,
+.main h5 {
+  color: #000;
+  display: table;
+  margin: 2rem auto;
+  font-weight: 900;
+  text-align: center;
+  padding-inline: 1rem;
+  padding-bottom: 0.7rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.main h4::after,
+.main h5::after {
+  content: "";
+  background-image: linear-gradient(to right, #fff, #c11a43, #fff);
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
