@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Roboto&family=Ubuntu&family=Ubuntu:ital@1&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/* font-family: 'Amita', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9333333333), rgba(255, 255, 255, 0.9333333333));
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 3rem;
+  height: 3rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(235, 163, 27, 0.8),
+      rgba(237, 170, 35, 0.8),
+      rgba(239, 177, 42, 0.8),
+      rgba(241, 183, 50, 0.8),
+      rgba(243, 190, 57, 0.8),
+      rgba(243, 191, 57, 0.8),
+      rgba(244, 191, 58, 0.8),
+      rgba(244, 192, 58, 0.8),
+      rgba(242, 187, 51, 0.8),
+      rgba(240, 181, 45, 0.8),
+      rgba(238, 176, 38, 0.8),
+      rgba(236, 170, 30, 0.8)
+    ),
+    linear-gradient(to right, #fff, #fff);
+}
+
+hr {
+  margin-block: 4rem;
+  opacity: 0.08;
+}
+
+.heading {
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #b00;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  border-left: 5px solid;
+  display: table;
+}
+
+.sectionHeading {
+  font-family: "Amita", cursive;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar,
+.dropdown-menu {
+  background-image: linear-gradient(
+      to right,
+      rgba(235, 163, 27, 0.8),
+      rgba(237, 170, 35, 0.8),
+      rgba(239, 177, 42, 0.8),
+      rgba(241, 183, 50, 0.8),
+      rgba(243, 190, 57, 0.8),
+      rgba(243, 191, 57, 0.8),
+      rgba(244, 191, 58, 0.8),
+      rgba(244, 192, 58, 0.8),
+      rgba(242, 187, 51, 0.8),
+      rgba(240, 181, 45, 0.8),
+      rgba(238, 176, 38, 0.8),
+      rgba(236, 170, 30, 0.8)
+    ),
+    linear-gradient(to right, #fff, #fff);
+  min-height: 70px;
+}
+.navbar .navbar-brand,
+.dropdown-menu .navbar-brand {
+  font-size: 1.5rem;
+  font-family: "Amita", cursive;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.navbar .navbar-nav,
+.dropdown-menu .navbar-nav {
+  margin-inline: auto 0;
+  align-items: center;
+}
+.navbar .nav-link,
+.navbar .dropdown-item,
+.dropdown-menu .nav-link,
+.dropdown-menu .dropdown-item {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-inline: 0.5rem;
+  transform: all 0.2s;
+}
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover,
+.dropdown-menu .nav-link:hover,
+.dropdown-menu .dropdown-item:hover {
+  color: #000 !important;
+}
+.navbar .dropdown-item,
+.dropdown-menu .dropdown-item {
+  margin-inline: auto;
+}
+.navbar .dropdown-item:active,
+.dropdown-menu .dropdown-item:active {
+  background-color: #000;
+  color: #fff !important;
+}
+
+.header {
+  padding: 3rem 1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(235, 163, 27, 0.8),
+    rgba(237, 170, 35, 0.8),
+    rgba(239, 177, 42, 0.8),
+    rgba(241, 183, 50, 0.8),
+    rgba(243, 190, 57, 0.8),
+    rgba(243, 191, 57, 0.8),
+    rgba(244, 191, 58, 0.8),
+    rgba(244, 192, 58, 0.8),
+    rgba(242, 187, 51, 0.8),
+    rgba(240, 181, 45, 0.8),
+    rgba(238, 176, 38, 0.8),
+    rgba(236, 170, 30, 0.8)
+  );
+  color: #000;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.header .title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.header .title big {
+  font-family: "Ubuntu", sans-serif;
+  color: rgba(255, 255, 255, 0.9333333333);
+  background-color: #111;
+  display: table;
+  padding: 4px 1rem;
+}
+.header .date {
+  font-weight: 300;
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+.header .date i {
+  font-size: 80%;
+  opacity: 0.6;
+}
+
+.imp-dates {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 0;
+  background-color: #fff;
+}
+.imp-dates b {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #b00;
+}
+
+section {
+  padding-block: 3rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 888px;
+}
+
+section a,
+.header a {
+  transition: all 0.2s;
+  color: rgb(60, 30, 231);
+  text-decoration: none;
+}
+section a:hover,
+.header a:hover {
+  color: red;
+} /*# sourceMappingURL=style.css.map */

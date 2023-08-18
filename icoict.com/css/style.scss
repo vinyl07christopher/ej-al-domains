@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Roboto&family=Ubuntu&family=Ubuntu:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* font-family: 'Amita', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, #fffe, #fffe), url(../RVSTC_BG.jfif);
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 3rem;
+  height: 3rem;
+  background-image: linear-gradient(
+      to right,
+      #eba31bcc,
+      #edaa23cc,
+      #efb12acc,
+      #f1b732cc,
+      #f3be39cc,
+      #f3bf39cc,
+      #f4bf3acc,
+      #f4c03acc,
+      #f2bb33cc,
+      #f0b52dcc,
+      #eeb026cc,
+      #ecaa1ecc
+    ),
+    linear-gradient(to right, #fff, #fff);
+}
+hr {
+  margin-block: 4rem;
+  opacity: 0.08;
+}
+
+.heading {
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: #b00;
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  border-left: 5px solid;
+  display: table;
+}
+
+.sectionHeading {
+  font-family: "Amita", cursive;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  color: #0006;
+}
+
+.navbar,
+.dropdown-menu {
+  background-image: linear-gradient(
+      to right,
+      #eba31bcc,
+      #edaa23cc,
+      #efb12acc,
+      #f1b732cc,
+      #f3be39cc,
+      #f3bf39cc,
+      #f4bf3acc,
+      #f4c03acc,
+      #f2bb33cc,
+      #f0b52dcc,
+      #eeb026cc,
+      #ecaa1ecc
+    ),
+    linear-gradient(to right, #fff, #fff);
+
+  min-height: 70px;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-family: "Amita", cursive;
+    user-select: none;
+  }
+
+  .navbar-nav {
+    margin-inline: auto 0;
+    align-items: center;
+  }
+
+  .nav-link,
+  .dropdown-item {
+    color: #000c !important;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-inline: 0.5rem;
+    transform: all 0.2s;
+    &:hover {
+      color: #000 !important;
+    }
+  }
+  .dropdown-item {
+    margin-inline: auto;
+    &:active {
+      background-color: #000;
+      color: #fff !important
+      ;
+    }
+  }
+}
+
+.header {
+  padding: 3rem 1rem;
+  background-image: linear-gradient(
+    to right,
+    #eba31bcc,
+    #edaa23cc,
+    #efb12acc,
+    #f1b732cc,
+    #f3be39cc,
+    #f3bf39cc,
+    #f4bf3acc,
+    #f4c03acc,
+    #f2bb33cc,
+    #f0b52dcc,
+    #eeb026cc,
+    #ecaa1ecc
+  );
+  color: #000;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: left;
+  box-shadow: 0 2px 8px #0009;
+
+  .title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  .title big {
+    font-family: "Ubuntu", sans-serif;
+    color: #fffe;
+
+    background-color: #111;
+    display: table;
+    padding: 4px 1rem;
+  }
+
+  .date {
+    font-weight: 300;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    opacity: 0.85;
+    i {
+      font-size: 80%;
+      opacity: 0.6;
+    }
+  }
+}
+
+.imp-dates {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 0;
+  background-color: #fff;
+  b {
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    color: #b00;
+  }
+}
+
+section {
+  padding-block: 3rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 888px;
+}
+
+section,
+.header {
+  a {
+    transition: all 0.2s;
+    color: rgb(60, 30, 231);
+    text-decoration: none;
+    &:hover {
+      color: red;
+    }
+  }
+}
