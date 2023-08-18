@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital@1&family=Source+Sans+Pro&display=swap");
+
+::selection {
+  color: #fff;
+  background-color: #d2452c;
+}
+
+body {
+  font-family: Open Sans, Sans;
+  // font-family: "Overlock", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: linear-gradient(to right, #fffe, #fffe), url(../RVS\ CET\ BG.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+  padding-bottom: 5rem;
+}
+
+.header,
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    #4e54c8,
+    #5b60d2,
+    #676cdb,
+    #7378e5,
+    #7f84ee,
+    #7f84ee,
+    #7f84ee,
+    #7f84ee,
+    #7378e5,
+    #676cdb,
+    #5b60d2,
+    #4e54c8
+  );
+}
+
+.navbar {
+  min-height: 70px;
+
+  font-size: 0.8rem;
+}
+.navbar-brand {
+  user-select: none;
+}
+.navbar-toggler {
+  background: #000000 !important;
+}
+.nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  margin-inline: 0.3rem;
+  font-weight: 500;
+  transition: all 0.2s;
+
+  &:hover {
+    color: #fffc !important;
+  }
+}
+
+.header {
+  padding: 3rem 1rem;
+  // background-image: linear-gradient(to right, #000a, #000a), url(../RVS\ CET\ BG.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+
+  .title {
+    font-family: "Overlock", cursive;
+    font-size: 3rem;
+    text-shadow: 0 0 4px #000;
+    line-height: 1;
+    font-weight: bold;
+    span {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 110%;
+      background-color: #d2452c;
+      color: #fff;
+      display: table;
+      text-shadow: none;
+      margin-block: 0.2rem;
+      padding: 3px 1rem;
+    }
+  }
+}
+
+.main h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Overlock", cursive;
+  font-size: 3rem;
+  opacity: 0.7;
+  color: #d2452c;
+  margin-bottom: 2rem;
+}
+
+.main {
+  max-width: 888px;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+.main h4 {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.8rem;
+  display: table;
+  padding: 5px 1rem;
+  background-color: #4e54c8;
+  font-weight: 800;
+}
+
+.list-item {
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+
+section {
+  padding-block: 2.5rem;
+}

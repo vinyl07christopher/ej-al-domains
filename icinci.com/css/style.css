@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap");
+body {
+  background-color: #f5f5f5;
+  color: #111;
+  font-family: "Roboto", sans-serif;
+  filter: blur(5px);
+}
+
+header {
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("../banner.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  scale: 0.9;
+  opacity: 0;
+  color: #fff;
+}
+header nav ul {
+  padding-block: 1rem;
+}
+header nav .show,
+header nav .collapsing {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header nav .show .nav-link,
+header nav .collapsing .nav-link {
+  color: #000 !important;
+}
+.nav-link {
+  margin-left: 1.4rem;
+  font-size: 0.85rem;
+  text-shadow: none;
+  font-family: "Comfortaa";
+  color: #000 !important;
+  font-weight: 400;
+  transition: all 0.2s;
+  position: relative;
+  padding: 0 !important;
+  margin-block: 1rem;
+}
+
+.nav-link::before {
+  content: "";
+  background-color: #000;
+  height: 1.7px;
+  position: absolute;
+  right: 0;
+  bottom: -0.25rem;
+  transition: all 0.25s;
+  width: 0;
+}
+
+.nav-link:hover::before {
+  transform-origin: left;
+  width: 100%;
+  left: 0;
+}
+header .content {
+  flex-grow: 1;
+  margin-inline: auto;
+  margin-block: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 70vh;
+  max-width: 1140px;
+  text-shadow: 1px 1px 3px #000;
+}
+header .content .title {
+  line-height: 1;
+  font-size: 3.7rem;
+  font-family: "Comfortaa";
+  letter-spacing: -0.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+header .content .date {
+  font-size: 2.3rem;
+  margin-block: 0.5rem 1rem;
+}
+header .section-heading {
+  font-family: "Comfortaa";
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-block: 3rem;
+  text-shadow: 2px 2px 2px #000;
+}
+
+section {
+  margin-block: 10rem;
+  padding-inline: 1rem;
+  max-width: 888px;
+  margin-inline: auto;
+}
+section .content .section-heading {
+  font-family: "Comfortaa";
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  border-left: 3px solid red;
+}
+
+.custom-btn {
+  transition: all 0.2s;
+  border: 2.5px solid;
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  display: table;
+  line-height: 1;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.custom-btn:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
+  text-shadow: none;
+  box-shadow: 0 2px 6px #000;
+}
+.custom-btn:active {
+  box-shadow: none;
+}
+
+.btn-blue {
+  color: #1e3dba;
+  border-color: #1e3dba;
+}
+.btn-blue:hover {
+  background-color: #1e3dba;
+  border-color: #1e3dba;
+  color: #fff;
+}
+
+.btn-red {
+  color: red;
+  border-color: red;
+}
+.btn-red:hover {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+
+.important-dates tr {
+  cursor: default;
+  color: #000;
+  transition: all 0.2s;
+}
+
+.important-dates td {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding-block: 3px;
+}
+
+.important-dates .t-name {
+  padding-inline: 0.8rem 1.5rem;
+  background-color: #f9d2a7;
+}
+
+.important-dates .date {
+  text-align: right;
+  padding-inline: 1.5rem 0.8rem;
+}
+
+::-moz-selection {
+  color: #000;
+  background-color: #f9d2a7;
+  text-shadow: none;
+}
+
+::selection {
+  color: #000;
+  background-color: #f9d2a7;
+  text-shadow: none;
+}
+
+.name {
+  font-size: 120%;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #fff;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 9px rgba(0, 0, 0, 0.4);
+}
+footer .links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  margin: 1rem;
+  transition: all 0.2s;
+}
+footer .links a:hover {
+  color: #000;
+} /*# sourceMappingURL=style.css.map */
+
+section a:not(.btn):not(.custom-btn) {
+  text-decoration: none;
+  color: #4366f3;
+  transition: all 0.25s;
+}
+
+section a:not(.btn):not(.custom-btn):hover {
+  color: #ff5757;
+}
