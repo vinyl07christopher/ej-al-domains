@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="smoothscroll.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./sam.css" />
+
+    <title>ICACRS-2023</title>
+  </head>
+
+  <body>
+    <script>
+      $(function () {
+        $("#back-to-top").hide();
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $("#back-to-top").fadeIn();
+          } else {
+            $("#back-to-top").fadeOut();
+          }
+        });
+
+        $("#back-to-top a").click(function () {
+          $("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            700
+          );
+
+          return false;
+        });
+      });
+    </script>
+
+    <div class="wrapper">
+      <br />
+
+      <div class="main">
+        <p class="ttl">Local Information</p>
+
+        <br />
+
+        <br />
+
+        <div class="container">
+          <div class="menu_box">
+            <div class="navi01">
+              <ul>
+                <li>
+                  <a href="./"><span>Home</span></a>
+                </li>
+
+                <li>
+                  <a href="submission.html"><span>Author Information</span></a>
+                </li>
+
+                <li>
+                  <a href="registration.html"><span>Registration</span></a>
+                </li>
+
+               
+                   <li>
+
+                    <a href="venue.html"><span>Venue</span></a>
+
+                  </li>
+
+                <!--<li class="second"><a href="11-01.html"><span>Travel Information</span></a></li>-->
+
+                <!-- <li class="second"><a href="11-02.html"><span>Visa Information</span></a></li> -->
+
+                <!--<li class="second"><a href="11-03.html"><span>About Kumamoto</span></a></li>-->
+
+                <li>
+                  <a href="12.html"><span>Committees</span></a>
+                </li>
+
+                <li>
+                  <a href="13.html"><span>Contact</span></a>
+                </li>
+
+                <li>
+                  <a href="14.html"><span>Program & Events</span></a>
+                </li>
+
+                <li>
+                  <a href="publication.html"><span>Publication</span></a>
+                </li>
+
+                <li class=" active"><a href="publication1.html"><span>Definition of Authorship
+                </span></a></li>
+                  <li class="second active"><a href="publication2.html"><span>Publish Original Research
+
+                </span></a></li>
+                <li>
+                  <a href="keynote.html"><span>Plenary Talks</span></a>
+                </li>
+
+                <li>
+                  <a href="17.html"><span>Workshops/Tutorials</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="link-aria">
+              <p class="ttl02">Venue &amp; Travel Information</p>
+
+              <div class="contents">
+                <div class="mb-3">
+                  <strong>Mount Zion College of Engineering and Technology<br /></strong>
+
+                  Lene vilakku, Pilivalam P.O<br />
+
+                  Pudukkottai, Tamil Nadu, India <br /><br />
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d133539.92570074738!2d78.76315219921203!3d10.33267405383138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dc82f4a20569695!2sMount%20Zion%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1640319028788!5m2!1sen!2sin"
+                  width="100%"
+                  height="350"
+                  style="border: 0; max-width: 666px; box-shadow: 0 2px 4px #0009"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+
+                <br /><br />
+
+                <p class="mt-4">
+                  <b>Distance from,</b><br />
+
+                  Tiruchirappalli International Airport: 57 km / 55 mins<br />
+
+                  Pudukkottai Railway Station: 12 km / 20 mins <br />
+
+                  Pudukkottai Bus Stand: 14 km / 25 mins
+                </p>
+
+                <br /><br />
+
+                <p class="mt-4">
+                  Nearby Tourist Attractions:
+
+                  <a
+                    href="https://www.tripadvisor.in/Attractions-g2285992-Activities-Pudukkottai_Pudukkottai_District_Tamil_Nadu.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >click here</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Lemonada&display=swap");
+
+body {
+  background: #f5f5f5;
+  color: #333;
+  font-family: PT Sans, sans-serif;
+}
+
+.navbar {
+  margin: 0;
+  padding: 1rem;
+}
+.navbar .fa {
+  color: #fffc;
+}
+.navbar .nav-link {
+  transition: all 0.3s;
+  color: #fff !important;
+  font-size: 1rem;
+  padding: 3px 8px !important;
+  margin-right: 10px;
+}
+.navbar .active,
+.nav-link:hover {
+  background-color: #fffd;
+  color: #395cae !important;
+}
+.navbar,
+.sectionTitle,
+.home {
+  background-image: linear-gradient(to right, #395cae, #3c61b7, #3e65c1, #416aca, #446fd4) !important;
+}
+.dates {
+  margin: 1rem auto;
+  max-width: 600px;
+  font-weight: 500;
+  background: #fff;
+  color: #1d2731;
+  border: 2px solid #fff;
+}
+.dates .col-6 {
+  display: flex;
+  border: 2px solid #1d2731;
+}
+.dates .col-date span {
+  margin: auto;
+  margin-right: 3px;
+}
+
+.dates .col-name span {
+  margin: auto;
+  margin-left: 3px;
+}
+
+.customLink {
+  color: blue;
+}
+
+.call-to-action {
+  background-color: #fbff83 !important;
+  color: #000;
+  border: 3px solid #fff0;
+}
+
+.call-to-action:hover {
+  border-color: #fff;
+  background-color: transparent !important;
+  box-shadow: 0 2px 6px #000c;
+}
+
+.home {
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+}
+.home .title {
+  font-size: 2.5rem;
+  margin: 1rem auto;
+  text-shadow: 0 0 8px #000;
+  line-height: 92%;
+}
+.home .confDate {
+  color: #0020a1;
+  background-color: #fffa;
+  display: table;
+  margin-inline: auto;
+  padding: 2px 1rem;
+  font-size: 1.5rem;
+}
+.home .place {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-shadow: 0 0 3px #000;
+}
+.home .place .name {
+  font-weight: 500;
+  color: #e6ff77;
+}
+.home img {
+  margin: 6px auto;
+}
+
+.committee h4,
+.container h4,
+.cfp h4 {
+  color: #002d5e;
+  padding: 5px 10px;
+  text-align: center;
+  background: #c2d8ee;
+}
+.sectionTitle {
+  text-align: center;
+  color: #fffc;
+  font-weight: 700;
+  font-family: Lemonada;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .dates {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./sam.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="smoothscroll.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&amp;display=swap" rel="stylesheet" />
+
+    <title>ICACRS-2023</title>
+  </head>
+
+  <body>
+    <script>
+      $(function () {
+        $("#back-to-top").hide();
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $("#back-to-top").fadeIn();
+          } else {
+            $("#back-to-top").fadeOut();
+          }
+        });
+
+        $("#back-to-top a").click(function () {
+          $("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            700
+          );
+
+          return false;
+        });
+      });
+    </script>
+
+    <div class="wrapper">
+      <br />
+
+      <div class="main">
+        <p class="ttl">Contact</p>
+
+        <br />
+
+        <br />
+
+        <div class="container">
+          <div class="menu_box">
+            <div class="navi01">
+              <ul>
+                <li>
+                  <a href="./"><span>Home</span></a>
+                </li>
+
+                　
+                <li>
+                  <a href="submission.html"><span>Author Information</span></a>
+                </li>
+
+                <li>
+                  <a href="registration.html"><span>Registration</span></a>
+                </li>
+
+                   <li>
+
+                    <a href="venue.html"><span>Venue</span></a>
+
+                  </li>
+
+                <li>
+                  <a href="committee.html"><span>Committees</span></a>
+                </li>
+
+                <li class="active">
+                  <a href="contact.html"><span>Contact</span></a>
+                </li>
+
+                <li>
+                  <a href="14.html"><span>Program & Events</span></a>
+                </li>
+
+                <li>
+                  <a href="publication.html"><span>Publication</span></a>
+                </li>
+                <li class=" active"><a href="publication1.html"><span>Definition of Authorship
+                </span></a></li>
+                  <li class="second active"><a href="publication2.html"><span>Publish Original Research
+
+                </span></a></li>
+
+                <li>
+                  <a href="keynote.html"><span>Plenary Talks</span></a>
+                </li>
+
+                <li>
+                  <a href="17.html"><span>Workshops/Tutorials</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contents">
+            <p class="ttl02">Contact Information</p>
+
+            <br />
+
+            <div class="contact">
+              Mr. RAMACHANDRAN K<br />
+
+              IEEE Coordinator<br />
+
+              Mount Zion College of Engineering and Technology<br />
+
+              Lene vilakku, Pilivalam P.O<br />
+
+              Pudukkottai, Tamil Nadu, India
+
+              <br />
+
+              <br />
+
+              <hr />
+              <br />
+
+              <i class="fa fa-envelope" style="color: #aaa; font-size: 120%"></i>&nbsp;<a
+                href="mailto:icacrs.confe@gmail.com"
+                class="customLink"
+                style="color: blue"
+                >icacrs.confe@gmail.com</a
+              ><br />
+
+              <i class="fa fa-phone" style="color: #aaa; font-size: 120%"></i>&nbsp;<a href="tel:+91 9894162587" class="customLink">+91-9894162587</a
+              ><br />
+
+              <i class="fa fa-whatsapp text-light bg-success" style="color: #aaa; font-size: 120%"></i>&nbsp;<a
+                href="tel:+91 9894162587"
+                class="customLink"
+                >+91-9894162587</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <br />
+    </div>
+  </body>
+</html>
