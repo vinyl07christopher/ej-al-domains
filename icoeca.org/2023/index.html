@@ -1,0 +1,3966 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+
+
+
+    <meta charset="utf-8" />
+
+
+
+    <meta
+
+      name="viewport"
+
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
+    />
+
+
+
+    <!-- Bootstrap CSS -->
+
+
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+
+      crossorigin="anonymous"
+
+    />
+
+
+
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+    <title>ICECA 2023</title>
+
+
+
+    <style>
+
+      /* Needed to force change to Navbar */
+
+      body {
+
+        line-height: 1.7em;
+
+        /* font-family: "sans-serif" !important; */
+
+      }
+
+      .navbar {
+
+        position: absolute;
+
+        bottom: 0;
+
+        width: 100%;
+
+        height: 55px;
+
+        z-index: 1;
+
+
+
+        opacity: 0.9; /* optional */
+
+      }
+
+
+
+      .fixed-top {
+
+        position: fixed;
+
+        top: 0;
+
+        z-index: 10;
+
+      }
+
+
+
+      /* Carousel mods are for fun */
+
+      .carousel {
+
+        max-height: 100vh;
+
+        background: #ccc;
+
+        z-index: 0;
+
+      }
+
+      .carousel > .carousel-control {
+
+        opacity: 0.4;
+
+      }
+
+      .carousel > .carousel-control:hover {
+
+        opacity: 1;
+
+      }
+
+      .carousel > .carousel-indicators {
+
+        top: 10px;
+
+      }
+
+
+
+      /* Might not need to force this with own images and not Place Holders */
+
+      .carousel img {
+
+        width: 100vw;
+
+        height: 100vh;
+
+        z-index: 0;
+
+      }
+
+
+
+      header {
+
+        margin-top: 30px;
+
+      }
+
+
+
+      section {
+
+        padding-top: 5rem;
+
+      }
+
+      .college-bg {
+
+        background-image: url(../surya-eng.jpeg) !important;
+
+        background-attachment: fixed;
+
+        background-repeat: no-repeat;
+
+        background-size: cover;
+
+      }
+
+
+
+      /* card desgin  */
+
+
+
+/* Body & Image List Styles
+
+-------------------------------------------------------------- */
+
+body {
+
+/* background: #000; */
+
+padding: 2.5%;
+
+}
+
+.img-list {
+
+list-style: none;
+
+padding: 0;
+
+margin: 0;
+
+}
+
+.img-list li {
+
+border: 5px solid transparent;
+
+box-sizing: border-box;
+
+width: 23.33%;
+
+float: left;
+
+position: relative;
+
+cursor: pointer;
+
+}
+
+.img-list img {
+
+max-width: 100%;
+
+vertical-align: middle;
+
+}
+
+
+
+/* Image Placeholder Styles
+
+-------------------------------------------------------------- */
+
+.img-placeholder:before,
+
+.img-placeholder:after {
+
+padding-top: 33.33%;
+
+content: "";
+
+display: block;
+
+}  
+
+.img-placeholder {
+
+background: #222;
+
+box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset;
+
+color: #444;
+
+line-height: 0;
+
+text-align: center;
+
+display: block;
+
+}
+
+
+
+/* The hover effect
+
+-------------------------------------------------------------- */
+
+.img-list li:before {
+
+transition: all .5s ease;
+
+content: "";
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+right: 0;
+
+bottom: 0;
+
+background: #333;
+
+transform: scale(0);
+
+}
+
+.img-list li:hover:before {
+
+opacity: .5;
+
+transform: scale(1);
+
+}
+
+.img-list li:after {
+
+transition: all .6s ease .2s;
+
+content: "";
+
+position: absolute;
+
+top: 8px;
+
+left: 8px;
+
+right: 8px;
+
+bottom: 8px;
+
+border: 1px solid #aaa;
+
+background: #000;
+
+opacity: 0;
+
+transform: scale(0);
+
+}
+
+.img-list li:hover:after {
+
+opacity: .35;
+
+transform: scale(1);
+
+z-index: 10;
+
+}
+
+
+
+/* new tab design in the css */
+
+
+
+body {
+
+  font-family: "Oxygen", sans-serif;
+
+  color: #050505;
+
+}
+
+
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+}
+
+
+
+.main {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+
+
+.cards {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+.cards_item {
+
+  display: flex;
+
+  padding: 1rem;
+
+}
+
+
+
+.card_image {
+
+  position: relative;
+
+  max-height: 250px;
+
+}
+
+
+
+.card_image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+
+.card_price {
+
+  position: absolute;
+
+  bottom: 8px;
+
+  right: 8px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 0.25rem;
+
+  background-color: #c89b3f;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+}
+
+
+
+.card_price span {
+
+  font-size: 12px;
+
+  margin-top: -2px;
+
+}
+
+
+
+.note {
+
+  position: absolute;
+
+  top: 8px;
+
+  left: 8px;
+
+  padding: 4px 8px;
+
+  border-radius: 0.25rem;
+
+  background-color: #c89b3f;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+}
+
+
+
+@media (min-width: 40rem) {
+
+  .cards_item {
+
+    width: 50%;
+
+  }
+
+}
+
+
+
+@media (min-width: 56rem) {
+
+  .cards_item {
+
+    width: 33.3333%;
+
+  }
+
+}
+
+
+
+.card {
+
+  background-color: white;
+
+  border-radius: 0.25rem;
+
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+}
+
+
+
+.card_content {
+
+  position: relative;
+
+  padding: 16px 12px 32px 24px;
+
+  margin: 16px 8px 8px 0;
+
+  max-height: 290px;
+
+  overflow-y: scroll;
+
+}
+
+
+
+.card_content::-webkit-scrollbar {
+
+  width: 8px;
+
+}
+
+
+
+.card_content::-webkit-scrollbar-track {
+
+  box-shadow: 0;
+
+  border-radius: 0;
+
+}
+
+
+
+.card_content::-webkit-scrollbar-thumb {
+
+  background: #c89b3f;
+
+  border-radius: 15px;
+
+}
+
+
+
+.card_title {
+
+  position: relative;
+
+  margin: 0 0 24px;
+
+  padding-bottom: 10px;
+
+  text-align: center;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+}
+
+
+
+.card_title::after {
+
+  position: absolute;
+
+  display: block;
+
+  width: 50px;
+
+  height: 2px;
+
+  bottom: 0;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: #c89b3f;
+
+  content: "";
+
+}
+
+
+
+hr {
+
+  margin: 24px auto;
+
+  width: 50px;
+
+  border-top: 2px solid #c89b3f;
+
+}
+
+
+
+.card_text p {
+
+  margin: 0 0 24px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+}
+
+
+
+.card_text p:last-child {
+
+  margin: 0;
+
+}
+
+
+
+    </style>
+
+  </head>
+
+
+
+  <body>
+
+    <div
+
+      id="carouselExample"
+
+      class="carousel slide"
+
+      data-ride="carousel"
+
+      data-pause="false"
+
+    >
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <img
+
+            class="img-fluid mx-auto d-block college-bg"
+
+            src="./bg-image1.jpg"
+
+            alt="First slide"
+
+          />
+
+        </div>
+
+        <div class="carousel-item">
+
+          <img
+
+            class="img-fluid mx-auto d-block college-bg"
+
+            src="./bg-image2.jpg"
+
+            alt="Second slide"
+
+          />
+
+        </div>
+
+        <div class="carousel-item">
+
+          <img
+
+            class="img-fluid mx-auto d-block college-bg"
+
+            src="./bg-image3.jpg"
+
+            alt="Third slide"
+
+          />
+
+        </div>
+
+      </div>
+
+      <div class="carousel-control">
+
+        <a
+
+          class="carousel-control-prev"
+
+          href="./#carouselExample"
+
+          role="button"
+
+          data-slide="prev"
+
+        >
+
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+          <span class="sr-only">Previous</span>
+
+        </a>
+
+        <a
+
+          class="carousel-control-next"
+
+          href="./#carouselExample"
+
+          role="button"
+
+          data-slide="next"
+
+        >
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+          <span class="sr-only">Next</span>
+
+        </a>
+
+      </div>
+
+      <ol class="carousel-indicators">
+
+        <li
+
+          data-target="#carouselExample"
+
+          data-slide-to="0"
+
+          class="active"
+
+        ></li>
+
+        <li data-target="#carouselExample" data-slide-to="1"></li>
+
+        <li data-target="#carouselExample" data-slide-to="2"></li>
+
+      </ol>
+
+    </div>
+
+
+
+    <!-- Navigation -->
+
+    <nav
+
+      class="navbar navbar-expand-lg navbar-light bg-dark navbar-nav"
+
+      id="mainNav"
+
+    >
+
+      <div class="container-fluid">
+
+        <!-- <a class="navbar-brand js-scroll-trigger" href="./#page-top">ICECA 2023</a> -->
+
+        <a class="navbar-brand js-scroll-trigger" href=href="./#page-top"
+
+          ><img
+
+            src="./ICECA logo.png"
+
+            style="height: 60px; margin-block: auto"
+
+            alt="confLogo"
+
+        /></a>
+
+
+
+        <button
+
+          class="navbar-toggler"
+
+          type="button"
+
+          data-toggle="collapse"
+
+          data-target="#navbarResponsive"
+
+          aria-controls="navbarResponsive"
+
+          aria-expanded="false"
+
+          aria-label="Toggle navigation"
+
+        >
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse text-dark" id="navbarResponsive">
+
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+
+              <!-- class="nav-item active" -->
+
+              <a class="nav-link" href="./#page-top"
+
+                >HOME <span class="sr-only">(current)</span></a
+
+              >
+
+            </li>
+
+
+
+            <!-- <li class="nav-item">
+
+              <a class="nav-link" href="./#pricing">About</a>
+
+            </li> -->
+
+            <li class="nav-item dropdown">
+
+              <a
+
+                class="nav-link dropdown-toggle"
+
+                href="#"
+
+                id="navbarDropdownMenuLink"
+
+                data-toggle="dropdown"
+
+                aria-haspopup="true"
+
+                aria-expanded="false"
+
+              >
+
+              ABOUT</a
+
+              >
+
+              <div
+
+                class="dropdown-menu"
+
+                aria-labelledby="navbarDropdownMenuLink"
+
+              >
+
+                <a class="dropdown-item" href="./#pricing">General Information</a>
+
+                <a class="dropdown-item" href="./#chairs">Organizing Committee</a>
+
+                <a class="dropdown-item" href="./#Steeringcommittee"> Technical Program Committee</a>
+
+              </div>
+
+            </li>
+
+            
+
+            <li class="nav-item dropdown">
+
+              <a
+
+                class="nav-link dropdown-toggle"
+
+                href="./#"
+
+                id="navbarDropdownMenuLink"
+
+                data-toggle="dropdown"
+
+                aria-haspopup="true"
+
+                aria-expanded="false"
+
+              >
+
+              AUTHORS</a
+
+              >
+
+              <div
+
+                class="dropdown-menu"
+
+                aria-labelledby="navbarDropdownMenuLink"
+
+              >
+
+                <a class="dropdown-item" href="./#cfp">Call for Papers</a>
+                <a class="dropdown-item" href="publication.html">Publication</a>
+
+                <a class="dropdown-item" href="./#gfa">Guideline for Authors</a>
+
+                <a class="dropdown-item" href="./#submission"> Paper Submission</a>
+
+                <a class="dropdown-item" href="./#stg"> Student Travel Grants</a>
+
+
+
+              </div>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a
+
+                class="nav-link dropdown-toggle"
+
+                href="./#"
+
+                id="navbarDropdownMenuLink"
+
+                data-toggle="dropdown"
+
+                aria-haspopup="true"
+
+                aria-expanded="false"
+
+              >
+
+              PROGRAM & SPEAKERS</a
+
+              >
+
+              <div
+
+                class="dropdown-menu"
+
+                aria-labelledby="navbarDropdownMenuLink"
+
+              >
+
+                <a class="dropdown-item" href="./#keynote">Keynote Speakers</a>
+
+                <a class="dropdown-item" href="./#Technicalprogram">Technical Program</a>
+
+                <a class="dropdown-item" href="./#Regular Papers"> Regular Papers</a>
+
+                <a class="dropdown-item" href="./#Posters"> Posters</a>
+
+                <a class="dropdown-item" href="./#Technical Visits"> Technical Visits</a>
+
+
+
+              </div>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="./#Sponsors">SPONSORS & EXHIBITORS</a>
+
+            </li>
+
+
+
+            <li class="nav-item dropdown">
+
+              <a
+
+                class="nav-link dropdown-toggle"
+
+                href="#"
+
+                id="navbarDropdownMenuLink"
+
+                data-toggle="dropdown"
+
+                aria-haspopup="true"
+
+                aria-expanded="false"
+
+              >
+
+              REGISTRATION</a
+
+              >
+
+              <div
+
+                class="dropdown-menu"
+
+                aria-labelledby="navbarDropdownMenuLink"
+
+              >
+
+                <a class="dropdown-item" href="./#Registration-Policies">Registration Policies</a>
+
+                <a class="dropdown-item" href="./#registration">Registration Fees and Benefits</a>
+
+            
+
+
+
+              </div>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a
+
+                class="nav-link dropdown-toggle"
+
+                href="#"
+
+                id="navbarDropdownMenuLink"
+
+                data-toggle="dropdown"
+
+                aria-haspopup="true"
+
+                aria-expanded="false"
+
+              >
+
+              TRAVEL/VENUE</a
+
+              >
+
+              <div
+
+                class="dropdown-menu"
+
+                aria-labelledby="navbarDropdownMenuLink"
+
+              >
+
+                <a class="dropdown-item" href="./#venue">Venue</a>
+
+                <a class="dropdown-item" href="./#local">Local Attractions</a>
+
+            
+
+
+
+              </div>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="./#news">NEWS</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="./#contact">CONTACT</a>
+
+            </li>
+
+       
+
+          </ul>
+
+    
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
+    <div class="" id="page-top" style="height: 22px"></div>
+
+
+
+    <header class="jumbotron jumbotron-fluid bg-transparent text-white">
+
+      <div class="container text-center text-dark">
+
+        <h1>
+
+          7th International Conference on Electronics, Communication and
+
+          Aerospace Technology
+
+        </h1>
+
+        <h3>ICECA 2023</h3>
+
+        <br />
+
+        <h4>
+
+          22-24, November 2023 <br /><br />
+
+          Coimbatore, India
+
+        </h4>
+
+        <!-- <p class="lead">Simple single page template designed for Bootstrap 4</p> -->
+
+      </div>
+
+      <div class="row mt-4 text-center mx-auto">
+
+        <div class="col-lg-4 pb-3 my-auto">
+
+          <div class="p-3 rounded d-table mx-auto shadow" style="background-color: #fff">
+
+            <img src="IEEE.png" alt="IEEE logo" height="50px" />
+
+            <img src="IEEE Madras Section.png" alt="IEEE Madras Section" height="50px" />
+
+            <div class="mt-3 small d-table mx-auto text-right" style="color: #000; text-shadow: none">
+
+              <b>IEEE XPLORE COMPLIANT ISBN:</b> 979-8-3503-4060-0 <br />
+
+              <b>IEEE DVD ISBN:</b> 979-8-3503-4059-4
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-4 pb-3 my-auto" id="important-dates">
+
+          <!-- Presentation Mode: Online -->
+
+          <div class="my-2 ">
+
+            <a class="text-danger" href="ICECA 2023.pdf" target="_blank" rel="noopener noreferrer">Brochure</a>
+
+          </div>
+
+
+
+          <p class="text-dark">ICECA Previous Edition :
+
+          <a class="text-danger" href="https://ieeexplore.ieee.org/xpl/conhome/10009019/proceeding" target="_blank">2022</a></p> 
+
+          
+
+           <p class="text-dark">ICECA 2023 in IEEE :
+
+          <a class="text-danger" href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/58529" target="_blank">Click here</a></p>
+
+        </div>
+
+
+
+        <div class="col-lg-4 pb-3 my-auto">
+
+          <img src="rvs tc logo.png" style="width: 100%; max-width: 400px" alt="rvs tc logo" />
+
+          <div class="mt-2 text-center" style="line-height: 1">RVS Technical Campus <br /><small>Coimbatore, India</small></div>
+
+        </div>
+
+      </div>
+
+      <br />
+
+      <div class="container">
+
+        <div class="py-5 section1 container bg-white text-dark p-4 rounded">
+
+          <div class="container" style="line-height: 2em">
+
+            <h3 style="text-transform: capitalize">ABOUT THE COLLEGE</h3>
+
+
+
+            <p>
+
+              The RVS Technical campus intends to be the preeminent research and
+
+              teaching institution linking the people of our institutions to the
+
+              nation and the world by providing quality, career focused
+
+              education and world class specializations. To be a world class
+
+              Institution for Engineering and Managerial Education by imparting
+
+              quality education of global standards and formulate students
+
+              academically superior, socially committed, ethically strong and
+
+              culturally rich citizens.
+
+            </p>
+
+
+
+            <br />
+
+          </div>
+
+        </div>
+
+        <br />
+
+
+
+        <div class="container bg-white text-dark p-4 rounded" id="keynote">
+
+          <h3 class="text-primary text-center">Keynote Information</h3>
+
+          <div class="container rounded">
+
+            <div class="row text-dark">
+
+              <div class="col-sm-6 mt-3">
+
+                <div class="card">
+
+                  <div class="card-body">
+
+                    <h5 class="card-title">Dr. K. Porkumaran</h5>
+
+                    <p class="card-text">
+
+                      Chairman, IEEE Madras Section and Principal & Senior
+
+                      Professor, <br />Sri Sairam Engineering College, Chennai,
+
+                      India.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-sm-6 mt-3">
+
+                <div class="card">
+
+                  <div class="card-body">
+
+                    <h5 class="card-title">Dr. T. Muthumanickam</h5>
+
+                    <p class="card-text">
+
+                      Chair - Aerospace and Electronic Systems (AES) Society,
+
+                      IEEE Madras Section.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="row text-dark">
+
+           
+
+              <div class="col-sm-6 mt-3">
+
+                <div class="card">
+
+                  <div class="card-body">
+
+                    <h5 class="card-title">Mr.S.Ayyappan</h5>
+
+                    <p class="card-text">
+
+                      Senior Manager - Avionics Design, HAL, <br />Bangalore.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <div
+
+        class="container lh-lg border border rounded bg-light text-dark p-4"
+
+        id="important-dates"
+
+      >
+
+        <div class="container">
+
+          <div class="card">
+
+            <div class="card-header">
+
+              <h4 class="text-primary" style="text-align: center">
+
+                Important Dates
+
+              </h4>
+
+            </div>
+
+            <div class="card-body">
+
+              <table class="table table-bordered">
+
+                <tbody>
+
+                  <tr>
+
+                    <td>Paper Submission Due:</td>
+
+                    <td><span class="submission-date">25 August, 2023</span></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Acceptance Notification:</td>
+
+                    <td>30 September, 2023</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Registration Due:</td>
+
+                    <td>25 October, 2023</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Conference:</td>
+
+                    <td>22-24, November 2023</td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- about button act to home page -->
+
+    <section id="pricing">
+
+      <h3 class="text-center">General Information</h3> <br>
+
+
+
+      <div class="container bg-white p-4 rounded">
+
+        <div class="container">
+
+          <h3>scope</h3> <br>
+
+
+
+          <div>
+
+            The 7th International Conference on Electronics, Communication and
+
+            Aerospace Technology [ICECA 2023] organized on 22-24, November 2023
+
+            by RVS Technical Campus, Coimbatore, Tamil Nadu, India is a premier
+
+            international conference that aims to promote the recent innovations
+
+            in various fields of engineering and technology. ICECA 2023 provides
+
+            a common platform for latest developments, inventive research works
+
+            and issues to be discussed and experimented for future
+
+            collaboration, amongst the researchers, academicians and
+
+            industrialists across the globe. The main objective of the ICECA
+
+            2023 conference is to present the latest research and results of
+
+            scientists, research scholars and students related to Electronics,
+
+            Communication and Aerospace technologies for future collaboration.
+
+            This ICECA 2023 conference provides an extensive opportunity for the
+
+            researchers to discuss, share and exchange the research innovations
+
+            on the advances in evolving fields of Artificial Intelligence,
+
+            Machine Learning, Deep Learning, Fog/Edge Computing and so on
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+<section>
+
+  <h3 class="text-center">Conference Committee</h3> <br>
+
+
+
+    <div class="container bg-white p-4 rounded" id="chairs" > <br><br>
+
+      <br /><br /><br />
+
+
+
+
+
+
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h5 class="card-title">General Chairs</h5>
+
+
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <p class="card-text">
+
+                Dr. S. Vijayan,<br />
+
+                Principal,<br />
+
+                RVS Technical Campus,<br />
+
+                Coimbatore, India.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <h5 class="card-title">Program Chair</h5>
+
+
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <p class="card-text">
+
+                Dr. S Narayanamoorthy, <br />
+
+                HoD - Mechatronics
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container bg-white p-4">
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h5 class="card-title">Tutorial and Workshop Chairs</h5>
+
+
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <p class="card-text">
+
+                Dr. S Sridhar, HoD - Automobile Engineering <br /><br />
+
+
+
+                Dr. D Rajkumar, HoD - Agri
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="col-sm-6">
+
+          <h5 class="card-title">Local Arrangement Chair</h5>
+
+
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <p class="card-text">Dr. A G Mohandas Gandhi, HoD - Civil</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container bg-white p-4">
+
+      <div class="row">
+
+        <div class="col-sm-6">
+
+          <h5 class="card-title">Conference Chair</h5>
+
+
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <p class="card-text">
+
+              Dr. S D Prabu Ragavendiran, RVS Technical Campus, India.
+
+
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    
+
+  </div>
+
+</section>
+
+<!-- call for paper -->
+
+
+
+
+
+
+
+<section>
+
+
+
+
+
+  <div class="container bg-white p-4 rounded" id="Steeringcommittee"> <br>  
+
+    <h4 class="text-center text-primary">
+
+      Steeringcommittee
+
+    </h4> <br>
+
+    <h5>Oversight Committee Members:    </h5> <br>
+
+
+
+    <li class="list-group-item">Dr. S D Prabu Ragavendiran, RVS Technical Campus, India.</li>
+
+    <li class="list-group-item">Dr. Shajulin Benedict, Indian Institute of Information Technology, India.</li>
+
+    <li class="list-group-item">Dr. K. Porkumaran, Chairman, IEEE Madras Section and Principal and Senior Professor, Sri Sairam Engineering College, Chennai, India.</li>
+
+    <li class="list-group-item">Dr. T. Muthumanickam, Aerospace and Electronic Systems, IEEE Madras Section, India.</li>
+
+    <li class="list-group-item">Mr. M. Arun, IEEE Execom Member, IEEE Madras Section.</li>
+
+   
+
+
+
+<br>
+
+
+
+   <h5>Technical Committee:</h5> <br>
+
+
+
+ 
+
+    <li class="list-group-item">Dr. A. Khaled A Kamel, Texas Southern University, USA.</li>
+
+    <li class="list-group-item">Dr. Reijo Savola, VTT Research Centre, Finland.</li>
+
+    <li class="list-group-item">Dr. Asif Hassan, Khulna University of Engineering and Technology, Bangladesh.</li>
+
+    <li class="list-group-item">Dr. Laila El Abbadi, IbnTofail University, Morocco.</li>
+
+    <li class="list-group-item">Dr. Giovanni Mazzeo, University Parthenope, Italy.</li>
+
+    <li class="list-group-item">Dr. Patrick Goh, Universiti Sains, Malaysia.</li>
+
+    <li class="list-group-item">Dr. Robert Bestak, Czech Technical University, Czech Republic.</li>
+
+    <li class="list-group-item">Dr. Youssouf EL ALLIOUI, Hassan University, Morocco.</li>
+
+    <li class="list-group-item">Dr. Vasile Avram, Bucharest University, Romania.</li>
+
+    <li class="list-group-item">Dr. Eric David Cohen, University of Campinas School of Applied Sciences, Brazil.</li>
+
+    <li class="list-group-item">Dr. Isabel Santiago Chiquero, Universidad de Córdoba, Córdoba.</li>
+
+    <li class="list-group-item">Dr. Gharsallah Zaineb, University of Tunis El Manar, Tunisia.</li>
+
+    <li class="list-group-item">Dr. Ahmet Cakanel, The Ohio State University, USA.</li>
+
+    <li class="list-group-item">Dr. Edoardo Patti, Polytechnic University of Turin, Italy.</li>
+
+    <li class="list-group-item">Dr. Mohammed Babiker Ali, Albutana University, Sudan.</li>
+
+    <li class="list-group-item">Dr. George A. Kyriacou, Democritus University of Thrace, Greece.</li>
+
+    <li class="list-group-item">Dr. Akhtar Kalam, Victoria University, Australia.</li>
+
+    <li class="list-group-item">Dr. Kuo-Chung Chen, National Chung-Shan Institute of Science and Technology, China.</li>
+
+    <li class="list-group-item">Dr. Cheng-Kuan Lin, Soochow University, China.</li>
+
+    <li class="list-group-item">Dr. AZM Ehtesham Chowdhury, American Intl. University, Bangladesh.</li>
+
+    <li class="list-group-item">Dr. Luis Gerardo de la Fraga, Cinvestav Av. Instituto Politécnico Nacional, Mexico.</li>
+
+    <li class="list-group-item">Dr. Qian Chen, Southeast University, China.</li>
+
+    <li class="list-group-item">Dr. Gustavo Medeiros Freitas, Federal University of Santa Catarina, Brazil.</li>
+
+    <li class="list-group-item">Dr. Gharsallah Zaineb, University of Tunis El Manar, Tunisia.</li>
+
+    <li class="list-group-item">Dr. Vinoth Kanna, Guru Nanak Institute of Technology, India.</li>
+
+    <li class="list-group-item">Dr. R. Harikumar, Bannari Amman Institute of Technology, India.</li>
+
+    <li class="list-group-item">Dr. N. Mohan Kumar, SKP Engineering College, India.</li>
+
+    <li class="list-group-item">Dr. Naveen Kumar, FCS Railenium, Valenciennes, France.</li>
+
+    
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- call for papers -->
+
+<section>
+
+
+
+
+
+  
+
+  <div class="section1 container bgcolor" id="cfp">
+
+    <div
+
+      class="m-0 w-100 text-left align-items-center"
+
+      style="margin: 0; padding: 90px 10px 10px 10px"
+
+    >
+
+      <div class="container">
+
+        <h3>Call for Paper</h3>
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container ">
+
+    <div class="row">
+
+      <div class="col-sm-6 mt-3">
+
+        <div class="card">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Communication Technologies</h5>
+
+            <hr />
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Digital Communication
+
+              Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Satellite Communication
+
+              Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Wireless Network
+
+              Communication Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Mobile Communication
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Mobile Ad-hoc Networks
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Computer Network
+
+              Communications
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Communication Modeling
+
+              Theories and Practices
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> 5G Communication and Networks
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Green Communication Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Network and Information
+
+              Security Techniques
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Multimedia Communication
+
+              Frameworks
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Microwave Communication
+
+              Networks and Technologies
+
+            </p>
+
+
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 mt-3">
+
+        <div class="card">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Electronics</h5>
+
+            <hr />
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Digital Electronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Power and Applied Electronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Electro Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Nanoelectronics and
+
+              Microelectronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Semiconductor Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Power Electronics and Drive
+
+              Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Power Systems Reliability and
+
+              Security
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Real-time Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Cognitive Electronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Applied Electronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Advanced VLSI Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Advanced Computer
+
+              Architectures
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Embedded Processors and
+
+              Networking
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Artificial Intelligence and
+
+              Expert Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Navigational Electronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Mechatronics
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6 mt-3">
+
+        <div class="card">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+
+              Artificial Intelligence Technology and Applications
+
+            </h5>
+
+            <hr />
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Cognitive Science
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Cognitive Theories and
+
+              Applications
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Natural Language Processing
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Machine Learning Techniques
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Deep Learning Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Decision Support Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Automated Expert Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Intelligent Information
+
+              Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> AI and Evolutionary
+
+              Algorithms
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Neural Networks and
+
+              Applications
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Intelligent user Interface
+
+              Technologies
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 mt-3">
+
+        <div class="card">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Robotics</h5>
+
+            <hr />
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Adaptive Control Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Mobile and Autonomous Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Multi-agent Collaborative
+
+              Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Robotics and Engineering
+
+              Applications
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Brain-Machine Interfaces
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Networked Robotics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Multi Robotic Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Distributed Systems
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Nanobots and Novel Sensors
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Robotics and Industrial
+
+              Monitoring
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Virtual Systems
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6 mt-3">
+
+        <div class="card">
+
+          <div class="card-body">
+
+            <h5 class="card-title">Aerospace Technologies</h5>
+
+            <hr />
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Advances in Aerospace
+
+              Technologies
+
+            </p>
+
+
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Aerospace Robotics and
+
+              Mechatronics
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Aviation Human Factors
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Aerodynamic Forces and
+
+              Flexibility
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Aircraft Mapping and
+
+              Navigation
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Ballistic Tracking
+
+              Technologies
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Aerospace Communication
+
+              Techniques
+
+            </p>
+
+            <p class="card-text">
+
+              <i style="color: red">&#x2217;</i> Remote Sensing Technologies
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <br /><br /><br /><br />
+
+
+
+  </div>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+  <div class="section1 container bg-white p-4 rounded bg-font" id="submission">
+
+    <h3>Paper Submission</h3>
+
+
+
+    <div class="m-0 w-100 text-left align-items-center" style="margin: 0; padding: 90px 0px 0px 0px">
+
+      <div class="container">
+
+
+
+        <p>
+
+          Prospective contributors are invited to submit full papers in DOC / DOCX / PDF format, with a maximum page length of <b>8 pages</b> in
+
+          double column by including all the figures, tables, and references. The paper must adhere to the standard IEEE paper template, and no
+
+          bibliography should be included at the conclusion. Papers that are not in accordance with the IEEE template by including appropriate
+
+          reference/citation, or that exceed the page limit will not be processed to the next stage. Nevertheless, only the research articles that
+
+          have neither appeared elsewhere for publication, nor are under review for another refereed conference publication will be considered. The
+
+          study topic, primary research findings, and contributions should be clearly stated in the article.
+
+        </p>
+
+
+
+        <div class="row">
+
+          <div class="col-lg-6 my-4 p-3">
+
+            <div style="padding: 1rem; color: #000; background-color: #fdedec">
+
+              <p><b>Submission Method</b></p>
+
+
+
+              The full research paper should be only submitted to the conference email
+
+              <a href="mailto:iceacconfteam@gmail.com" target="_blank" rel="noopener">iceacconfteam@gmail.com</a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 my-4 p-3">
+
+            <div style="padding: 1rem; color: #000; background-color: #d5f5e3">
+
+              <p><b>Paper Template</b></p>
+
+              <p>
+
+                <a href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx" target="_blank"
+
+                  >click here</a
+
+                >
+
+                to download MS Word Template
+
+                <br />
+
+
+
+                <a href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/conference-latex-template_10-17-19.zip" target="_blank"
+
+                  >click here</a
+
+                >
+
+                to download LaTex Template
+
+              </p>
+
+
+
+              <a href=" https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
+
+                https://www.ieee.org/<wbr />conferences/<wbr />publishing/<wbr />templates.html</a
+
+              >
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <p>
+
+          When submitting a research paper, authors agree that if their work is accepted, they will submit a camera-ready version of the updated
+
+          paper for inclusion in the final ICECA 2023 proceedings and will present the paper at the conference. By the time the camera-ready article
+
+          is submitted for inclusion in the proceedings, each approved contribution must have one paid registration.
+
+        </p>
+
+
+
+        <p>
+
+          The decision on the submitted manuscript will be sent to the authors via Email after the completion of review process. The acceptance ID
+
+          given in the acceptance should be included in all the future conversations.
+
+        </p>
+
+
+
+        <p>
+
+          For the full call for papers of ICECA 2023:
+
+          <a
+
+            href="./#cfp"
+
+            target="_blank"
+
+            rel="noopener"
+
+            data-saferedirecturl="https://www.google.com/url?q=http://icoeca.org/2023/cfp.html&amp;source=gmail&amp;ust=1638945496119000&amp;usg=AOvVaw3ViOJs-GKNiQGZm34cEhvc"
+
+            >Call for Papers</a
+
+          >
+
+        </p>
+
+
+
+        <p>
+
+          Submission Deadline: Refer Conference
+
+          <a
+
+            href="./#important-dates"
+
+            target="_blank"
+
+            rel="noopener"
+
+            data-saferedirecturl="https://www.google.com/url?q=http://icoeca.org/2023/index.html&amp;source=gmail&amp;ust=1638945496119000&amp;usg=AOvVaw08Uy9XHsURAbg_hboydHnR"
+
+            >Homepage</a
+
+          >
+
+        </p>
+
+
+
+        <p>
+
+          Papers that are accepted will be allocated to a normal technical session. All articles will be subjected to a comprehensive, double-blind
+
+          review procedure. In order to submit the final version, at least one author of an approved work must register for the conference. All
+
+          accepted papers will be included in the conference proceedings and submitted to IEEE Xplore for publishing consideration.
+
+        </p>
+
+
+
+        <p><b>Standard Conference Policies</b></p>
+
+
+
+        <ul>
+
+          <li>
+
+            If a paper is not presented at the conference, ICECA reserves the right to remove it from dissemination after the meeting (for example,
+
+            by not submitting it in IEEE Xplore). Papers are assessed on the criterion that they are not plagiarized and have not been submitted to
+
+            another conference at the same time (multiple submissions).
+
+          </li>
+
+
+
+          <li>
+
+            The conference can take any corrective or preventive action to publish the conference articles. The author is solely responsible for any
+
+            post conference plagiarism and similarity issues.
+
+          </li>
+
+
+
+          <li>
+
+            Authors are allowed to post their article in their personal website and institutional repositories. However, once accepted for
+
+            publication in IEEE, the posted article must be removed from any other third-party servers.
+
+          </li>
+
+
+
+          <li>
+
+            The author may not post the final published article online whereas it will be only available in IEEE Digital Xplore Library, which can
+
+            be cited for any use.
+
+          </li>
+
+        </ul>
+
+
+
+        <p></p>
+
+
+
+        <div>
+
+          IEEE Plagiarism Policy (<a
+
+            href="https://www.ieee.org/publications/rights/plagiarism/id-plagiarism.html"
+
+            target="_blank"
+
+            rel="noopener"
+
+            data-saferedirecturl="https://www.google.com/url?q=https://www.ieee.org/publications/rights/plagiarism/id-plagiarism.html&amp;source=gmail&amp;ust=1638945496119000&amp;usg=AOvVaw10j4213wFKwT2qU_6gs_Et"
+
+            >https://www.ieee.org/<wbr />publications/rights/<wbr />plagiarism/id-plagiarism.html</a
+
+          >)
+
+        </div>
+
+
+
+        <div>
+
+          <div>
+
+            <div id="">
+
+              <h4 class="mt-4">Possible plagiarism scenarios</h4>
+
+            </div>
+
+
+
+            <div>
+
+              <p>
+
+                Potentially complicating the effort to identify plagiarism is the fact that each of the above basic factors can be combined with
+
+                other factors, creating a range of possible plagiarism scenarios. Here, then, is a full list of possible scenarios, starting with
+
+                the worst case:
+
+              </p>
+
+
+
+              <ol>
+
+                <li>
+
+                  Uncredited Verbatim Copying of a Full Paper, or Uncredited Verbatim Copying of a Major Portion (more than 50%) within a Single
+
+                  Paper--An instance is where a large section of the original paper is copied without quotation marks, credit notice, reference, and
+
+                  bibliography. This case also includes instances where different portions of a paper are copied without attribution from a number
+
+                  of papers by other authors, and the sum of plagiarized material is more 50%, or<br /><br />Uncredited Verbatim Copying within More
+
+                  than a Single Paper by the Same Author(s)--This includes instances where more than one paper by the offending author(s) has been
+
+                  found to contain plagiarized content, and all the percentages of plagiarized material in each of the discovered papers sum to
+
+                  greater than 50%.<br /><br />
+
+                </li>
+
+
+
+                <li>
+
+                  Uncredited Verbatim Copying of a Large Portion (greater than 20% and up to 50%) within a Paper.--An instance is where a section of
+
+                  the original paper is copied from another paper without quotation marks, credit notice, reference, and bibliography. This case
+
+                  also includes instances where different portions of a paper are copied without attribution from a number of papers by other
+
+                  authors, and the sum of copying results in a large portion of plagiarized material (up to 50%) in the paper, or<br /><br />Uncredited
+
+                  Verbatim Copying within More than One Paper by the Same Author(s)--This includes instances where the sum of plagiarized material
+
+                  from the different papers would constitute the equivalent of a large portion (greater than 20% and up to 50%) of the discovered
+
+                  paper with the fewest words.<br /><br />
+
+                </li>
+
+
+
+                <li>
+
+                  Uncredited Verbatim Copying of Individual Elements (Paragraph(s), Sentence(s), Illustration(s), etc.) Resulting in a Significant
+
+                  Portion (up to 20%) within a Paper--An instance could be where portions of original paper are used in another paper without
+
+                  quotation marks, credit notice, reference, and bibliography.<br /><br />
+
+                </li>
+
+
+
+                <li>
+
+                  Uncredited Improper Paraphrasing of Pages or Paragraphs. Instances of improper paraphrasing occur when only a few words and
+
+                  phrases have been changed or when the original sentence order has been rearranged; no credit notice or reference appears with the
+
+                  text.<br /><br />
+
+                </li>
+
+
+
+                <li>
+
+                  Credited Verbatim Copying of a Major Portion of a Paper without Clear Delineation. Instances could include sections of an original
+
+                  paper copied from another paper; credit notice is used but absence of quotation marks or offset text does not clearly reference or
+
+                  identify the specific, copied material.
+
+                </li>
+
+              </ol>
+
+            </div>
+
+
+
+            <div></div>
+
+          </div>
+
+
+
+          <div>
+
+            <div id="">
+
+              <h4 class="mt-4">Plagiarism, in short</h4>
+
+            </div>
+
+
+
+            <div>
+
+              <p>
+
+                The extreme and more obvious cases notwithstanding, the above scenarios provide us with some basic determining factors we can use
+
+                when attempting to deal with allegations of plagiarism between authors.
+
+              </p>
+
+
+
+              <ul>
+
+                <li>
+
+                  Amount or quantity does not play a part in defining plagiarism. However, the amount of material plagiarized should play an
+
+                  important part in determining the appropriate corrective action.
+
+                </li>
+
+
+
+                <li>
+
+                  Credit notices or references are not sufficient to deflecting a charge of plagiarism if quotation marks or offset text have not
+
+                  been used to identify the specific material being copied.
+
+                </li>
+
+
+
+                <li>
+
+                  Paraphrasing can leave an author open to a charge of plagiarism if he or she has changed only a few words or phrases or has only
+
+                  rearranged the original sentence order. Even a proper paraphrasing of the original text can lead to a charge of plagiarism if the
+
+                  original source is not properly cited.
+
+                </li>
+
+              </ul>
+
+
+
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+
+
+  <div class="container bg-white p-3 rounded" id="stg">
+
+    <h5 class="text-center text-primary">Travel Grant</h5> <br>
+
+    <div>Travel grant will be afforded to the selected best (IEEE student members) research works.</div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div id="Technicalprogram">
+
+    <h5 class="text-dark text-center text-white">Technical Program</h5> <br>
+
+    <div class="container bg-white p-4 rounded" id="">To be announced.</div></div>
+
+</section>
+
+<section>
+
+ <div id="Regular Papers"> <h5 class="text-dark text-center text-white">Regular Papers</h5> <br>
+
+  <div class="container bg-white p-4 rounded" id="">To be announced.</div></div>
+
+</section>
+
+<section>
+
+ <div id="Posters">
+
+  <h5 class="text-dark text-center text-white">Posters</h5> <br>
+
+  <div class="container bg-white p-4 rounded" id="">To be announced.</div>
+
+ </div>
+
+</section>
+
+<section>
+
+  <div id="Technical Visits">
+
+    <h5 class="text-dark text-center text-white">Technical Visits</h5> <br>
+
+  <div class="container bg-white p-4 rounded" id="">To be announced.</div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section>
+
+<div class="text-center cotainer" id="Sponsors">
+
+  <h3>
+
+    Sponsors: 
+
+
+
+  </h3>
+
+<br>
+
+<div class="container">
+
+  <ul class="img-list">
+
+    <li><img src="./IEEE.png" style="height: 100px; width: 300px;"></li>
+
+    <li><img src="./IEEE Madras Section.png" style="height: 100px; width: 300px;"></li>
+
+    <li><img src="./RVSTC-4.jpg" style="height: 100px; width: 300px;"></li>
+
+    <li><img src="./RVSTC-3.jpg" style="height: 100px; width: 300px;"></li>
+
+    
+
+  </ul>
+
+</div>
+
+</div>
+
+</section>
+
+<br><br>
+
+<section>
+
+
+
+  <div class="container bg-white p-4 rounded" id="Registration-Policies">
+
+<h3 class="text-center text-primary"> 
+
+  Registration Policies
+
+
+
+</h3>
+
+
+
+<div class="section1 container p-4 bg-white rounded">
+
+  <div class="m-0 w-100 text-left align-items-center" style="margin: 0; padding: 90px 10px 10px 10px">
+
+    <div class="container"> <br>
+
+
+
+
+
+<h5 class="mt-5"> Registration Policy</h5>
+
+<br>
+
+7th ICECA 2023 conference registration for members of IEEE and associated societies, and non-members includes the admission to all technical sessions in the 3-day conference event. The members of IEEE and associated societies should provide their E-Membership details or membership ID while submitting the registration documents. 
+
+To publish the accepted article in 7th ICECA 2023 conference proceedings and to be eligible for publication in IEEE Xplore, at least one of the authors should register (either as a IEEE/ Non-IEEE) member and present the research work at the conference event.<br><br>
+
+One registration allows authors to present and publish one paper in the conference. Please send the registration documents (Final paper, IEEE Copyright Form, and Payment Gateway (Paid) Screenshot). Making payment for the submitted paper before getting official conference acceptance letter is strictly prohibited.<br><br>
+
+
+
+  
+
+     
+
+ <h5 class="mt-5">Conference Registration Form</h5>
+
+
+
+    <form>
+
+
+
+ <input class="form-control" required type="text" name="ArtTitle" placeholder="Article Title" /><br />
+
+
+
+          <input class="form-control" required type="text" name="AuthName" placeholder="Authors Name" /><br />
+
+
+
+          <input class="form-control" required type="text" name="ArtId" placeholder="Article Id" /><br />
+
+
+
+ <input class="form-control" required type="email" name="email" placeholder="Corresonding Author Email:" /><br />
+
+ 
+
+ <input class="form-control" required type="number" name="number" placeholder="Contact Number:" /><br />
+
+
+
+
+
+<label for="ieee_membership">Select the Category for Payment:</label>
+
+<select id="ieee_membership" name="ieee_membership">
+
+    <option value="ieee_member">IEEE Member</option>
+
+    <option value="non_ieee_member">Non-IEEE Member</option>
+
+</select><br><br>
+
+
+
+<button type="button" onclick="submitForm()">Submit</button>
+
+</form> <br /><br />
+
+
+
+<script>
+
+function submitForm() {
+
+var membership = document.getElementById("ieee_membership").value;
+
+
+
+if (membership === "ieee_member") {
+
+    window.location.href = "https://razorpay.com/payment-button/pl_M9EDyHUI1G506F/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button";
+
+} else if (membership === "non_ieee_member") {
+
+    window.location.href = "https://razorpay.com/payment-button/pl_M9EFTveQf0uM58/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button";
+
+}
+
+}
+
+</script>
+
+      <hr />
+
+<!--
+
+      <h5>Payment Gateway:</h5>
+
+      IEEE Members:
+
+      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_M9EDyHUI1G506F" async></script></form>
+
+      <br />
+
+
+
+      Non IEEE Members:
+
+      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_M9EFTveQf0uM58" async></script></form>
+
+
+
+      <hr class="my-5" />
+
+      <p> -->
+
+          <h5>Benefits including for Registration Fee:</h5>
+
+          <br>
+
+        Registration fee includes, participation in the conference, participation in the technical program [Keynote, all technical sessions],
+
+        publication of the contribution, individual conference certificates, and a conference kit.
+
+      </p>
+
+      <hr class="my-5" />
+
+      <div class="mb-3">
+
+        <a href="ieeecopyrightform.doc" style="border-radius: 0" class="btn btn-success rounded" target="_blank">IEEE Copyright Form &nbsp; &darr;</a>
+
+      </div>
+
+
+
+      <a
+
+        data-toggle="collapse"
+
+        title="submit E-copyright"
+
+        href="./#ecopyright"
+
+        role="button"
+
+        aria-expanded="false"
+
+        aria-controls="ecopyright"
+
+        style="color: blue"
+
+        >Click here</a
+
+      >
+
+      to submit IEEE eCopyright
+
+
+
+      <div class="my-5 collapse" id="ecopyright">
+
+        <form
+
+          action="https://ecopyright.ieee.org/ECTT/IntroPage.jsp"
+
+          style="max-width: 400px; background-color: #f5f5f5; padding: 1.5rem"
+
+          class="rounded-lg shadow"
+
+          method="post"
+
+        >
+
+          <div class="mb-3 opacity-50 h5">
+
+            <strong>Submit IEEE eCopyright</strong>
+
+          </div>
+
+          <input
+
+            class="form-control"
+
+            type="hidden"
+
+            name="PubTitle"
+
+            value="2023 7th International Conference on Electronics, Communication and Aerospace Technology (ICECA)"
+
+          />
+
+
+
+          <input class="form-control" required type="text" name="ArtTitle" placeholder="Article Title:" /><br />
+
+
+
+          <input class="form-control" required type="text" name="AuthName" placeholder="Authors Name:" /><br />
+
+
+
+          <input class="form-control" required type="text" name="ArtId" placeholder="Article Id:" />
+
+
+
+          <input type="hidden" name="ArtSource" value="58529" /><br />
+
+
+
+          <input class="form-control" required type="text" name="AuthEmail" placeholder="Author Email" /><br />
+
+
+
+          <input class="form-control" type="hidden" name="rtrnurl" value="http://icoeca.org/2023/registration.html" />
+
+
+
+          <input class="btn btn-primary btn-block" style="border-radius: 0" name="Submit" type="submit" value="Submit" />
+
+        </form>
+
+      </div>
+
+
+
+      <hr class="my-5" />
+
+      <h5>Refund Policy</h5>
+
+      <p>After registration, no refunds or cancellations are granted.</p> <br>
+
+
+
+    
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+
+
+  <div class="container bg-white p-3 rounded" id="registration">
+
+
+
+    
+
+      <h5 class="mt-5 text-center text-primary">Registration Fee</h5> <br>
+
+      <style>
+
+        /* table td,
+
+        table th {
+
+          text-align: center;
+
+          padding: 0.2rem 1rem;
+
+        }
+
+        table th {
+
+          background-color: #0055ea;
+
+          color: #fff;
+
+          font-weight: 500;
+
+        } */
+
+
+
+
+
+        /* Apply basic styling to the table */
+
+.responsive-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  border: 1px solid #ccc;
+
+}
+
+
+
+.responsive-table th, .responsive-table td {
+
+  border: 1px solid #ccc;
+
+  padding: 8px;
+
+  text-align: center;
+
+}
+
+
+
+/* Add styles for responsiveness */
+
+.table-container {
+
+  overflow-x: auto;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .responsive-table {
+
+    font-size: 14px;
+
+  }
+
+}
+
+      </style>
+
+      
+
+<div class="table-container">
+
+  <table class="responsive-table">
+
+    <thead>
+
+      <tr>
+
+        <th colspan="2">Category</th>
+
+        <th>IEEE Members</th>
+
+        <th>Non-IEEE Members</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td rowspan="5">Indian Participants (INR)</td>
+
+        <td>UG/PG Students</td>
+
+        <td>6000 INR</td>
+
+        <td>6500 INR</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Research Scholars</td>
+
+        <td>6500 INR</td>
+
+        <td>7000 INR</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Academicians</td>
+
+        <td>7000 INR</td>
+
+        <td>7500 INR</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Industry Delegates</td>
+
+        <td>7500 INR</td>
+
+        <td>8000 INR</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Listeners</td>
+
+        <td>5000 INR</td>
+
+        <td>6000 INR</td>
+
+      </tr>
+
+      <tr>
+
+        <td rowspan="2">Foreign Participants (USD)</td>
+
+        <td>Authors</td>
+
+        <td>150 USD</td>
+
+        <td>200 USD</td>
+
+      </tr>
+
+      <tr>
+
+        <td>Listeners</td>
+
+        <td>100 USD</td>
+
+        <td>150 USD</td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  
+
+  
+
+</div>
+
+
+
+      <br />
+
+      <hr />
+
+
+
+
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="section1 container bg-white p-4 rounded " id="venue">
+
+    <div class="m-0 w-100 text-left align-items-center" style="margin: 0; padding: 90px 10px 10px 10px">
+
+      <div class="container">
+
+        <h3>Venue</h3>
+
+
+
+        <br />
+
+
+
+        <!-- Presentation Mode: Online -->
+
+
+
+        <h5>RVS Technical Campus</h5>
+
+
+
+        Kumaran Kottam Campus, <br />
+
+        Kannampalayam,<br />
+
+
+
+        Coimbatore – 641 402, <br />
+
+
+
+        India.
+
+
+
+        <br /><br />
+
+
+
+        <iframe
+
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47253.38326153334!2d77.07434221593857!3d11.019714457807327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85681d8360ed3%3A0x96ed9c44ebfc8508!2sRVS%20TECHNICAL%20CAMPUS%2C%20Tamil%20Nadu%20641402!5e0!3m2!1sen!2sin!4v1638860031116!5m2!1sen!2sin"
+
+          width="100%"
+
+          height="350"
+
+          frameborder="0"
+
+          style="border: 0;"
+
+          allowfullscreen loading="lazy"
+
+          aria-hidden="false"
+
+          tabindex="0"
+
+          class="p-1 bg-light shadow"
+
+          style="box-shadow: 2px 4px 6px #0008"
+
+        ></iframe>
+
+
+
+    
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+  <div class="section1 container bg-white p-2 rounded " id="local">
+
+    <div class="m-0 w-100 text-left align-items-center" style="margin: 0; padding: 90px 10px 10px 10px">
+
+      <div class="container">
+
+        <h3>Local Attractions:</h3>
+
+
+
+
+
+
+
+        <div class="my-5">
+
+          <div class="mb-3">
+
+            <div><i>Distance from:</i></div>
+
+            <table>
+
+              <tr class=">
+
+                <td class="pr-3">Coimbatore International Airport</td>
+
+                <td>14 KM</td>
+
+              </tr>
+
+              <tr class=">
+
+                <td class="pr-3">Coimbatore Railway Junction</td>
+
+                <td>16 KM</td>
+
+              </tr>
+
+            </table>
+
+          </div>
+
+
+
+          <a
+
+            href="https://www.holidify.com/places/coimbatore/sightseeing-and-things-to-do.html"
+
+            target="_blank"
+
+            rel="noopener noreferrer"
+
+            >click here</a
+
+          >
+
+          to view nearby tourist places
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+
+
+  <div class="container rounded border border" id="news">
+
+<h3 class="text-white p-4 text-white">News</h3>
+
+    <div class="main">
+
+      <ul class="cards">
+
+        <li class="cards_item">
+
+          <div class="card">
+
+            <div class="card_image">
+
+              <img src="./rvs-cet-3jpg.jpg" />
+
+            </div>
+
+            <div class="card_content">
+
+              <h2 class="card_title">Welcome</h2>
+
+              <div class="card_text">
+
+              <p>
+
+
+
+                The RVS Technical campus intends to be the preeminent research and teaching institution linking the people of our institutions to the nation and the world by providing quality, career focused education and world class specializations. To be a world class Institution for Engineering and Managerial Education by imparting quality education of global standards and formulate students academically superior, socially committed, ethically strong and culturally rich citizens.
+
+              </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+    
+
+        <li class="cards_item">
+
+          <div class="card">
+
+            <div class="card_image">
+
+              <img src="./black-microphone-conference-room.jpg" alt="a Reuben sandwich on wax paper." />
+
+            </div>
+
+            <div class="card_content">
+
+              <h2 class="card_title">Keynote Speakers</h2>
+
+              <div class="card_text">
+
+               <p>Dr. K. Porkumaran
+
+                Chairman, IEEE Madras Section and Principal & Senior Professor,
+
+                Sri Sairam Engineering College, Chennai, India.</p>
+
+                <p>
+
+                  Dr. T. Muthumanickam
+
+Chair - Aerospace and Electronic Systems (AES) Society, IEEE Madras Section.
+
+                </p>
+
+                
+                <p>
+
+                  Mr.S.Ayyappan
+
+Senior Manager - Avionics Design, HAL,
+
+Bangalore.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </li>
+
+    
+
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section>
+
+
+
+  
+
+  <div class="section1 container rounded bg-white p-2" id="contact">
+
+    <div class="m-0 w-100 text-left align-items-center" style="margin: 0; padding: 90px 10px 10px 10px">
+
+      <div class="container rounded">
+
+        <h3>Contact</h3>
+
+
+
+        Dr. S D Prabu Ragavendiran, <br />
+
+        HoD - CSE, <br />
+
+        RVS Technical Campus, <br />
+
+        Coimbatore, India. <br /><br />
+
+
+
+        Email: iceacconfteam@gmail.com <br />
+
+
+
+        Phone: +91-7708233150 <br />
+
+        Whatsapp: +91-7708233150 <br />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<br><br> <br><br>
+
+
+
+    <script>
+
+      $(document).ready(function () {
+
+        $(window).bind("scroll", function () {
+
+          var navHeight = $(window).height() - 55;
+
+          if ($(window).scrollTop() > navHeight) {
+
+            $(".navbar").addClass("fixed-top");
+
+          } else {
+
+            $(".navbar").removeClass("fixed-top");
+
+          }
+
+        });
+
+      });
+
+
+
+      // activate scrollspy on sections navigation
+
+      $("body").scrollspy({
+
+        target: ".navbar-nav",
+
+        offset: 0,
+
+      });
+
+
+
+      // Smooth Scroll, pure Javascript, no library
+
+      initSmoothScrolling();
+
+
+
+      function initSmoothScrolling() {
+
+        var duration = 400;
+
+
+
+        var pageUrl = location.hash ? stripHash(location.href) : location.href;
+
+
+
+        delegatedLinkHijacking();
+
+        //directLinkHijacking();
+
+
+
+        function delegatedLinkHijacking() {
+
+          document.body.addEventListener("click", onClick, false);
+
+
+
+          function onClick(e) {
+
+            if (!isInPageLink(e.target)) return;
+
+
+
+            e.stopPropagation();
+
+            e.preventDefault();
+
+
+
+            jump(e.target.hash, {
+
+              duration: duration,
+
+              callback: function () {
+
+                setFocus(e.target.hash);
+
+              },
+
+            });
+
+          }
+
+        }
+
+
+
+        function directLinkHijacking() {
+
+          [].slice
+
+            .call(document.querySelectorAll("a"))
+
+            .filter(isInPageLink)
+
+            .forEach(function (a) {
+
+              a.addEventListener("click", onClick, false);
+
+            });
+
+
+
+          function onClick(e) {
+
+            e.stopPropagation();
+
+            e.preventDefault();
+
+
+
+            jump(e.target.hash, {
+
+              duration: duration,
+
+            });
+
+          }
+
+        }
+
+
+
+        function isInPageLink(n) {
+
+          return (
+
+            n.tagName.toLowerCase() === "a" &&
+
+            n.hash.length > 0 &&
+
+            stripHash(n.href) === pageUrl
+
+          );
+
+        }
+
+
+
+        function stripHash(url) {
+
+          return url.slice(0, url.lastIndexOf("#"));
+
+        }
+
+
+
+        function setFocus(hash) {
+
+          var element = document.getElementById(hash.substring(1));
+
+
+
+          if (element) {
+
+            if (
+
+              !/^(?:a|select|input|button|textarea)$/i.test(element.tagName)
+
+            ) {
+
+              element.tabIndex = -1;
+
+            }
+
+
+
+            element.focus();
+
+          }
+
+        }
+
+      }
+
+
+
+      function jump(target, options) {
+
+        var start = window.pageYOffset,
+
+          opt = {
+
+            duration: options.duration,
+
+            offset: options.offset || 0,
+
+            callback: options.callback,
+
+            easing: options.easing || easeInOutQuad,
+
+          },
+
+          distance =
+
+            typeof target === "string"
+
+              ? opt.offset +
+
+                document.querySelector(target).getBoundingClientRect().top
+
+              : target,
+
+          duration =
+
+            typeof opt.duration === "function"
+
+              ? opt.duration(distance)
+
+              : opt.duration,
+
+          timeStart,
+
+          timeElapsed;
+
+
+
+        requestAnimationFrame(function (time) {
+
+          timeStart = time;
+
+          loop(time);
+
+        });
+
+
+
+        function loop(time) {
+
+          timeElapsed = time - timeStart;
+
+
+
+          window.scrollTo(
+
+            0,
+
+            opt.easing(timeElapsed, start, distance, duration)
+
+          );
+
+
+
+          if (timeElapsed < duration) requestAnimationFrame(loop);
+
+          else end();
+
+        }
+
+
+
+        function end() {
+
+          window.scrollTo(0, start + distance);
+
+
+
+          if (typeof opt.callback === "function") opt.callback();
+
+        }
+
+
+
+        // Robert Penner's easeInOutQuad - http://robertpenner.com/easing/
+
+        function easeInOutQuad(t, b, c, d) {
+
+          t /= d / 2;
+
+          if (t < 1) return (c / 2) * t * t + b;
+
+          t--;
+
+          return (-c / 2) * (t * (t - 2) - 1) + b;
+
+        }
+
+      }
+
+    </script>
+
+    <script
+
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+      crossorigin="anonymous"
+
+    ></script>
+
+
+
+    <script
+
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+
+      crossorigin="anonymous"
+
+    ></script>
+
+
+
+    <script
+
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+
+      crossorigin="anonymous"
+
+    ></script>
+
+  </body>
+
+</html>
+
